@@ -1,0 +1,43 @@
+body{max-height: 100%;
+overflow-y: hidden;
+}
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  font-size: 26px;
+    font-weight: bold;
+    line-height: 30px;
+    
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+   
+  position: static;
+  top: 0;
+  z-index: 1;
+  background-color:black;
+}
+.menu-list-item{
+
+  font-size: 26px;
+    font-weight: 300;
+    line-height: 28px;
+    
+}
+.side-nav-toolbar-spacer {
+  flex: 1 1 auto;
+}
+.side-nav-but-spacer{
+  flex: 1 1 auto;
+}
+
