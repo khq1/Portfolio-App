@@ -17,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { CounterDataComponent } from './components/counter-data/counter-data.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCaruselComponent } from './components/ngb-carusel/ngb-carusel/ngb-carusel.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MenuComponent,
     HomepageComponent,
     CounterDataComponent,
+    NgbCaruselComponent,
     
      ],
   imports: [
