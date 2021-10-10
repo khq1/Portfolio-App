@@ -16,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatCardModule } from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { CounterDataComponent } from './components/counter-data/counter-data.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CounterDataComponent } from './components/counter-data/counter-data.com
     MatListModule,
     MatCardModule,
     MatProgressBarModule,
+    NgbModule,
   ],
   providers: [ ],
   bootstrap: [AppComponent]
