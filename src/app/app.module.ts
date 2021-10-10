@@ -16,6 +16,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { CounterDataComponent } from './components/counter-data/counter-data.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCaruselComponent } from './components/ngb-carusel/ngb-carusel/ngb-carusel.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,8 +40,9 @@ import { NgbCaruselComponent } from './components/ngb-carusel/ngb-carusel/ngb-ca
     MatCardModule,
     MatProgressBarModule,
     NgbModule,
+    FormsModule
   ],
-  providers: [ ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
