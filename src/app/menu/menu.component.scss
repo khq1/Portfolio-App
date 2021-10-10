@@ -10,17 +10,17 @@ overflow-y: hidden;
 }
 
 .sidenav .mat-toolbar {
-  font-size: 26px;
+  font-size: 28px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 28px;
     
   background: inherit;
 }
 
 .mat-toolbar.mat-primary {
-  font-size: 30px;
+  font-size: 28px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 28px;
    
   position: static;
   top: 0;
@@ -39,5 +39,8 @@ overflow-y: hidden;
 }
 .side-nav-but-spacer{
   flex: 1 1 auto;
+}
+.toolbar-date{
+  font-size: 22px ;
 }
 

@@ -47,7 +47,15 @@ $margin-promotion-sections-small: 15px;
     margin: 15px 0 25px 0;
   }
 }
-
+.carusel-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 75%;
+  max-width: 1080px;
+  margin: auto;
+}
 .docs-homepage-promo {
   align-items: center;
   display: flex;

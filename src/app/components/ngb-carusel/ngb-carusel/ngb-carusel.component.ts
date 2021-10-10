@@ -9,8 +9,8 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbCarouselConfig], // add NgbCarouselConfig to the component providers
 })
 export class NgbCaruselComponent {
-  showNavigationArrows = false;
-  showNavigationIndicators = false;
+  showNavigationArrows = true;
+  showNavigationIndicators = true;
   images = [1055, 194, 368].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
   constructor(config: NgbCarouselConfig) {
