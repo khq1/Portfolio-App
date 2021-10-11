@@ -54,14 +54,16 @@ $margin-promotion-sections-small: 15px;
   width:100%;
   max-width: 100%;
   margin: auto;
+  img{
+  max-width:100%;
+}
 }
 .docs-homepage-promo {
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 16px;
-  width: 75%;
-  max-width: 1080px;
+  width: 100%;
   margin: auto;
 
   a {

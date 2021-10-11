@@ -17,6 +17,7 @@ import { CounterDataComponent } from './components/counter-data/counter-data.com
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCaruselComponent } from './components/ngb-carusel/ngb-carusel/ngb-carusel.component';
 import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatProgressBarModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
