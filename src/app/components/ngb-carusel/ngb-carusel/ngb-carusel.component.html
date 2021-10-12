@@ -1,6 +1,6 @@
 
 <ngb-carousel #carousel  [showNavigationArrows]="showNavigationArrows"
-    [showNavigationIndicators]="showNavigationIndicators"  [interval]="3333" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+    [showNavigationIndicators]="showNavigationIndicators"  [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
     <ng-template ngbSlide *ngFor="let img of images; index as i">
         <div class="carousel-caption">
             <h3>My slide {{i + 1}} title</h3>
@@ -15,9 +15,10 @@
 </ngb-carousel>
 
 <hr>
-<div class="btn-group" aria-label="Carousel toggle controls">
+<div class="button-group" aria-label="Carousel toggle controls">
     <button mat-raised-button (click)="togglePaused()">
-        {{paused ? 'Cycle' : 'Pause' }}
+        {{paused ? 'Play' : 'Pause' }}
+        <mat-icon>{{icon}}</mat-icon>
     </button>
     <button mat-raised-button (click)="showNavigationArrows = !showNavigationArrows"
         >Toggle navigation arrows</button>
@@ -25,19 +26,19 @@
         >Toggle navigation indicators</button>
     
         
-    <mat-checkbox [(ngModel)]="pauseOnHover">Pause on hover
-    </mat-checkbox>
+    <button mat-raised-button [(ngModel)]="pauseOnHover">Pause on hover
+    </button>
 
-    <mat-checkbox id="pauseOnFocus" [(ngModel)]="pauseOnFocus">
+    <button mat-raised-button [(ngModel)]="pauseOnFocus">
     Pause on focus
-    </mat-checkbox>
+    </button>
 
-    <mat-checkbox id="unpauseOnArrow" [(ngModel)]="unpauseOnArrow">
+    <button mat-raised-button [(ngModel)]="unpauseOnArrow">
     Unpause when clicking on arrows
-    </mat-checkbox>
+    </button>
 
-    <mat-checkbox id="pauseOnIndicator" [(ngModel)]="pauseOnIndicator">
-    Pause when clicking on navigation indicator
-    </mat-checkbox>
+    <button mat-raised-button [(ngModel)]="pauseOnIndicator">
+        Pause when clicking on indicator
+    </button>
     
 </div>

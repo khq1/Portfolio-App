@@ -1,10 +1,8 @@
-.btn-group{
+.button-group {
     display: flex;
-    flex-wrap: wrap;
-  width: 95%;
-  align-items: center;
-  justify-content: space-evenly;
-  max-width: 100%;
-  height: auto;
-}
+    flex-flow: row wrap;
     
+}
+button{
+  margin:auto;
+}

@@ -19,7 +19,7 @@ export class NgbCaruselComponent {
   images = [62, 83, 466, 965, 982, 1043, 738].map(
     (n) => `https://picsum.photos/id/${n}/900/500`
   );
-
+  icon = "string";
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;
@@ -33,8 +33,10 @@ export class NgbCaruselComponent {
   togglePaused() {
     if (this.paused) {
       this.carousel.cycle();
+      this.icon = 'play';
     } else {
       this.carousel.pause();
+      this.icon = 'pause';
     }
     this.paused = !this.paused;
   }
