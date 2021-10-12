@@ -18,6 +18,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCaruselComponent } from './components/ngb-carusel/ngb-carusel/ngb-carusel.component';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +30,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     HomepageComponent,
     CounterDataComponent,
     NgbCaruselComponent,
+    HeroesComponent,
     
-     ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -42,9 +47,17 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatProgressBarModule,
     NgbModule,
     FormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    HttpClientModule,
+    
+    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+    // and returns simulated server responses.
+    // Remove it when a real server is ready to receive requests.
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+      dataEncapsulation: false,
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
