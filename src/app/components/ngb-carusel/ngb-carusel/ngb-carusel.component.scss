@@ -1,8 +1,38 @@
+
+.carusel-container {
+display: flex;
+align-items: center;
+flex-direction: column;
+width:100vw;
+max-width: 100%;
+height: auto;
+max-height:100%;
+margin: auto;
+ 
+}
+.img-wrapper{
+width: 95vw;
+height: 60vh;
+}
+ .img_slide{
+     
+width: inherit;
+height: inherit;
+object-fit: fill;
+object-position: center;
+
+  
+  
+     
+}
+
 .button-group {
+    min-height: 10vh;
     display: flex;
     flex-flow: row wrap;
+    row-gap: 1em;
+    column-gap: 1em;
+    margin:auto;
+    justify-content:center;
     
-}
-button{
-  margin:auto;
 }

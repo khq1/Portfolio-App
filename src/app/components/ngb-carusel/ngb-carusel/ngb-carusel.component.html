@@ -1,15 +1,13 @@
-
-<ngb-carousel #carousel  [showNavigationArrows]="showNavigationArrows"
+<div class="carusel-container">
+    <ngb-carousel #carousel [showNavigationArrows]="showNavigationArrows"
     [showNavigationIndicators]="showNavigationIndicators"  [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
     <ng-template ngbSlide  *ngFor="let hero of heroes">
-        <div class="carousel-caption">
-            <h3>My slide {{hero.id}} title</h3>
+        <div class="img-wrapper">
+            <img [src]="hero.image_url" class="img_slide" alt={{hero.img_alt}}>
         </div>
-        <div class="picsum-img-wrapper">
-            <img [src]="hero.image_url" alt="Random slide" style="width: 100%;"></div>
             <div class="carousel-caption">
-            <h3>No mouse navigation</h3>
-            <p>This carousel hides navigation arrows and indicators.</p>
+            <h3>{{hero.title}}</h3>
+            <p>{{hero.description}}.</p>
         </div>
     </ng-template>
 </ngb-carousel>
@@ -41,4 +39,5 @@
         Pause when clicking on indicator
     </button>
     
+</div>
 </div>

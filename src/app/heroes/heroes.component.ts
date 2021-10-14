@@ -11,8 +11,11 @@ export class HeroesComponent implements OnInit {
   hero = 'Windstorm';
   */
   hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
+  id: 1,
+  title: '',
+  image_url: '',
+  description: '',
+  img_alt: ''
   };
 
   constructor() { }

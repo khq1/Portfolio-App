@@ -21,20 +21,20 @@ export class NgbCaruselComponent {
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;
-  pauseOnHover = true;
-  pauseOnFocus = true;
-  icon = '';
+  pauseOnHover = false;
+  pauseOnFocus = false;
+  icon = 'play';
 
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
-  
+
   togglePaused() {
     if (this.paused) {
       this.carousel.cycle();
-      this.icon = 'play';
+      this.icon = 'pause';
     } else {
       this.carousel.pause();
-      this.icon = 'pause';
+      this.icon = 'play';
     }
     this.paused = !this.paused;
   }

@@ -47,17 +47,16 @@ $margin-promotion-sections-small: 15px;
     margin: 15px 0 25px 0;
   }
 }
-.carusel-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width:100%;
-  max-width: 100%;
-  margin: auto;
-  img{
-  max-width:100%;
-}
-}
+  mat-divider {
+    width: 100%;
+  }
+
+  mat-icon {
+    vertical-align: middle;
+  }
+
+/*comment out unused css
+
 .docs-homepage-promo {
   align-items: center;
   display: flex;
@@ -85,14 +84,7 @@ $margin-promotion-sections-small: 15px;
     padding: 0;
   }
 
-  mat-divider {
-    width: 100%;
-  }
 
-  mat-icon {
-    vertical-align: middle;
-  }
-}
 
 .carousel-item {
   width: 48%;
@@ -247,8 +239,8 @@ $margin-promotion-sections-small: 15px;
 }
 
 /**
-  * Rules for when the device is detected to be a small screen.
-  */
+  * Rules for when the device is detected to be a small screen.//
+  
 @media (max-width: 720px) {
   .docs-header-start {
     margin: $margin-promotion-sections-small 0 0 0;
@@ -259,7 +251,7 @@ $margin-promotion-sections-small: 15px;
   }
 }
 
-
+*/
 
 
 
