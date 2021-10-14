@@ -8,18 +8,79 @@ import { Hero } from './hero';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 11, name: 'Dr Nice' },
-      { id: 12, name: 'Narco' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'Dynama' },
-      { id: 18, name: 'Dr IQ' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado' },
+      {
+        id: 11,
+        title: 'title_string1',
+        image_url:
+          '../../../assets/img/homepage/carusel-images/boat.jpg',
+        description: 'desc_string1',
+        img_alt: 'Photo by Ann-Kathrin Rehse from FreeImages',
+      },
+      {
+        id: 12,
+        title: 'title_string2',
+        image_url: '../../../assets/img/homepage/carusel-images/mt-fuji.jpg',
+        description: 'desc_string2',
+        img_alt: 'Photo by James Farmer from FreeImages',
+      },
+      {
+        id: 13,
+        title: 'title_string3',
+        image_url: 'linkurl3',
+        description: 'desc_string3',
+        img_alt: 'img_alt_string',
+      },
+      {
+        id: 14,
+        title: 'title_string',
+        image_url: 'linkurl',
+        description: 'desc_string',
+        img_alt: 'img_alt_string',
+      },
+      {
+        id: 15,
+        title: 'title_string5',
+        image_url: 'linkurl',
+        description: 'desc_string5',
+        img_alt: 'img_alt_string',
+      },
+      {
+        id: 16,
+        title: 'title_string',
+        image_url: 'linkurl',
+        description: 'desc_string',
+        img_alt: 'img_alt_string',
+      },
+      {
+        id: 17,
+        title: 'title_string6',
+        image_url: 'linkurl',
+        description: 'desc_string6',
+        img_alt: 'img_alt_string',
+      },
+      {
+        id: 18,
+        title: 'title_string',
+        image_url: 'linkurl',
+        description: 'desc_string',
+        img_alt: 'img_alt_string',
+      },
+      {
+        id: 19,
+        title: 'title_string',
+        image_url: 'linkurl',
+        description: 'desc_string',
+        img_alt: 'img_alt_string',
+      },
+      {
+        id: 20,
+        title: 'title_string',
+        image_url: 'linkurl',
+        description: 'desc_string',
+        img_alt: 'img_alt_string',
+      },
     ];
-    return { heroes };
+    return {heroes};
   }
 
   // Overrides the genId method to ensure that a hero always has an id.
@@ -28,8 +89,6 @@ export class InMemoryDataService implements InMemoryDbService {
   // if the heroes array is not empty, the method below returns the highest
   // hero id + 1.
   genId(heroes: Hero[]): number {
-    return heroes.length > 0
-      ? Math.max(...heroes.map((hero) => hero.id)) + 1
-      : 11;
+    return heroes.length > 0 ? Math.max(...heroes.map(hero => hero.id)) + 1 : 11;
   }
 }
