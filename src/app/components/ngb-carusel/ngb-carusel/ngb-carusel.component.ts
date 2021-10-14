@@ -1,7 +1,4 @@
 import { Component,ViewChild, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
-
 import { Hero } from '../../../hero';
 import { HeroService } from '../../../hero.service';
 import {
@@ -19,8 +16,6 @@ import {
   providers: [NgbCarouselConfig], // add NgbCarouselConfig to the component providers
 })
 export class NgbCaruselComponent {
-  heroes: Hero[] = [];
-
   showNavigationArrows = true;
   showNavigationIndicators = true;
   paused = false;
@@ -28,12 +23,11 @@ export class NgbCaruselComponent {
   pauseOnIndicator = false;
   pauseOnHover = true;
   pauseOnFocus = true;
-
   icon = '';
 
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
-
+  
   togglePaused() {
     if (this.paused) {
       this.carousel.cycle();
@@ -63,11 +57,9 @@ export class NgbCaruselComponent {
     }
   }
 
-  constructor(
-    private route: ActivatedRoute,
-    private heroService: HeroService,
-    private location: Location
-  ) {}
+  heroes: Hero[] = [];
+
+  constructor(private heroService: HeroService) {}
 
   ngOnInit() {
     this.getHeroes();
@@ -79,3 +71,4 @@ export class NgbCaruselComponent {
       .subscribe((heroes) => (this.heroes = heroes.slice(1, 5)));
   }
 }
+
