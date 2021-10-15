@@ -22,6 +22,7 @@
           <a mat-list-item href="#">
             <mat-icon> email</mat-icon><span class="side-nav-but-spacer"></span>Contact
           </a>
+          <a mat-list-item  href="#"> <app-messages></app-messages></a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -39,13 +40,13 @@
      
       <span class="side-nav-toolbar-spacer"></span>
       <app-counter-data class="toolbar-date"></app-counter-data>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
+      <mat-icon mat-icon-button matBadge="15" matBadgeColor="warn" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">favorite</mat-icon>
+      
     </mat-toolbar>
-    <app-messages></app-messages>
+    
+    <ng-content></ng-content>
   <!-- Add Content Here -->
-  <ng-content #ngcontent></ng-content>
+  
   </mat-sidenav-content>
 
 

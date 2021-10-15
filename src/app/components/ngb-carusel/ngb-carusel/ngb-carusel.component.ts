@@ -1,12 +1,15 @@
-import { Component,ViewChild, OnInit } from '@angular/core';
+import { Component,ViewChild, OnInit, Injectable } from '@angular/core';
 import { Hero } from '../../../hero';
 import { HeroService } from '../../../hero.service';
+import { FormControl } from '@angular/forms';
+import { MessageService } from '../../../message.service';
 import {
   NgbCarouselConfig,
   NgbCarousel,
   NgbSlideEvent,
   NgbSlideEventSource,
 } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-ngb-carusel',
@@ -15,26 +18,29 @@ import {
 
   providers: [NgbCarouselConfig], // add NgbCarouselConfig to the component providers
 })
+@Injectable({ providedIn: 'root' })
 export class NgbCaruselComponent {
+  
+  interval = new FormControl(3000);
+  panelOpenState = false;
   showNavigationArrows = true;
   showNavigationIndicators = true;
-  paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;
   pauseOnHover = false;
   pauseOnFocus = false;
-  icon = 'play';
+  paused = false;
+  icon = '';
 
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
+  heroes: Hero[] = [];
 
   togglePaused() {
     if (this.paused) {
       this.carousel.cycle();
-      this.icon = 'pause';
     } else {
       this.carousel.pause();
-      this.icon = 'play';
     }
     this.paused = !this.paused;
   }
@@ -55,20 +61,26 @@ export class NgbCaruselComponent {
     ) {
       this.togglePaused();
     }
+    
   }
+  selectedHero?: Hero;
 
-  heroes: Hero[] = [];
-
-  constructor(private heroService: HeroService) {}
+  constructor(
+    private heroService: HeroService,
+    private messageService: MessageService
+  ) {}
 
   ngOnInit() {
     this.getHeroes();
   }
 
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
+  }
+
   getHeroes(): void {
-    this.heroService
-      .getHeroes()
-      .subscribe((heroes) => (this.heroes = heroes.slice(1, 5)));
+    this.heroService.getHeroes().subscribe((heroes) => (this.heroes = heroes));
   }
 }
 

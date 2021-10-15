@@ -26,6 +26,12 @@ import { HeroDetailComponent } from './components/hero/hero-detail/hero-detail.c
 import { HeroesComponent } from './components/hero/heroes/heroes.component';
 import { HeroSearchComponent } from './components/hero/hero-search/hero-search.component';
 import { MessagesComponent } from './components/hero/messages/messages.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 
@@ -58,6 +64,15 @@ import { MessagesComponent } from './components/hero/messages/messages.component
     FormsModule,
     MatCheckboxModule,
     HttpClientModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    
+
+    
+    
+    
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
