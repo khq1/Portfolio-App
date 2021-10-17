@@ -7,7 +7,7 @@ import { MessageService } from '../../../message.service';
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent implements OnInit {
-
+  isDisabled = true;
   constructor(public messageService: MessageService) {}
 
   ngOnInit() {

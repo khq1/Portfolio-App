@@ -1,25 +1,30 @@
-<header  class="docs-header-background"
+<div class="container">
+    <header class="docs-header-background"
     aria-label="Get started" id="homepage-header">
     <div class="docs-header-section">
         <div class="docs-header-headline">
             <h1 class="mat-h1">Jan Warzecha</h1>
-            <h2>Portfolio programisty</h2>
+            <h2>Angular Material coders Portfolio</h2>
         </div>
         <div class="docs-header-start">
             <a mat-raised-button class="docs-button" routerLink="/guide/getting-started">Zaczynamy!</a>
         </div>
     </div>
 </header>
+<hr>
+<h1>About me:</h1>
+<app-ngb-carusel>
 
 
-    <app-ngb-carusel></app-ngb-carusel>
-
+</app-ngb-carusel>
+<hr>
 <div class=".docs-homepage-promo">
     <h1>{{title}}</h1>
     <nav>
         <a routerLink="/dashboard">Dashboard</a>
         <a routerLink="/heroes">Heroes</a>
     </nav>  
+</div>
 </div>
 
 

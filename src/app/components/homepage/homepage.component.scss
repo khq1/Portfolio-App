@@ -5,10 +5,11 @@ $margin-promotion-sections-small: 15px;
 .docs-header-background {
   overflow: hidden;
   position: relative;
-  height: 420px;
+  height: 600px;
 }
 
 .docs-header-background::before {
+  
   content: '';
   position: absolute;
   background-image: url('../../../assets/img/homepage/angular-white-transparent.png');
@@ -33,6 +34,7 @@ $margin-promotion-sections-small: 15px;
 }
 
 .docs-header-headline {
+height: 100%;  
   h1 {
     font-size: 56px;
     font-weight: bold;

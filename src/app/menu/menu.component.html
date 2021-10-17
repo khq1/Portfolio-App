@@ -4,7 +4,7 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
-      <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon>
 
       Menu</mat-toolbar>
     <mat-nav-list class="menu-list-item">
@@ -22,8 +22,9 @@
           <a mat-list-item href="#">
             <mat-icon> email</mat-icon><span class="side-nav-but-spacer"></span>Contact
           </a>
-          <a mat-list-item  href="#"> <app-messages></app-messages></a>
+          
     </mat-nav-list>
+    <app-messages></app-messages>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -40,7 +41,7 @@
      
       <span class="side-nav-toolbar-spacer"></span>
       <app-counter-data class="toolbar-date"></app-counter-data>
-      <mat-icon mat-icon-button matBadge="15" matBadgeColor="warn" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">favorite</mat-icon>
+      <mat-icon matBadge="15" matBadgeColor="warn" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">favorite</mat-icon>
       
     </mat-toolbar>
     

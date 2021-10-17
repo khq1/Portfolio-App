@@ -20,7 +20,6 @@ import {
 })
 @Injectable({ providedIn: 'root' })
 export class NgbCaruselComponent {
-  
   interval = new FormControl(3000);
   panelOpenState = false;
   showNavigationArrows = true;
@@ -29,12 +28,11 @@ export class NgbCaruselComponent {
   pauseOnIndicator = false;
   pauseOnHover = false;
   pauseOnFocus = false;
-  paused = false;
+  paused = true;
   icon = '';
 
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
-  heroes: Hero[] = [];
 
   togglePaused() {
     if (this.paused) {
@@ -61,10 +59,9 @@ export class NgbCaruselComponent {
     ) {
       this.togglePaused();
     }
-    
   }
   selectedHero?: Hero;
-
+  heroes: Hero[] = [];
   constructor(
     private heroService: HeroService,
     private messageService: MessageService
@@ -76,7 +73,7 @@ export class NgbCaruselComponent {
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
+    this.messageService.add(`Carusel: Selected hero id=${hero.id}`);
   }
 
   getHeroes(): void {

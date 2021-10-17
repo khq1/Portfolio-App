@@ -1,15 +1,7 @@
 
-.carusel-container {
-display: flex;
-align-items: center;
-flex-direction: column;
-width:100vw;
-max-width: 100%;
-margin: auto;
- 
-}
+
 .img-wrapper{
-    width: 84vw;
+    width: 84vw; //adapt angular good practises
     height: 85vh;
     margin: 1em 0;
 }
@@ -21,6 +13,25 @@ margin: auto;
     object-position: center center;
    
 }
+
+.carousel-caption{
+  text-shadow: 0 1px 0 #7c7c7c,
+               0 2px 0 #4e4e4e;
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+        margin: 50% 40% auto 0;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    
+    margin: 15px 0 25px 0;
+  }
+}
+
+
 .button-group {
     display: flex;
     flex-flow: row wrap;
@@ -31,8 +42,8 @@ margin: auto;
 }
 
 .slide-controls-panel{
-    width: auto;
-    max-width: 90%;
+    width: fit-content;
+    max-width: 100%;
 }
 
 .button-group-panel {
