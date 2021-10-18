@@ -13,21 +13,31 @@
     object-position: center center;
    
 }
-
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
 .carousel-caption{
-  text-shadow: 0 1px 0 #7c7c7c,
-               0 2px 0 #4e4e4e;
-               white-space:pre-line; // 
-               text-align: left; 
-  h3 {
-    font-size: 36px;
-    font-weight: 600;
-        margin: 40% 30% auto 0;
+  color:black;
+  max-height: 100%;
+      -webkit-backdrop-filter: blur(3px);
+      backdrop-filter: blur(3px);
+      background-color: rgba($color: rgba(128, 128, 128), $alpha: 0.4);  
+      border-radius: 16px;
+
+  white-space:pre-line; // \n\u2022 work properly in TS
+ text-align: left;
+ padding-left: 2%;
+ line-height: 2em;
+}
+
+  .carousel-caption h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+   
   }
 
-  p {
-    font-size: 18px;
-    font-weight: 500;
+  .carousel-caption p {
+    font-size: 16px;
+    font-weight: 400;
     
     margin: 15px 0 25px 0;
   }
@@ -41,11 +51,12 @@
     row-gap: 1em;
     margin:0 1em;
     justify-content:center;
+    max-width: 100%;
 }
 
 .slide-controls-panel{
-    width: fit-content;
-    max-width: 100%;
+    width: 80%;
+    
 }
 
 .button-group-panel {
@@ -71,5 +82,6 @@ input.interval-right-align::-webkit-inner-spin-button {
 input.interval-right-align {
   -moz-appearance: textfield;
 }
+
 
 

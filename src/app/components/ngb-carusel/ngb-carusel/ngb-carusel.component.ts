@@ -20,7 +20,7 @@ import {
 })
 @Injectable({ providedIn: 'root' })
 export class NgbCaruselComponent {
-  interval = new FormControl(3000);
+  interval = new FormControl(10000);
   panelOpenState = false;
   showNavigationArrows = true;
   showNavigationIndicators = true;

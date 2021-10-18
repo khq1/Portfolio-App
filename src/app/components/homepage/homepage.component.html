@@ -1,4 +1,4 @@
-<div class="container">
+<div id='Jan' class="container">
     <header class="docs-header-background"
     aria-label="Get started" id="homepage-header">
     <div class="docs-header-section">
@@ -7,23 +7,25 @@
             <h2>Angular Material coders Portfolio</h2>
         </div>
         <div class="docs-header-start">
-            <a mat-raised-button class="docs-button" routerLink="/guide/getting-started">Zaczynamy!</a>
+            <a mat-raised-button class="docs-button" routerLink="/app-homepage#projects">Zaczynamy!</a>
         </div>
     </div>
 </header>
+<div>
 
-<div class="container">
+<div id="About" class="container" routerLink="/app-homepage#Jan">
     <h1>About me:</h1>
     <app-ngb-carusel></app-ngb-carusel>
-</div>
-
-<div class="container">
-            <h1>{{title}}</h1>
-    <nav>
-        <a routerLink="/dashboard">Dashboard</a>
-        <a routerLink="/heroes">Heroes</a>
-    </nav>  
+    <div id="About" class="container" routerLink="/app-homepage#About">
     </div>
+
+<div id="skills" class="container" routerLink="/app-homepage#skills">
+    <h1>Skills:</h1>
+
 </div>
-
-
+<div id="projects" class="container" routerLink="/app-homepage#project">
+    <h1>Projets:</h1>
+</div>
+<div id="contact" class="container" routerLink="/app-homepage#contact">
+    <h1>Contact me:</h1>
+</div>
