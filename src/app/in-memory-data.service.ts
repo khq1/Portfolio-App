@@ -13,21 +13,22 @@ export class InMemoryDataService implements InMemoryDbService {
         title: '1. My Coding Experience:',
         image_url: '../../../assets/img/homepage/carusel-images/i1.jpg',
         description:
-          "I started my adventure with coding in June 2020. I followed the front-end route: HTML, CSS, API, JS, TS, Angular. I love figure out how each piece of code works, and as I learn, I am just more curious.",
+          "\u2022I started coding in June 2020.\n\u2022I went the front-end route: HTML, CSS, API, JavaScript, Typescipt, Angular 12.\n\u2022I love to figure out how each piece of code works, and as I learn - I'm just more curious.",
         img_alt: 'Image by birgl from Pixabay',
       },
       {
         id: 2,
         title: '2. Graduation',
         image_url: '../../../assets/img/homepage/carusel-images/i2.jpg',
-        description: 'desc_string2',
+        description:
+          "I finished Geology with a master's degree at the University of Wrocław. Specialization: Geochemistry",
         img_alt: 'Image by McElspeth from Pixabay',
       },
       {
         id: 3,
         title: '3. Profesional Carrier:',
         image_url: '../../../assets/img/homepage/carusel-images/i3.jpg',
-        description: 'desc_string3',
+        description: 'KGHM Cuprum Research and Development Centre',
         img_alt: 'Image by Malachi Witt from Pixabay',
       },
       {

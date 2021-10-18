@@ -30,10 +30,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
-
-
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -47,7 +44,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-  ],
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -68,6 +65,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatRadioModule,
     
 
     
