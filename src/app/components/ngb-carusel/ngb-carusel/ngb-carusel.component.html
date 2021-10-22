@@ -7,7 +7,7 @@
             <div class="img-wrapper">
                 <img [src]="hero.image_url" class="img_slide" alt={{hero.img_alt}}>
             </div>
-            <div class="carousel-caption"  cdkDragBoundary=".container" cdkDrag>
+            <div class="carousel-caption">
                 <h3>{{hero.title}}</h3>
                 <p>{{hero.description}}.</p>
                 </div>
@@ -17,7 +17,7 @@
 <hr>
 
     <div class="button-group" aria-label="Carousel toggle controls">
-        <button mat-raised-button (click)="togglePaused()">
+        <button mat-raised-button (click)="togglePaused()"class="cycle_pause_button">
             {{paused ? 'Cycle' : 'Pause'}}
             <mat-icon>{{paused ? 'play_circle_outline' : 'pause_circle_outline'}}</mat-icon>
         </button>

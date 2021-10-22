@@ -8,18 +8,23 @@
 
       Menu</mat-toolbar>
     <mat-nav-list class="menu-list-item">
-      <a mat-list-item href="#">
+      <a mat-list-item routerLinkActive="active" (click)="buttonClick('Jan')">
         <mat-icon>face</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
       </a>
-      <a mat-list-item href="#">
+
+      <a mat-list-item routerLinkActive="active" (click)="buttonClick('About')">
         <mat-icon>perm_identity</mat-icon><span class="side-nav-but-spacer"></span>About Me
       </a>
-      <a mat-list-item href="#"><img src="../../../assets/img/homepage/github-circle-black-transparent.svg" alt="angular"
-          class="docs-angular-logo"><span class="side-nav-but-spacer"></span>GitHub</a>
-          <a mat-list-item href="#">
+
+      <a mat-list-item href="https://github.com/khq1" target="_blank"><img src="../../../assets/img/homepage/github-circle-black-transparent.svg" alt="angular"
+          class="docs-angular-logo"><span class="side-nav-but-spacer"></span>GitHub
+      </a>
+
+          <a mat-list-item routerLinkActive="active" (click)="buttonClick('Projects')">
             <mat-icon>subject</mat-icon><span class="side-nav-but-spacer"></span>Fundament
           </a>
-          <a mat-list-item href="#">
+
+          <a mat-list-item routerLinkActive="active" (click)="buttonClick('Contact')">
             <mat-icon> email</mat-icon><span class="side-nav-but-spacer"></span>Contact
           </a>
           

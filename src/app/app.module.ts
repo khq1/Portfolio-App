@@ -33,6 +33,9 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ProjectsGridComponent } from './components/projects-grid/projects-grid.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
+    ProjectsGridComponent,
       ],
   imports: [
     BrowserModule,
@@ -81,6 +85,20 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
     }),
+    
+
+    
+    
+    
+
+    MatGridListModule,
+    
+
+    
+    
+    
+
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

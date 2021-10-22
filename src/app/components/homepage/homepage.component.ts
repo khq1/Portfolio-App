@@ -8,9 +8,7 @@ import { Component, OnInit,ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class HomepageComponent implements OnInit {
+   
   
-  title = '';
-  constructor() {}
-
-  ngOnInit(): void {}
+  ngOnInit() {}
 }
