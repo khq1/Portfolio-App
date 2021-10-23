@@ -2,7 +2,7 @@
     <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows" [colspan]="card.cols" 
 [rowspan]="card.rows" [title]="card.title" subtitle="card.subtitle" img_url="card.img_url" gh_url="card.gh_url" gh_pages_url="card.gh_pages_url" description="card.description">
-      <mat-card class="dashboard-card">
+      <mat-card tabindex="0" class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
             {{card.title}}
@@ -17,7 +17,7 @@
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
           <div>{{card.subtitle}}</div>
-          <img mat-card-image [src]="card.img_url" class="img_project">
+          <img   mat-card-s-image [src]="card.img_url" class="img_project">
           <div>{{card.description}}</div>
         <mat-card-actions class="button-group">
           <a mat-raised-button href="{{card.gh_url}}">Github Repo</a>

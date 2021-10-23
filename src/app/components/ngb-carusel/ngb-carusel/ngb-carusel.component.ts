@@ -59,6 +59,7 @@ export class NgbCaruselComponent {
     ) {
       this.togglePaused();
     }
+    
   }
   selectedHero?: Hero;
   heroes: Hero[] = [];
@@ -69,6 +70,7 @@ export class NgbCaruselComponent {
 
   ngOnInit() {
     this.getHeroes();
+    this.messageService.add(`Carusel: getHeroes()`);
   }
 
   onSelect(hero: Hero): void {

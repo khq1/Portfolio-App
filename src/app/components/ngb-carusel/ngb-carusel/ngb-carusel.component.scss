@@ -1,8 +1,8 @@
 
 
 .img-wrapper{
-    width: 84vw; //adapt angular good practises
-    height: 85vh;
+    width: 78vw; //adapt angular good practises
+    height: 72vh;
     margin: 1em 0;
 }
  .img_slide{
@@ -37,11 +37,11 @@ border:1px solid #ffffff;
 line-height: 2em;
 }
   .carousel-caption h3 {
-    font-size:28px;
+    font-size:1rem;
     font-weight: 400;     }
 
   .carousel-caption p {
-    font-size:24px;
+    font-size:1rem;
     font-weight: 300;
       }
 }
@@ -53,7 +53,7 @@ line-height: 2em;
     column-gap: 1em;
     row-gap: 1em;
     align-content:center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     max-width: 100%;
 }

@@ -1,6 +1,6 @@
 // The margin between two sections
 $margin-promotion-sections: 50px;
-$margin-promotion-sections-small: 15px;
+$margin-promotion-sections-small: 152px;
 
 .docs-header-background {
   overflow: hidden;
@@ -55,7 +55,10 @@ $margin-promotion-sections-small: 15px;
   mat-icon {
     vertical-align: middle;
   }
-.container {
+.container-fluid {
+  .homepage-tile{
+max-height: 100%;
+  }
   h1 {
     font-size: 46px;
     font-weight: bold;
@@ -70,13 +73,15 @@ $margin-promotion-sections-small: 15px;
   
   }
 }
+
+
 /*comment out unused css
 
 .docs-homepage-promo {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: px;
   width: 100%;
   margin: auto;
 
@@ -99,7 +104,7 @@ $margin-promotion-sections-small: 15px;
     padding: 0;
   }
 
-
+}
 
 .carousel-item {
   width: 48%;
@@ -267,8 +272,4 @@ $margin-promotion-sections-small: 15px;
 }
 
 */
-
-
-
-
 

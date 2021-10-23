@@ -3,7 +3,10 @@
         [showNavigationIndicators]="showNavigationIndicators" [pauseOnHover]="pauseOnHover"[interval]="interval.value" (slide)="onSlide($event)">
         
          
-        <ng-template ngbSlide *ngFor="let hero of heroes">
+        <ng-template ngbSlide *ngFor="let hero of heroes"
+        (ngModelChange)="onSelect" (ngModel)="heroes"
+        
+        >
             <div class="img-wrapper">
                 <img [src]="hero.image_url" class="img_slide" alt={{hero.img_alt}}>
             </div>
@@ -72,4 +75,4 @@
             
             </mat-accordion>
     </div>
-    
+    <hr>
