@@ -2,42 +2,107 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+      [opened]="(isHandset$ | async) === false"
+      
+      >
     <mat-toolbar>
       <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon>
 
       Menu</mat-toolbar>
-    <mat-nav-list class="menu-list-item" *ngFor="let tooltip of tooltips | async" [tooltip]="tooltips.tooltip">
-  <a mat-list-item matTooltip="{{tooltip}}"
+    <mat-nav-list
+      class="menu-list-item">
+      <div (mousemove)="show=false" *ngFor="let item of items; let i=index">
+        <mat-form-field [matTooltipDisabled]="!show" matTooltip="{{item.comment}}" #tooltip="matTooltip">
+          <input matInput>
+        </mat-form-field>
+      </div>
+      <button mat-raised-button (click)="showAllTooltips()"> Show / hide all tooltips </button>
+
+
+
+  <a mat-list-item 
+  #tooltip="matTooltip"
+  matTooltip="XXXXXXXXXXXXXXXXXXXX"
   routerLinkActive="active"
-  (click)="buttonClick('jan')">
+  (click)="buttonClick('jan')"
+  
+   matTooltipPosition="right"
+  aria-tooltip="Aria description">
         <mat-icon>face</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
   </a>
 
- <a mat-list-item routerLinkActive="active" (click)="buttonClick('bio')">
+ <a mat-list-item
+ #tooltip="matTooltip"
+
+ matTooltip="Bio"
+ routerLinkActive="active"
+ (click)="buttonClick('bio')"
+  matTooltipPosition="right" 
+      aria-tooltip="Aria description">
         <mat-icon>perm_identity</mat-icon><span class="side-nav-but-spacer"></span>Bio
       </a>
 
-<a mat-list-item routerLinkActive="active" (click)="buttonClick('projects')">
+<a mat-list-item
+#tooltip="matTooltip"
+matTooltip="XXXXXXXXXXXXXXXXXXXX"
+routerLinkActive="active"
+(click)="buttonClick('projects')"
+
+ matTooltipPosition="right" 
+      aria-tooltip="Aria description">
       <mat-icon><span class="material-icons">
         dashboard
       </span></mat-icon><span class="side-nav-but-spacer"></span>Projects
       </a>
 
-<a mat-list-item routerLinkActive="active" (click)="buttonClick('about')">
+<a mat-list-item
+matTooltip="XXXXXXXXXXXXXXXXXXXX"
+ routerLinkActive="active"
+  (click)="buttonClick('about')"
+  #tooltip="matTooltip"
+  matTooltipPosition="right" 
+      aria-tooltip="Aria description">
             <mat-icon>subject</mat-icon><span class="side-nav-but-spacer"></span>Fundament
 </a>
 
-<a mat-list-item routerLinkActive="active" (click)="buttonClick('contact')">
-            <mat-icon> email</mat-icon><span class="side-nav-but-spacer"></span>Contact
+<a mat-list-item
+matTooltip="XXXXXXXXXXXXXXXXXXXX"
+ routerLinkActive="active"
+  (click)="buttonClick('contact')"
+  #tooltip="matTooltip"
+   matTooltipPosition="right" 
+      aria-tooltip="Aria description">
+            <mat-icon>email</mat-icon><span class="side-nav-but-spacer"></span>Contact
 </a>
 
-<a mat-list-item href="https://github.com/khq1" target="_blank"><img
+<a mat-list-item
+matTooltip="XXXXXXXXXXXXXXXXXXXX"
+#tooltip="matTooltip"
+ matTooltipPosition="right" 
+ aria-tooltip="Aria description"
+ href="https://github.com/khq1"
+  target="_blank"><img
     src="../../../assets/img/homepage/github-circle-black-transparent.svg" alt="angular" class="docs-angular-logo"><span
     class="side-nav-but-spacer"></span>GitHub
 </a>
           
     </mat-nav-list>
+    <div>
+      <span> Click the following buttons to... </span>
+      
+      <button mat-button (click)="tooltip.toggle()" aria-label="Show/Hide tooltip on the button at the end of this section"
+        class="example-action-button">
+        toggle show/hide
+      </button>
+    </div>
+    
+    <button mat-raised-button #tooltip="matTooltip" matTooltip="Info about the action" matTooltipPosition="right"
+      aria-tooltip="Button that displays and hides a tooltip triggered by other buttons">
+      Action
+    </button>
+
+
+
     <app-messages></app-messages>
   </mat-sidenav>
   <mat-sidenav-content>

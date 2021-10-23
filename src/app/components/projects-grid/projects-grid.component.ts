@@ -24,7 +24,6 @@ export class ProjectsGridComponent {
             gh_pages_url: 'https://khq1.github.io/QuoPic/',
             description:
               'Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module',
-            matTooltip: 'Welcome Page '
           },
           { title: 'Card 2', cols: 1, rows: 1 },
           { title: 'Card 3', cols: 1, rows: 1 },

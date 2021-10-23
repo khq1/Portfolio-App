@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { CounterDataComponent } from '../components/counter-data/counter-data.component';
 import { Router } from '@angular/router';
+import { ViewChildren } from '@angular/core';
 
 
 @Component({
@@ -18,7 +19,27 @@ export class MenuComponent {
     .pipe(
       map(result => result.matches),
       shareReplay()
-    );
+  );
+    
+  @ViewChildren('tooltip')
+  tooltips!: { _results: any[]; };
+
+  items = [{ comment: "Comment1" }, { comment: "Comment2" }, { comment: "Comment3" }]
+  show!: boolean;
+
+  showAllTooltips() {
+    this.show = !this.show;
+    if (this.show) {
+      setTimeout(() => {
+        this.tooltips._results.forEach(item => item.show());
+      }, 5)
+    } else {
+      this.tooltips._results.forEach(item => item.hide());
+    }
+  }
+
+
+
 
   constructor(private breakpointObserver: BreakpointObserver, private router: Router) { }
   
