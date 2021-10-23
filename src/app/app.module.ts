@@ -36,7 +36,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ProjectsGridComponent } from './components/projects-grid/projects-grid.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,6 +73,7 @@ import { MatMenuModule } from '@angular/material/menu';
     ReactiveFormsModule,
     MatRadioModule,
     DragDropModule,
+    MatTooltipModule,
     
 
     

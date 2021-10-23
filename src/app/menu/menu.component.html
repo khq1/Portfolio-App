@@ -7,32 +7,41 @@
       <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon>
 
       Menu</mat-toolbar>
-    <mat-nav-list class="menu-list-item">
-      <a mat-list-item routerLinkActive="active" (click)="buttonClick('Jan')">
+    <mat-nav-list class="menu-list-item" *ngFor="let tooltip of tooltips | async" [tooltip]="tooltips.tooltip">
+  <a mat-list-item matTooltip="{{tooltip}}"
+  routerLinkActive="active"
+  (click)="buttonClick('jan')">
         <mat-icon>face</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
+  </a>
+
+ <a mat-list-item routerLinkActive="active" (click)="buttonClick('bio')">
+        <mat-icon>perm_identity</mat-icon><span class="side-nav-but-spacer"></span>Bio
       </a>
 
-      <a mat-list-item routerLinkActive="active" (click)="buttonClick('About')">
-        <mat-icon>perm_identity</mat-icon><span class="side-nav-but-spacer"></span>About Me
+<a mat-list-item routerLinkActive="active" (click)="buttonClick('projects')">
+      <mat-icon><span class="material-icons">
+        dashboard
+      </span></mat-icon><span class="side-nav-but-spacer"></span>Projects
       </a>
 
-      <a mat-list-item href="https://github.com/khq1" target="_blank"><img src="../../../assets/img/homepage/github-circle-black-transparent.svg" alt="angular"
-          class="docs-angular-logo"><span class="side-nav-but-spacer"></span>GitHub
-      </a>
-
-          <a mat-list-item routerLinkActive="active" (click)="buttonClick('Projects')">
+<a mat-list-item routerLinkActive="active" (click)="buttonClick('about')">
             <mat-icon>subject</mat-icon><span class="side-nav-but-spacer"></span>Fundament
-          </a>
+</a>
 
-          <a mat-list-item routerLinkActive="active" (click)="buttonClick('Contact')">
+<a mat-list-item routerLinkActive="active" (click)="buttonClick('contact')">
             <mat-icon> email</mat-icon><span class="side-nav-but-spacer"></span>Contact
-          </a>
+</a>
+
+<a mat-list-item href="https://github.com/khq1" target="_blank"><img
+    src="../../../assets/img/homepage/github-circle-black-transparent.svg" alt="angular" class="docs-angular-logo"><span
+    class="side-nav-but-spacer"></span>GitHub
+</a>
           
     </mat-nav-list>
     <app-messages></app-messages>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar id="jan" color="primary">
       <button
         type="button"
         aria-label="Toggle sidenav"

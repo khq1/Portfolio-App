@@ -4,7 +4,7 @@
         
          
         <ng-template ngbSlide *ngFor="let hero of heroes"
-        (ngModelChange)="onSelect" (ngModel)="heroes"
+        (ngModelChange)="(onSelect)" 
         
         >
             <div class="img-wrapper">
@@ -20,7 +20,7 @@
 <hr>
 
     <div class="button-group" aria-label="Carousel toggle controls">
-        <button mat-raised-button (click)="togglePaused()"class="cycle_pause_button">
+        <button mat-raised-button isIconButton:true (click)="togglePaused()" class="cycle_pause_button">
             {{paused ? 'Cycle' : 'Pause'}}
             <mat-icon>{{paused ? 'play_circle_outline' : 'pause_circle_outline'}}</mat-icon>
         </button>
