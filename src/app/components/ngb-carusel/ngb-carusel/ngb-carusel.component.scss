@@ -25,7 +25,7 @@ right:10%;
 left:10%;
 height:auto;
 max-height: 100%;
-text-shadow: 2px 2px 2px black;
+//text-shadow: 2px 2px 2px black;
 color:#ffffff;
 background:#8080800d;
 box-shadow:0 8px 32px 0 #1f268780;
@@ -39,11 +39,11 @@ line-height: 2rem;
 
   h2 {
     top: 50%;
-    font-weight: 200;     }
+    font-weight: 300;     }
 
   h3 {
     
-    font-weight: 400;
+    font-weight: 300;
       }
 
 
@@ -63,8 +63,7 @@ width: 25%;
 }
 .slide-controls-panel{
     width: 75%;
-    
-}
+    }
 
 .button-group-panel {
     min-height: 10%;
@@ -74,6 +73,7 @@ width: 25%;
     column-gap: 1em;
     justify-content:center;
     align-items: center;
+    
     }
   
 

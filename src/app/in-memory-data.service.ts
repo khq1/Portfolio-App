@@ -13,7 +13,7 @@ export class InMemoryDataService implements InMemoryDbService {
         title: 'My Coding Experience:',
         image_url: '../../../assets/img/homepage/carusel-images/i1.jpg',
         description:
-          "\u2022 Coding since June 2020\n\u2022 Front-end route: HTML, CSS, JavaScript, Typescript, Angular \n\u2022 Self-taught \n\u2022 I'm enthusiastic learner, aspiring for Fullstack developer position ",
+          "\u2022 Coding since June 2020 Front-end route:\n\u2022  <HTML>\n .css{style:on;}\n javaScript='true'\n typeScript:'boolean'= true,\n '@angular' \n\u2022 Self-taught \n\u2022 I'm enthusiastic learner, aspiring for Fullstack developer position ",
         img_alt: 'Image by birgl from Pixabay',
       },
       {
@@ -29,15 +29,15 @@ export class InMemoryDataService implements InMemoryDbService {
         title: 'Profesional Carrier: KGHM Cuprum R&D',
         image_url: '../../../assets/img/homepage/carusel-images/i3.jpg',
         description:
-          "Exploration Geologist\n\u2022 Data digitization, database building and management \n\u2022 Custom maps, geological cross sections and profiles from interpolated data\n\u2022 Writing documentation chapters, e.g. administration, geology, mineralization characteristics, chronostratigraphy, tectonics.\n\u2022 Estimation of the mine's industrial resources - ores: copper and polimetals, nickel and brown coal, mineral salt",
+          "Exploration Geologist\n\u2022 Data digitization, database building and management \n\u2022 Custom maps, geological cross sections and profiles from interpolated data\n\u2022 Estimation of the mine's industrial resources - ores: copper and polimetals, nickel and brown coal, mineral salt",
         img_alt: 'Image by Malachi Witt from Pixabay',
       },
       {
         id: 4,
-        title: '4. Projects:',
+        title: 'Projects and documentations:',
         image_url: '../../../assets/img/homepage/carusel-images/i4.jpg',
         description:
-          '\n\u2022 Exploration projects and resource documentations\n\u2022 Tasks spanned from investor relations to approval of the Ministry of the Environment documentation \n\u2022 Cooperation on drilling projects in Poland and Germany',
+          '\n\u2022 Exploration projects and resource documentations\n\u2022 Creaing documentation chapters, e.g. administration, geology, mineralization characteristics, chronostratigraphy, tectonics.\n\u2022 Tasks from investor relations to approval of documentation by the Ministry of the Environment \n\u2022 Cooperation on drilling projects in Poland and Germany',
         img_alt: 'Image by György Károly Tóth from Pixabay',
       },
       {
