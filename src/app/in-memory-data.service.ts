@@ -10,26 +10,26 @@ export class InMemoryDataService implements InMemoryDbService {
     const heroes = [
       {
         id: 1,
-        title: '1. My Coding Experience:',
+        title: 'My Coding Experience:',
         image_url: '../../../assets/img/homepage/carusel-images/i1.jpg',
         description:
-          "\u2022I started coding in June 2020\n\u2022I went the front-end route: HTML, CSS, API, JavaScript, Typescipt, Angular 12\n\u2022I love to figure out how each piece of code works\n\u2022 and when I learn - I'm just become more curious",
+          "\u2022 Coding since June 2020\n\u2022 Front-end route: HTML, CSS, JavaScript, Typescript, Angular \n\u2022 Self-taught \n\u2022 I'm enthusiastic learner, aspiring for Fullstack developer position ",
         img_alt: 'Image by birgl from Pixabay',
       },
       {
         id: 2,
-        title: '2. Graduation',
+        title: 'Graduation',
         image_url: '../../../assets/img/homepage/carusel-images/i2.jpg',
         description:
-          "\n\u2022I finished Geology with a master's degree at the University of Wrocław \n\u2022Specialization: Geochemistry \n\u2022 Master Thesis: Geochemisty & Hyrology ",
+          "\n\u2022 I graduated Geology with a master's degree at the University of Wrocław \n\u2022 Specialization: Geochemistry \n\u2022 Master Thesis: Chemistry of water of Red Water Creek - Stołowe Mountains National Park area",
         img_alt: 'Image by McElspeth from Pixabay',
       },
       {
         id: 3,
-        title: '3. Profesional Carrier: KGHM Cuprum R&D',
+        title: 'Profesional Carrier: KGHM Cuprum R&D',
         image_url: '../../../assets/img/homepage/carusel-images/i3.jpg',
         description:
-          'Exploration Geologist\n\u2022Data digitization and database management \n\u2022Custom maps, geological cross sections and profiles from interpolated data\n\u2022writing chapters of documentation\n\u2022Mine resource estimation – copper, silver, coal, nickel and others',
+          "Exploration Geologist\n\u2022 Data digitization, database building and management \n\u2022 Custom maps, geological cross sections and profiles from interpolated data\n\u2022 Writing documentation chapters, e.g. administration, geology, mineralization characteristics, chronostratigraphy, tectonics.\n\u2022 Estimation of the mine's industrial resources - ores: copper and polimetals, nickel and brown coal, mineral salt",
         img_alt: 'Image by Malachi Witt from Pixabay',
       },
       {
@@ -37,39 +37,39 @@ export class InMemoryDataService implements InMemoryDbService {
         title: '4. Projects:',
         image_url: '../../../assets/img/homepage/carusel-images/i4.jpg',
         description:
-          '\n\u2022Preparation of exploration projects and resource documentations\n\u2022Tasks spaned from investor relations to approval of ministry of the environment \n\u2022Support for drilling projects in Poland and Germany',
+          '\n\u2022 Exploration projects and resource documentations\n\u2022 Tasks spanned from investor relations to approval of the Ministry of the Environment documentation \n\u2022 Cooperation on drilling projects in Poland and Germany',
         img_alt: 'Image by György Károly Tóth from Pixabay',
       },
       {
         id: 5,
-        title: '5. Drilling:',
+        title: 'Drilling:',
         image_url: '../../../assets/img/homepage/carusel-images/i5.jpg',
         description:
-          '\n\u2022Investor representation\n\u2022Drill site supervise & reporting\n\u2022Onsite core drill consulting and expertise\n\u2022Management of cores and data',
+          '\n\u2022 Representation of the investor on the premises of the geological and drilling works \n\u2022 Supervision and reporting of drilling works\n\u2022 consulting and expertise in the field of core drilling \n\u2022 Management of data, drill cores, samples of water, ore and gas , documents',
         img_alt: 'Image by Terry McGraw from Pixabay',
       },
       {
         id: 6,
-        title: '6. Arcadis for PGE EJ (First Nuclear Power Plant in Poland):',
+        title: 'Arcadis (First Nuclear Power Plant in Poland Project):',
         image_url: '../../../assets/img/homepage/carusel-images/i6.jpg',
         description:
-          '\n\u2022Hydro-geological monitoring\n\u2022Drill site supervising\n\u2022Quality assurance in sampling and logistics, reporting',
+          '\n\u2022 Supervisor of the hydrological drilling rigs\n\u2022 Quality assurance in soil, rock, fluid, cores and logistics\n\u2022 Hydrogeological mesurements and monitoring \n\u2022 Periodic, formal raports',
         img_alt: 'Image by Markus Distelrath from Pixabay',
       },
       {
         id: 7,
-        title: '7. Transport:',
+        title: 'Chauffeuring services:',
         image_url: '../../../assets/img/homepage/carusel-images/i7.jpg',
         description:
-          '\n\u2022VIP transport in cooperation with major companies and hotels located in Wrocław \n\u2022Ensuring promptness, safety and comfort',
+          '\n\u2022 VIP transport in cooperation with major companies and hotels located in Wrocław \n\u2022 Ensure promptness, safety and comfort',
         img_alt: 'Image by Free-Photos from Pixabay',
       },
       {
         id: 8,
-        title: '8. Goals:',
+        title: 'Profesional goals:',
         image_url: '../../../assets/img/homepage/carusel-images/i8.jpg',
         description:
-          '\n\u2022Get a contract of employment as a developer\n\u2022Become Full Stack Developer \n\u2022Publish, manage, and distribute my app worldwide',
+          '\n\u2022 Get a contract of employment as a developer\n\u2022 Join international development team, grow to create value by gaining competence\n\u2022 Become Full Stack Developer',
         img_alt: 'Image by borozdor from Pixabay',
       },
     ];

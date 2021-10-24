@@ -4,51 +4,47 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false"
       
-      >
+  >
     <mat-toolbar>
-      <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon>
+      <mat-icon aria-label="Home icon">home</mat-icon>
 
       Menu</mat-toolbar>
     <mat-nav-list
       class="menu-list-item">
-      <div (mousemove)="show=false" *ngFor="let item of items; let i=index">
-        <mat-form-field [matTooltipDisabled]="!show" matTooltip="{{item.comment}}" #tooltip="matTooltip">
-          <input matInput>
-        </mat-form-field>
-      </div>
-      <button mat-raised-button (click)="showAllTooltips()"> Show / hide all tooltips </button>
+      
+        
+      
+      
 
 
 
   <a mat-list-item 
   #tooltip="matTooltip"
-  matTooltip="XXXXXXXXXXXXXXXXXXXX"
+  matTooltip="Welcome header"
   routerLinkActive="active"
   (click)="buttonClick('jan')"
   
-   matTooltipPosition="right"
-  aria-tooltip="Aria description">
+  aria-tooltip="Welcome header">
         <mat-icon>face</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
   </a>
 
  <a mat-list-item
  #tooltip="matTooltip"
 
- matTooltip="Bio"
+ matTooltip="Read short authors biography"
  routerLinkActive="active"
  (click)="buttonClick('bio')"
-  matTooltipPosition="right" 
-      aria-tooltip="Aria description">
+   
+      aria-tooltip="short author biography">
         <mat-icon>perm_identity</mat-icon><span class="side-nav-but-spacer"></span>Bio
       </a>
 
 <a mat-list-item
 #tooltip="matTooltip"
-matTooltip="XXXXXXXXXXXXXXXXXXXX"
+matTooltip="Explore my projects"
 routerLinkActive="active"
 (click)="buttonClick('projects')"
-
- matTooltipPosition="right" 
+  
       aria-tooltip="Aria description">
       <mat-icon><span class="material-icons">
         dashboard
@@ -56,51 +52,45 @@ routerLinkActive="active"
       </a>
 
 <a mat-list-item
-matTooltip="XXXXXXXXXXXXXXXXXXXX"
+matTooltip="See more in-depth information about the author of this code portfolio"
  routerLinkActive="active"
   (click)="buttonClick('about')"
   #tooltip="matTooltip"
-  matTooltipPosition="right" 
+   
       aria-tooltip="Aria description">
             <mat-icon>subject</mat-icon><span class="side-nav-but-spacer"></span>Fundament
 </a>
 
 <a mat-list-item
-matTooltip="XXXXXXXXXXXXXXXXXXXX"
+matTooltip="Send me an e-mail or contact me via contact form from this website"
  routerLinkActive="active"
   (click)="buttonClick('contact')"
   #tooltip="matTooltip"
-   matTooltipPosition="right" 
+    
       aria-tooltip="Aria description">
             <mat-icon>email</mat-icon><span class="side-nav-but-spacer"></span>Contact
 </a>
 
 <a mat-list-item
-matTooltip="XXXXXXXXXXXXXXXXXXXX"
+matTooltip="Visit my GitHub page"
 #tooltip="matTooltip"
- matTooltipPosition="right" 
+  
  aria-tooltip="Aria description"
  href="https://github.com/khq1"
   target="_blank"><img
-    src="../../../assets/img/homepage/github-circle-black-transparent.svg" alt="angular" class="docs-angular-logo"><span
+    src="../../../assets/img/homepage/github-circle-black-transparent.svg" alt="Github" class="docs-angular-logo"><span
     class="side-nav-but-spacer"></span>GitHub
 </a>
           
     </mat-nav-list>
-    <div>
-      <span> Click the following buttons to... </span>
-      
-      <button mat-button (click)="tooltip.toggle()" aria-label="Show/Hide tooltip on the button at the end of this section"
-        class="example-action-button">
-        toggle show/hide
-      </button>
-    </div>
     
-    <button mat-raised-button #tooltip="matTooltip" matTooltip="Info about the action" matTooltipPosition="right"
-      aria-tooltip="Button that displays and hides a tooltip triggered by other buttons">
-      Action
-    </button>
-
+<button mat-raised-button 
+matTooltip="Button to toggle Show / hide all tooltips, also user can scroll mouse or swipe to hide tooltips"
+ #tooltip="matTooltip"
+  (mousemove)="show=false"
+  
+  (click)="showAllTooltips()"> 
+   Show / hide all tooltips </button>
 
 
     <app-messages></app-messages>
@@ -108,8 +98,9 @@ matTooltip="XXXXXXXXXXXXXXXXXXXX"
   <mat-sidenav-content>
     <mat-toolbar id="jan" color="primary">
       <button
+      matTooltip="Toggle sidenav menu" #tooltip="matTooltip"
         type="button"
-        aria-label="Toggle sidenav"
+        aria-label="Toggle sidenav menu"
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
@@ -119,8 +110,11 @@ matTooltip="XXXXXXXXXXXXXXXXXXXX"
       
      
       <span class="side-nav-toolbar-spacer"></span>
-      <app-counter-data class="toolbar-date"></app-counter-data>
-      <mat-icon matBadge="15" matBadgeColor="warn" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">favorite</mat-icon>
+      <app-counter-data matTooltip="Current day of the week and date" #tooltip="matTooltip"
+      class="toolbar-date"></app-counter-data>
+      <mat-icon matBadge="15" matBadgeColor="warn" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
+      matTooltip="heart ico to increase morale during app development process" #tooltip="matTooltip"
+      >favorite</mat-icon>
       
     </mat-toolbar>
     

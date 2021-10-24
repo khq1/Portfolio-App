@@ -1,59 +1,77 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { CounterDataComponent } from '../components/counter-data/counter-data.component';
 import { Router } from '@angular/router';
 import { ViewChildren } from '@angular/core';
+import {MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions} from '@angular/material/tooltip';
 
 
+export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
+  showDelay: 800,
+  hideDelay: 100,
+  touchendHideDelay: 200,
+  position: 'right',
+  touchGestures: 'auto',
+}
+ 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
-  providers: [CounterDataComponent],
+  providers: [CounterDataComponent,
+    { provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: myCustomTooltipDefaults }
+  ],
 })
 export class MenuComponent {
-
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-  );
+  
+  @Input('matTooltipHideDelay')
     
-  @ViewChildren('tooltip')
-  tooltips!: { _results: any[]; };
+  
+  
+TooltipPosition = 'right';
+ TooltipTouchGestures = 'auto';
+  
 
-  items = [{ comment: "Comment1" }, { comment: "Comment2" }, { comment: "Comment3" }]
+  isHandset$: Observable<boolean> = this.breakpointObserver
+    .observe(Breakpoints.Handset)
+    .pipe(
+      map((result) => result.matches),
+      shareReplay()
+    );
+
+  @ViewChildren('tooltip')
+  tooltips!: { _results: any[] };
+
+  items = [];
   show!: boolean;
 
   showAllTooltips() {
     this.show = !this.show;
     if (this.show) {
       setTimeout(() => {
-        this.tooltips._results.forEach(item => item.show());
-      }, 5)
+        this.tooltips._results.forEach((item) => item.show());
+      }, 5);
     } else {
-      this.tooltips._results.forEach(item => item.hide());
+      this.tooltips._results.forEach((item) => item.hide());
     }
   }
 
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private router: Router
+  ) {}
 
-
-
-  constructor(private breakpointObserver: BreakpointObserver, private router: Router) { }
-  
-   public buttonClick(fragment: string): void {
+  public buttonClick(fragment: string): void {
     this.router.navigate(['/app-homepage']).then(() => {
       window.location.hash = fragment;
     });
-  
 
-     {
-     
+    {
     }
-    }ngOnInit() {
   }
+  ngOnInit() {}
 }
 
 
