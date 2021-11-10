@@ -1,4 +1,5 @@
-import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MessageService } from 'src/app/message.service';
 
 
 @Component({
@@ -8,7 +9,17 @@ import { Component, OnInit,ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class HomepageComponent implements OnInit {
-   
+  constructor(
+    private messageService: MessageService
+  ) { }
+
+  ngOnInit() {
+    
+    
   
-  ngOnInit() {}
+  }
+
+  CoppiedMsg() {
+    this.messageService.add(`E-mail adress copied to Clipboard`);
+  }
 }

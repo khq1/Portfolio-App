@@ -4,7 +4,7 @@
     <div class="docs-header-section">
         <div class="docs-header-headline">
             <h1 class="mat-h1">Jan Warzecha</h1>
-            <h2>Angular Material Coder Portfolio</h2>
+            <h2>Full Stack Developer</h2>
         </div>
         <div class="docs-header-start">
             <a mat-raised-button class="docs-button" routerLink="/app-homepage#projects">It's on</a>
@@ -13,24 +13,38 @@
 </header>
 
 <div id="bio">
-        <h1>Bio:</h1>
-
+        <h1>Bio</h1>
+<mat-tab-group>
+    <mat-tab label="Short">
+        <h2>
+            Hi, I am John.
+    
+        </h2> <p>Your best hr decision ever made</mat-tab>
+    <mat-tab label="Professional"> Content 2 </mat-tab>
+    <mat-tab label="Personal"> Content 3 </mat-tab>
+</mat-tab-group>
 </div>    
 
 
 <div id="projects" class="homepage-tile" >
-    <h1>Projects:</h1>
+    <h1>Projects</h1>
     <app-projects-grid></app-projects-grid>
 </div>
 
 
 <div id="about" class="homepage-tile">
-    <h1>About me:</h1>
+    <h1>About me</h1>
     <app-ngb-carusel></app-ngb-carusel>
 </div>
 
 
 <div id="contact" class="homepage-tile" >
-    <h1>Contact me:</h1>
-
+    <h1>Contact me</h1>
+<p><h2>Copy my mail</h2>
+<h3>
+<div class="contact-clipboard">My Mail
+<button mat-button cdkCopyToClipboard="ThisIsMyMail@mmail.com" (click)="CoppiedMsg()"><mat-icon>content_copy</mat-icon>Copy to clipboard</button>
 </div>
+</h3>
+</div>
+

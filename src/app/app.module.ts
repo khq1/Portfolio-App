@@ -37,6 +37,8 @@ import { ProjectsGridComponent } from './components/projects-grid/projects-grid.
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +52,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MessagesComponent,
     HeroSearchComponent,
     ProjectsGridComponent,
-      ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -74,11 +76,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatRadioModule,
     DragDropModule,
     MatTooltipModule,
-    
-
-    
-    
-    
+    ClipboardModule,
+    MatTabsModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
@@ -86,18 +85,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
     }),
-    
-
-    
-    
-    
 
     MatGridListModule,
-    
-
-    
-    
-    
 
     MatMenuModule,
   ],
