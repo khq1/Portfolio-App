@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -6,7 +6,8 @@ import { CounterDataComponent } from '../components/counter-data/counter-data.co
 import { Router } from '@angular/router';
 import { ViewChildren } from '@angular/core';
 import {MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions} from '@angular/material/tooltip';
-
+import { Option } from ".././option.model";
+import { ThemeService } from ".././theme.service";
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
   showDelay: 800,
@@ -25,14 +26,11 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
   ],
 })
 export class MenuComponent {
-  
+  options$: Observable<Array<Option>> = this.themeService.getThemeOptions();
+
   @Input('matTooltipHideDelay')
-    
-  
-  
-TooltipPosition = 'right';
- TooltipTouchGestures = 'auto';
-  
+  TooltipPosition = 'right';
+  TooltipTouchGestures = 'auto';
 
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
@@ -57,21 +55,23 @@ TooltipPosition = 'right';
       this.tooltips._results.forEach((item) => item.hide());
     }
   }
-
   constructor(
     private breakpointObserver: BreakpointObserver,
-    private router: Router
-  ) {}
+    private router: Router,
+    private readonly themeService: ThemeService
+  ) { } ngOnInit() {
+    this.themeService.setTheme("deeppurple-amber");
+  }
 
+  themeChangeHandler(themeToSet: string) {
+    this.themeService.setTheme(themeToSet);
+  }
+
+
+  
   public buttonClick(fragment: string): void {
     this.router.navigate(['/app-homepage']).then(() => {
       window.location.hash = fragment;
     });
-
-    {
-    }
   }
-  ngOnInit() {}
 }
-
-

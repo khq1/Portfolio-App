@@ -38,7 +38,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ClipboardModule } from '@angular/cdk/clipboard';
-import { MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
+import { StyleManagerService } from './style-manager.service';
+import { ThemeService } from './theme.service';
+import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.component';
+import { Observable } from 'rxjs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +56,8 @@ import { MatTabsModule} from '@angular/material/tabs';
     MessagesComponent,
     HeroSearchComponent,
     ProjectsGridComponent,
+    ThemeSwitchComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -87,10 +93,10 @@ import { MatTabsModule} from '@angular/material/tabs';
     }),
 
     MatGridListModule,
-
     MatMenuModule,
+    
   ],
-  providers: [],
+  providers: [StyleManagerService, ThemeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
