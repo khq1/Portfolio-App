@@ -64,7 +64,7 @@ export class ProjectsGridComponent {
       return [
         {
           title: 'QuoPic',
-          cols: 2,
+          cols: 1,
           rows: 2,
           subtitle: 'Cafe and Clouds',
           img_url: "../../../assets/img/homepage/projects-images/QuoPic.jpg",
@@ -75,7 +75,7 @@ export class ProjectsGridComponent {
         },
         {
           title: 'Porsche',
-          cols: 2,
+          cols: 1,
           rows: 2,
           subtitle: 'The App',
           img_url: "../../../assets/img/homepage/projects-images/My-First-App.jpg",
@@ -86,8 +86,8 @@ export class ProjectsGridComponent {
         },
         {
           title: 'Responsive Gallery ',
-          cols: 2,
-          rows: 1,
+          cols: 1,
+          rows: 2,
           subtitle: 'Balanced App',
           img_url: "../../../assets/img/homepage/projects-images/Gallery.jpg",
           gh_url: 'https://khq1.github.io/Gallery/',
@@ -97,8 +97,8 @@ export class ProjectsGridComponent {
         },
         {
           title: 'FutureGreenTech',
-          cols: 2,
-          rows: 1,
+          cols: 1,
+          rows: 2,
           subtitle: 'Visions For A Sustainable Future.',
           img_url: '../../../assets/img/homepage/projects-images/FutureGreenTech.jpg',
           gh_url: 'https://github.com/khq1/FutureGreenTech',

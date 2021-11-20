@@ -4,8 +4,12 @@ import { Observable } from "rxjs/Observable";
 import { Option } from "./option.model";
 import { StyleManagerService } from "./style-manager.service";
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ThemeService {
+
+  
   constructor(
     private http: HttpClient,
     private styleManager: StyleManagerService
@@ -18,7 +22,7 @@ export class ThemeService {
   setTheme(themeToSet: string) {
     this.styleManager.setStyle(
       "theme",
-      `node_modules/@angular/material/prebuilt-themes/${themeToSet}.css`
+      `../assets/styles/${themeToSet}.css`
     );
   }
 }

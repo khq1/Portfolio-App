@@ -1,6 +1,9 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
-import { Option } from "../.././option.model";
+import { Option } from "../../option.model";
 import { ThemeService } from "../.././theme.service";
+
+
+
 
 @Component({
   selector: "app-theme-switch",
@@ -9,13 +12,13 @@ import { ThemeService } from "../.././theme.service";
 })
 export class ThemeSwitchComponent {
 
-  @Input()
-  options!: Array<Option>;
+  @Input() options: Array<Option>|null = [];
   @Output() themeChange: EventEmitter<string> = new EventEmitter<string>();
 
+  
   constructor(private themeService: ThemeService) { }
 
-  changeTheme(themeToSet: string | undefined) {
+  changeTheme(themeToSet: string) {
     this.themeChange.emit(themeToSet);
   }
 

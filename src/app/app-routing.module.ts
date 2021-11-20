@@ -5,6 +5,7 @@ import { DashboardComponent } from './components/hero/dashboard/dashboard.compon
 import { HeroDetailComponent } from './components/hero/hero-detail/hero-detail.component';
 import { HeroesComponent } from './components/hero/heroes/heroes.component';
 import { ProjectsGridComponent } from './components/projects-grid/projects-grid.component';
+import { InMemoryDataService } from './in-memory-data.service';
 
 const routes: Routes = [
   { path: 'app-homepage', component: HomepageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'projects', component: ProjectsGridComponent },
+  { path: 'api', component: InMemoryDataService },
   { path: 'heroes', component: HeroesComponent }, // redirect to `first-component`
   { path: '**', redirectTo: 'app-homepage' }, // Wildcard route for a 404 page
 ];

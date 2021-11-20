@@ -2,32 +2,24 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false"
-      
-  >
+      [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
       <mat-icon aria-label="Home icon">home</mat-icon><span class="side-nav-toolbar-spacer"></span>
-      <app-theme-switch>
-        [options]="options$ | async"
-        (themeChange)="themeChangeHandler($event)">
+      <app-theme-switch 
+       [options]="options$ | async" 
+      (themeChange)="themeChangeHandler($event)"
+      >
       </app-theme-switch>
       Menu</mat-toolbar>
     <mat-nav-list
       class="menu-list-item">
-      
-        
-      
-      
-
-
 
   <a mat-list-item 
   #tooltip="matTooltip"
   matTooltip="Welcome header"
   routerLinkActive="active"
   (click)="buttonClick('jan')"
-  
-  aria-tooltip="Welcome header">
+    aria-tooltip="Welcome header">
         <mat-icon>face</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
   </a>
 
@@ -110,9 +102,6 @@ matTooltip="Button to toggle Show / hide all tooltips, also user can scroll mous
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Jan's Code:</span>
-      <app-theme-switch [options]="options$ | async" (themeChange)="themeChangeHandler($event)">
-      </app-theme-switch>
-     
       <span class="side-nav-toolbar-spacer"></span>
       <app-counter-data matTooltip="Current day of the week and date" #tooltip="matTooltip"
       class="toolbar-date"></app-counter-data>

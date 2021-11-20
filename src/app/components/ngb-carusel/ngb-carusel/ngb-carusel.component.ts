@@ -1,6 +1,6 @@
 import { Component,ViewChild, OnInit, Injectable } from '@angular/core';
-import { Hero } from '../../../hero';
-import { HeroService } from '../../../hero.service';
+import { Slide } from '../../../slide';
+import { SlideService } from '../../../slide.service';
 import { FormControl } from '@angular/forms';
 import { MessageService } from '../../../message.service';
 import {
@@ -61,25 +61,23 @@ export class NgbCaruselComponent {
     }
     
   }
-  selectedHero?: Hero;
-  heroes: Hero[] = [];
+  
+  selectedHero?: Slide;
+  slides: Slide[] = [];
+  
   constructor(
-    private heroService: HeroService,
+    private SlideService: SlideService,
     private messageService: MessageService
   ) {}
 
   ngOnInit() {
-    this.getHeroes();
-    this.messageService.add(`Carusel: getHeroes()`);
+    this.getSlides();
+    this.messageService.add(`Carusel: getSlides()`);
   }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`Carusel: Selected hero id=${hero.id}`);
-  }
-
-  getHeroes(): void {
-    this.heroService.getHeroes().subscribe((heroes) => (this.heroes = heroes));
+  getSlides(): void {
+    this.SlideService.getSlides().subscribe((slides) => (this.slides = slides));
   }
 }
+
 

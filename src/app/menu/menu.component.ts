@@ -1,13 +1,14 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { CounterDataComponent } from '../components/counter-data/counter-data.component';
 import { Router } from '@angular/router';
 import { ViewChildren } from '@angular/core';
-import {MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions} from '@angular/material/tooltip';
+import { MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions } from '@angular/material/tooltip';
 import { Option } from ".././option.model";
 import { ThemeService } from ".././theme.service";
+
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
   showDelay: 800,
@@ -16,7 +17,7 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
   position: 'right',
   touchGestures: 'auto',
 }
- 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -25,9 +26,9 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
     { provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: myCustomTooltipDefaults }
   ],
 })
-export class MenuComponent {
-  options$: Observable<Array<Option>> = this.themeService.getThemeOptions();
 
+export class MenuComponent implements OnInit {
+  
   @Input('matTooltipHideDelay')
   TooltipPosition = 'right';
   TooltipTouchGestures = 'auto';
@@ -55,12 +56,17 @@ export class MenuComponent {
       this.tooltips._results.forEach((item) => item.hide());
     }
   }
+  
+  options$: Observable<Array<Option>> = this.themeService.getThemeOptions();
+  
   constructor(
     private breakpointObserver: BreakpointObserver,
     private router: Router,
     private readonly themeService: ThemeService
-  ) { } ngOnInit() {
-    this.themeService.setTheme("deeppurple-amber");
+  ) { }
+  
+  ngOnInit() {
+    this.themeService.setTheme("indigo-pink");
   }
 
   themeChangeHandler(themeToSet: string) {

@@ -3,16 +3,16 @@
         [showNavigationIndicators]="showNavigationIndicators" [pauseOnHover]="pauseOnHover"[interval]="interval.value" (slide)="onSlide($event)">
         
          
-        <ng-template ngbSlide *ngFor="let hero of heroes"
+        <ng-template ngbSlide *ngFor="let slide of slides"
         (ngModelChange)="(onSelect)" 
         
         >
             <div class="img-wrapper">
-                <img [src]="hero.image_url" class="img_slide" alt={{hero.img_alt}}>
+                <img [src]="slide.image_url" class="img_slide" alt={{slide.img_alt}}>
             </div>
             <div class="carousel-caption">
-                <h2>{{hero.title}}</h2>
-                <h3>{{hero.description}}.</h3>
+                <h2>{{slide.title}}</h2>
+                <h3>{{slide.description}}.</h3>
                 </div>
                 </ng-template>
                 </ngb-carousel>
