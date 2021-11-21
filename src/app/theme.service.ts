@@ -22,7 +22,7 @@ export class ThemeService {
   setTheme(themeToSet: string) {
     this.styleManager.setStyle(
       "theme",
-      `../assets/styles/${themeToSet}.css`
+      `assets/styles/${themeToSet}.css`
     );
   }
 }
