@@ -30,11 +30,12 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": ["./src/assets/styles/deeppurple-amber.css",
+            "styles": [
+              "src/styles.scss",
+              "./src/assets/styles/deeppurple-amber.css",
               "./src/assets/styles/pink-bluegrey.css",
               "./src/assets/styles/indigo-pink.css",
-              "./src/assets/styles/purple-green.css",
-               "src/styles.scss"
+              "./src/assets/styles/purple-green.css"
             ],
             "scripts": []
           },
