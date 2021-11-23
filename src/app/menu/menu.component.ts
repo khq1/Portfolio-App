@@ -76,7 +76,7 @@ export class MenuComponent implements OnInit {
   ) { }
   
   ngOnInit() {
-    this.themeService.setTheme("pink-bluegray");
+    this.themeService.setTheme("pink-bluegrey");
     this.messageService.add("Theme switch: OK");
 
   }
