@@ -72,7 +72,7 @@ export class NgbCaruselComponent {
 
   ngOnInit() {
     this.getSlides();
-    this.messageService.add(`Carusel: getSlides()`);
+    this.messageService.add(`Slides: OK`);
   }
 
   getSlides(): void {

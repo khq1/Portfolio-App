@@ -20,6 +20,6 @@ export class HomepageComponent implements OnInit {
   }
 
   CoppiedMsg() {
-    this.messageService.add(`E-mail adress copied to Clipboard`);
+    this.messageService.add(`E-mail copied to Clipboard`);
   }
 }

@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import { Option } from "../../option.model";
 import { ThemeService } from "../.././theme.service";
+import { MessageService } from "src/app/message.service";
 
 
 
@@ -12,18 +14,21 @@ import { ThemeService } from "../.././theme.service";
 })
 export class ThemeSwitchComponent {
 
-  @Input() options: Array<Option>|null = [];
+  @Input() options: Array<Option> | null = [];
   @Output() themeChange: EventEmitter<string> = new EventEmitter<string>();
 
   
-  constructor(private themeService: ThemeService) { }
+  constructor(private themeService: ThemeService, private messageService: MessageService) { }
 
   changeTheme(themeToSet: string) {
     this.themeChange.emit(themeToSet);
-  }
+    this.messageService.add(themeToSet)
 
-
-
-
-
+  };
 }
+
+
+
+
+
+

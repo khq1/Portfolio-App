@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
-
+import { MessageService } from 'src/app/message.service';
 
 @Component({
   selector: 'app-projects-grid',
@@ -9,10 +9,13 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
   styleUrls: ['./projects-grid.component.scss'],
 })
 export class ProjectsGridComponent {
+
+ 
   /** Based on the screen size, switch from standard to one column per row */
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
+        this.messageService.add(`Projects - 1 column View`);
         return [
           {
             title: 'QuoPic',
@@ -60,7 +63,7 @@ export class ProjectsGridComponent {
           },
         ];
       }
-
+      this.messageService.add(`Projects - 2 columns View`);
       return [
         {
           title: 'QuoPic',
@@ -111,5 +114,5 @@ export class ProjectsGridComponent {
     })
   );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver, private messageService: MessageService) { }
 }
