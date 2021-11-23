@@ -115,4 +115,9 @@ export class ProjectsGridComponent {
   );
 
   constructor(private breakpointObserver: BreakpointObserver, private messageService: MessageService) { }
+  ngOnInit() {
+
+    this.messageService.add("Projects: OK");
+
+  }
 }

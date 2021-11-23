@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-
+import { MatBadgeModule } from '@angular/material/badge';
 import { AppRoutingModule } from './app-routing.module';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -42,7 +42,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { StyleManagerService } from './style-manager.service';
 import { ThemeService } from './theme.service';
 import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.component';
-import { Observable } from 'rxjs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,6 +84,7 @@ import { Observable } from 'rxjs';
     MatTooltipModule,
     ClipboardModule,
     MatTabsModule,
+    MatBadgeModule,
 
     
 

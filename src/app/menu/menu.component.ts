@@ -8,6 +8,8 @@ import { ViewChildren } from '@angular/core';
 import { MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions } from '@angular/material/tooltip';
 import { Option } from ".././option.model";
 import { ThemeService } from ".././theme.service";
+import { MessageService } from "src/app/message.service";
+import { MatBadgeModule } from '@angular/material/badge';
 
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
@@ -30,6 +32,9 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
 export class MenuComponent implements OnInit {
   
   @Input('matTooltipHideDelay')
+  
+
+  
   TooltipPosition = 'right';
   TooltipTouchGestures = 'auto';
 
@@ -38,6 +43,7 @@ export class MenuComponent implements OnInit {
     .pipe(
       map((result) => result.matches),
       shareReplay()
+
     );
 
   @ViewChildren('tooltip')
@@ -52,8 +58,10 @@ export class MenuComponent implements OnInit {
       setTimeout(() => {
         this.tooltips._results.forEach((item) => item.show());
       }, 5);
+      this.messageService.add("All tooltips showing");
     } else {
       this.tooltips._results.forEach((item) => item.hide());
+      this.messageService.add("All tooltips hidden");
     }
   }
   
@@ -62,12 +70,17 @@ export class MenuComponent implements OnInit {
   constructor(
     private breakpointObserver: BreakpointObserver,
     private router: Router,
-    private readonly themeService: ThemeService
+    private readonly themeService: ThemeService,
+    private messageService: MessageService
+
   ) { }
   
   ngOnInit() {
-    this.themeService.setTheme("indigo-pink");
+    this.themeService.setTheme("pink-bluegray");
+    this.messageService.add("Theme switch: OK");
+
   }
+
 
   themeChangeHandler(themeToSet: string) {
     this.themeService.setTheme(themeToSet);
@@ -78,6 +91,7 @@ export class MenuComponent implements OnInit {
   public buttonClick(fragment: string): void {
     this.router.navigate(['/app-homepage']).then(() => {
       window.location.hash = fragment;
+      this.messageService.add('Navigating to ' + fragment);
     });
   }
 }
