@@ -10,12 +10,12 @@
         "id": "2",
         "title": "Graduation",
         "image_url": "assets/img/homepage/carusel-images/i2.jpg",
-        "description": "\n\u2022 I graduated Geology with a master's degree at the University of Wrocław \n\u2022 Specialization: Geochemistry \n\u2022 Master Thesis: Chemistry of water of Red Water Creek - Stołowe Mountains National Park area",
+        "description": "\n\u2022 I graduated Geology with a master's degree at the University\n\u2022 Specialization: Geochemistry \n\u2022 ",
         "img_alt": "Image by McElspeth from Pixabay"
     },
     {
         "id": "3",
-        "title": "Profesional Carrier: KGHM Cuprum R&D",
+        "title": "Profesional Carrier: R&D Centre",
         "image_url": "assets/img/homepage/carusel-images/i3.jpg",
         "description": "Exploration Geologist\n\u2022 Data digitization, database building and management \n\u2022 Custom maps, geological cross sections and profiles from interpolated data\n\u2022 Estimation of the mine's industrial resources - ores: copper and polimetals, nickel and brown coal, mineral salt",
         "img_alt": "Image by Malachi Witt from Pixabay"
@@ -36,7 +36,7 @@
     },
     {
         "id": "6",
-        "title": "Arcadis (First Nuclear Power Plant in Poland Project):",
+        "title": "First Nuclear Power Plant in Poland Project:",
         "image_url": "assets/img/homepage/carusel-images/i6.jpg",
         "description": "\n\u2022 Supervisor of the hydrological drilling rigs\n\u2022 Quality assurance in soil, rock, fluid, cores and logistics\n\u2022 Hydrogeological mesurements and monitoring \n\u2022 Periodic, formal raports",
         "img_alt": "Image by Markus Distelrath from Pixabay"
