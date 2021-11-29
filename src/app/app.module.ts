@@ -22,10 +22,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
-import { DashboardComponent } from './components/hero/dashboard/dashboard.component';
-import { HeroDetailComponent } from './components/hero/hero-detail/hero-detail.component';
-import { HeroesComponent } from './components/hero/heroes/heroes.component';
-import { HeroSearchComponent } from './components/hero/hero-search/hero-search.component';
+
 import { MessagesComponent } from './components/hero/messages/messages.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -50,11 +47,7 @@ import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.com
     HomepageComponent,
     CounterDataComponent,
     NgbCaruselComponent,
-    DashboardComponent,
-    HeroesComponent,
-    HeroDetailComponent,
-    MessagesComponent,
-    HeroSearchComponent,
+    MessagesComponent,    
     ProjectsGridComponent,
     ThemeSwitchComponent,
 

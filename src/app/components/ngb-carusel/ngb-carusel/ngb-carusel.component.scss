@@ -18,36 +18,46 @@
 
   white-space:pre-line; // \n\u2022 work properly in TS
  text-align: left;
-padding-left: 3%;
+
 position:absolute;
-bottom: 8%;
-right:10%;
-left:10%;
+top:2%;
 height:auto;
 max-height: 100%;
-//text-shadow: 2px 2px 2px black;
-color:#ffffff;
-background:#8080800d;
-box-shadow:0 8px 32px 0 #1f268780;
-backdrop-filter:blur(3px);
--webkit-backdrop-filter:blur(3px);
-border:1px solid #ffffff;
-border-radius:10px;
-box-shadow:0 8px 32px 0 #1f268780;
--webkit-box-shadow: 2px 3px 7px 1px #000000d0; 
+text-shadow: 1px 1px 1px black;
+color: black;
 line-height: 2rem;
 
-  h2 {
-    top: 50%;
-    font-weight: 300;     }
+  background-color: black;
+  color: #fff; 
+  display: inline;
+  padding: 0.5rem;
+  
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 
-  h3 {
-    
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 56px;
+    margin: 15px 5px;
+  }
+  h2{
+    font-size: 22px;
     font-weight: 300;
-      }
+    line-height: 28px;
+    margin: 15px 0 25px 0;
+  
+  }
+  h3{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 15px 0 25px 0;
 
 
     }
+}
 .button-group {
     display: flex;
     flex-flow: row nowrap;
@@ -71,10 +81,10 @@ width: 25%;
     flex-flow: row wrap;
     row-gap: 1em;
     column-gap: 1em;
-    justify-content:center;
-    align-items: center;
+    justify-content:flex-flow;
+
     
-    }
+    
   
 
 .interval-right-align {
@@ -93,3 +103,4 @@ input.interval-right-align {
 
 
 
+}

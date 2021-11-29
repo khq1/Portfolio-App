@@ -30,7 +30,7 @@ $margin-promotion-sections-small: 152px;
 	height:100%;
 	position: absolute;
 	z-index:1;
-	animation: slide 1s infinite 13s;
+	animation: slide 3s infinite 5s;
 	 
   /* 
   CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
@@ -59,8 +59,10 @@ $margin-promotion-sections-small: 152px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 .docs-header-headline {
     height: 100%;  
+    
   .mat-h1 {
     font-size: 66px;
     font-weight: bold;

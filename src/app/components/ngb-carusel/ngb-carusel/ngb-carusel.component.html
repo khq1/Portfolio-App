@@ -11,8 +11,8 @@
                 <img [src]="slide.image_url" class="img_slide" alt={{slide.img_alt}}>
             </div>
             <div class="carousel-caption">
-                <h2>{{slide.title}}</h2>
-                <h3>{{slide.description}}.</h3>
+                <h1>{{slide.title}}</h1>
+                <h2>{{slide.description}}.</h2>
                 </div>
                 </ng-template>
                 </ngb-carousel>
@@ -41,8 +41,8 @@
                 <mat-label>1 second = 1000 miliseconds</mat-label>
                 <input matInput type="number"  [formControl]="interval" class="interval-right-align"
                     placeholder={{interval.value}}>
-                <span matPrefix>Interval&nbsp;</span>
-                <span matSuffix>&nbsp; miliseconds</span>
+                <span matPrefix>Interval</span>
+                <span matSuffix>miliseconds</span>
             </mat-form-field>
 
                     <button mat-raised-button aria-label="Toggle navigation arrows" (click)="showNavigationArrows = !showNavigationArrows">
@@ -53,6 +53,7 @@
 
                     <button mat-raised-button aria-label="Toggle navigation
                                     indicators" (click)="showNavigationIndicators = !showNavigationIndicators">
+                        <mat-icon>minimize</mat-icon>
                         <mat-icon>minimize</mat-icon>
                         Toggle navigation indicators
                     </button>

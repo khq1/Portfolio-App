@@ -3,11 +3,16 @@
     aria-label="Get started" id="homepage-header">
     <div class="docs-header-section">
         <div class="docs-header-headline">
-            <h1 class="mat-h1">Jan Warzecha</h1>
+            <h1 class="mat-h1">{{name}}Warzecha</h1>
             <h2>Full Stack Developer</h2>
         </div>
         <div class="docs-header-start">
-            <a mat-raised-button class="docs-button" routerLink="/app-homepage#projects">It's on</a>
+            <a mat-raised-button class="docs-button" routerLink="/Homepage#projects"><mat-form-field appearance="fill">
+                <mat-label>What's your name?</mat-label>
+                <input matInput [(ngModel)]="name">
+            </mat-form-field></a>
+            
+            
         </div>
     </div>
 </header>

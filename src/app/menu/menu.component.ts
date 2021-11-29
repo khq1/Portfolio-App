@@ -89,7 +89,7 @@ export class MenuComponent implements OnInit {
 
   
   public buttonClick(fragment: string): void {
-    this.router.navigate(['/app-homepage']).then(() => {
+    this.router.navigate(['/Homepage']).then(() => {
       window.location.hash = fragment;
       this.messageService.add('Navigating to ' + fragment);
     });

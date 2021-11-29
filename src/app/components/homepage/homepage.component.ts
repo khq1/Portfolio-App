@@ -9,6 +9,8 @@ import { MessageService } from 'src/app/message.service';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class HomepageComponent implements OnInit {
+  name: string | undefined;
+
   constructor(
     private messageService: MessageService
   ) { }
