@@ -1,1 +1,16 @@
-/* MessagesComponent's private CSS styles */
+.container{
+    font-size: medium;
+    position: absolute;
+
+   right: 0px;
+
+    
+width: 300px;
+    height: auto;
+    max-height: 90vh;
+    z-index: 5;
+}
+.message{
+   background-color: blue;
+  
+}

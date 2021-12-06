@@ -73,7 +73,7 @@ matTooltip="Visit my GitHub page"
  aria-tooltip="Aria description"
  href="https://github.com/khq1"
   target="_blank"><img
-    src="assets/img/homepage/github-circle-black-transparent.svg" alt="Github" class="docs-angular-logo"><span
+    src="assets/img/homepage/github-circle-black-transparent.svg" alt="Github" class="menu-github-logo"><span
     class="side-nav-but-spacer"></span>GitHub
 </a>
           
@@ -85,10 +85,10 @@ matTooltip="Button to toggle Show / hide all tooltips, also user can scroll mous
   (mousemove)="show=false"
   
   (click)="showAllTooltips()"> 
-   Show / hide all tooltips </button>
+   Show / Hide all tooltips </button>
 
 
-    <app-messages></app-messages>
+    
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar id="jan" color="primary">
@@ -105,12 +105,12 @@ matTooltip="Button to toggle Show / hide all tooltips, also user can scroll mous
       <span class="side-nav-toolbar-spacer"></span>
       <app-counter-data matTooltip="Current day of the week and date" #tooltip="matTooltip"
       class="toolbar-date"></app-counter-data>
-      <mat-icon matBadge="15" matBadgeColor="accent" class="badge-icon favorite-icon" aria-label="Icon-button with heart icon"
+      <mat-icon matBadge="11" matBadgeColor="accent" class="badge-icon favorite-icon" aria-label="Icon-button with heart icon"
       matTooltip="Show Messages" #tooltip="matTooltip"
       >favorite</mat-icon>
       
     </mat-toolbar>
-    
+    <app-messages></app-messages>
     <ng-content></ng-content>
   <!-- Add Content Here -->
   

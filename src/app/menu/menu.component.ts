@@ -10,6 +10,7 @@ import { Option } from ".././option.model";
 import { ThemeService } from ".././theme.service";
 import { MessageService } from "src/app/message.service";
 import { MatBadgeModule } from '@angular/material/badge';
+import { UpperCasePipe } from '@angular/common';
 
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
@@ -32,6 +33,7 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
 export class MenuComponent implements OnInit {
   
   @Input('matTooltipHideDelay')
+   
   
 
   
@@ -47,6 +49,7 @@ export class MenuComponent implements OnInit {
     );
 
   @ViewChildren('tooltip')
+    
   tooltips!: { _results: any[] };
 
   items = [];
