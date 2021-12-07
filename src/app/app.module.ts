@@ -39,6 +39,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { StyleManagerService } from './style-manager.service';
 import { ThemeService } from './theme.service';
 import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.component';
+import { UserLoginComponent } from './components/user-login/user-login.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+
 
 @NgModule({
   declarations: [
@@ -47,10 +50,10 @@ import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.com
     HomepageComponent,
     CounterDataComponent,
     NgbCaruselComponent,
-    MessagesComponent,    
+    MessagesComponent,
     ProjectsGridComponent,
     ThemeSwitchComponent,
-
+    UserLoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -81,7 +84,7 @@ import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.com
     MatDialogModule,
     MatGridListModule,
     MatMenuModule,
-    
+    MatAutocompleteModule,
   ],
   providers: [StyleManagerService, ThemeService],
   bootstrap: [AppComponent],

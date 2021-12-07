@@ -11,6 +11,8 @@ import { ThemeService } from ".././theme.service";
 import { MessageService } from "src/app/message.service";
 import { MatBadgeModule } from '@angular/material/badge';
 import { UpperCasePipe } from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
+import { UserLoginComponent } from '../components/user-login/user-login.component';
 
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
@@ -25,18 +27,13 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
-  providers: [CounterDataComponent,
-    { provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: myCustomTooltipDefaults }
+  providers: [
+    CounterDataComponent,
+    { provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: myCustomTooltipDefaults },
   ],
 })
-
 export class MenuComponent implements OnInit {
-  
   @Input('matTooltipHideDelay')
-   
-  
-
-  
   TooltipPosition = 'right';
   TooltipTouchGestures = 'auto';
 
@@ -45,11 +42,9 @@ export class MenuComponent implements OnInit {
     .pipe(
       map((result) => result.matches),
       shareReplay()
-
     );
 
   @ViewChildren('tooltip')
-    
   tooltips!: { _results: any[] };
 
   items = [];
@@ -61,27 +56,29 @@ export class MenuComponent implements OnInit {
       setTimeout(() => {
         this.tooltips._results.forEach((item) => item.show());
       }, 5);
-      this.messageService.add("All tooltips showing");
+      this.messageService.add('All tooltips showing');
     } else {
       this.tooltips._results.forEach((item) => item.hide());
-      this.messageService.add("All tooltips hidden");
+      this.messageService.add('All tooltips hidden');
     }
   }
   
   options$: Observable<Array<Option>> = this.themeService.getThemeOptions();
-  
+
   constructor(
     private breakpointObserver: BreakpointObserver,
     private router: Router,
     private readonly themeService: ThemeService,
-    private messageService: MessageService
+    private messageService: MessageService,
+    public dialog: MatDialog
+  ) {}
 
-  ) { }
-  
   ngOnInit() {
-    this.themeService.setTheme("pink-bluegrey");
-    this.messageService.add("Theme switch: OK");
-
+    this.themeService.setTheme('pink-bluegrey');
+    this.messageService.add('Theme switch: OK');
+  }
+openUserLogin() {
+    this.dialog.open(UserLoginComponent);
   }
 
 
@@ -89,8 +86,6 @@ export class MenuComponent implements OnInit {
     this.themeService.setTheme(themeToSet);
   }
 
-
-  
   public buttonClick(fragment: string): void {
     this.router.navigate(['/Homepage']).then(() => {
       window.location.hash = fragment;

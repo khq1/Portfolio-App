@@ -1,4 +1,4 @@
-import { Component,ViewChild, OnInit, Injectable } from '@angular/core';
+import { Component,ViewChild, OnInit, Injectable, Input } from '@angular/core';
 import { Slide } from '../../../slide';
 import { SlideService } from '../../../slide.service';
 import { FormControl } from '@angular/forms';
@@ -20,7 +20,6 @@ import {
 })
 @Injectable({ providedIn: 'root' })
 export class NgbCaruselComponent {
-  interval = new FormControl(10000);
   panelOpenState = false;
   showNavigationArrows = true;
   showNavigationIndicators = true;
@@ -30,6 +29,8 @@ export class NgbCaruselComponent {
   pauseOnFocus = false;
   paused = true;
   icon = '';
+  @Input()
+  interval: FormControl = new FormControl(5000);
 
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
@@ -59,12 +60,10 @@ export class NgbCaruselComponent {
     ) {
       this.togglePaused();
     }
-    
   }
-  
   selectedHero?: Slide;
   slides: Slide[] = [];
-  
+
   constructor(
     private SlideService: SlideService,
     private messageService: MessageService

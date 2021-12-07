@@ -1,120 +1,70 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
-      <mat-icon aria-label="Home icon">home</mat-icon><span class="side-nav-toolbar-spacer"></span>
-      <app-theme-switch 
-       [options]="options$ | async" 
-      (themeChange)="themeChangeHandler($event)"
-      >
+      <button mat-button (click)="openUserLogin()">
+        <mat-icon aria-label="Home icon">home
+        </mat-icon>
+      </button><span class="side-nav-toolbar-spacer"></span>
+      <app-theme-switch [options]="options$ | async" (themeChange)="themeChangeHandler($event)">
       </app-theme-switch>
-      Menu</mat-toolbar>
-    <mat-nav-list
-      class="menu-list-item">
-
-  <a mat-list-item 
-  #tooltip="matTooltip"
-  matTooltip="Welcome header"
-  routerLinkActive="active"
-  (click)="buttonClick('jan')"
-    aria-tooltip="Welcome header">
+      Menu
+    </mat-toolbar>
+    <mat-nav-list class="menu-list-item">
+      <a mat-list-item #tooltip="matTooltip" matTooltip="Welcome header" routerLinkActive="active"
+        (click)="buttonClick('jan')" aria-tooltip="Welcome header">
         <mat-icon>face</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
-  </a>
+      </a>
 
- <a mat-list-item
- #tooltip="matTooltip"
-
- matTooltip="Read short authors biography"
- routerLinkActive="active"
- (click)="buttonClick('bio')"
-   
-      aria-tooltip="short author biography">
+      <a mat-list-item #tooltip="matTooltip" matTooltip="Read short authors biography" routerLinkActive="active"
+        (click)="buttonClick('bio')" aria-tooltip="short author biography">
         <mat-icon>perm_identity</mat-icon><span class="side-nav-but-spacer"></span>Bio
       </a>
 
-<a mat-list-item
-#tooltip="matTooltip"
-matTooltip="Explore my projects"
-routerLinkActive="active"
-(click)="buttonClick('projects')"
-  
-      aria-tooltip="Aria description">
-      <mat-icon><span class="material-icons">
-        dashboard
-      </span></mat-icon><span class="side-nav-but-spacer"></span>Projects
+      <a mat-list-item #tooltip="matTooltip" matTooltip="Explore my projects" routerLinkActive="active"
+        (click)="buttonClick('projects')" aria-tooltip="Aria description">
+        <mat-icon><span class="material-icons"> dashboard </span></mat-icon><span
+          class="side-nav-but-spacer"></span>Projects
       </a>
 
-<a mat-list-item
-matTooltip="See more in-depth information about the author of this code portfolio"
- routerLinkActive="active"
-  (click)="buttonClick('about')"
-  #tooltip="matTooltip"
-   
-      aria-tooltip="Aria description">
-            <mat-icon>subject</mat-icon><span class="side-nav-but-spacer"></span>Fundament
-</a>
+      <a mat-list-item matTooltip="See more in-depth information about the author of this code portfolio"
+        routerLinkActive="active" (click)="buttonClick('about')" #tooltip="matTooltip" aria-tooltip="Aria description">
+        <mat-icon>subject</mat-icon><span class="side-nav-but-spacer"></span>Fundament
+      </a>
 
-<a mat-list-item
-matTooltip="Send me an e-mail or contact me via contact form from this website"
- routerLinkActive="active"
-  (click)="buttonClick('contact')"
-  #tooltip="matTooltip"
-    
-      aria-tooltip="Aria description">
-            <mat-icon>email</mat-icon><span class="side-nav-but-spacer"></span>Contact
-</a>
+      <a mat-list-item matTooltip="Send me an e-mail or contact me via contact form from this website"
+        routerLinkActive="active" (click)="buttonClick('contact')" #tooltip="matTooltip"
+        aria-tooltip="Aria description">
+        <mat-icon>email</mat-icon><span class="side-nav-but-spacer"></span>Contact
+      </a>
 
-<a mat-list-item
-matTooltip="Visit my GitHub page"
-#tooltip="matTooltip"
-  
- aria-tooltip="Aria description"
- href="https://github.com/khq1"
-  target="_blank"><img
-    src="assets/img/homepage/github-circle-black-transparent.svg" alt="Github" class="menu-github-logo"><span
-    class="side-nav-but-spacer"></span>GitHub
-</a>
-          
+      <a mat-list-item matTooltip="Visit my GitHub page" #tooltip="matTooltip" aria-tooltip="Aria description"
+        href="https://github.com/khq1" target="_blank"><img
+          src="assets/img/homepage/github-circle-black-transparent.svg" alt="Github" class="menu-github-logo" /><span
+          class="side-nav-but-spacer"></span>GitHub
+      </a>
     </mat-nav-list>
-    
-<button mat-raised-button 
-matTooltip="Button to toggle Show / hide all tooltips, also user can scroll mouse or swipe to hide tooltips"
- #tooltip="matTooltip"
-  (mousemove)="show=false"
-  
-  (click)="showAllTooltips()"> 
-   Show / Hide all tooltips </button>
 
-
-    
+    <button mat-raised-button
+      matTooltip="Button to toggle Show / hide all tooltips, also user can scroll mouse or swipe to hide tooltips"
+      #tooltip="matTooltip" (mousemove)="show = false" (click)="showAllTooltips()">
+      Show / Hide all tooltips
+    </button>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar id="jan" color="primary">
-      <button
-      matTooltip="Toggle sidenav menu" #tooltip="matTooltip"
-        type="button"
-        aria-label="Toggle sidenav menu"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+      <button matTooltip="Toggle sidenav menu" #tooltip="matTooltip" type="button" aria-label="Toggle sidenav menu"
+        mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Jan's Code:</span>
       <span class="side-nav-toolbar-spacer"></span>
-      <app-counter-data matTooltip="Current day of the week and date" #tooltip="matTooltip"
-      class="toolbar-date"></app-counter-data>
-      <mat-icon matBadge="11" matBadgeColor="accent" class="badge-icon favorite-icon" aria-label="Icon-button with heart icon"
-      matTooltip="Show Messages" #tooltip="matTooltip"
-      >favorite</mat-icon>
-      
+      <app-counter-data matTooltip="Current day of the week and date" #tooltip="matTooltip" class="toolbar-date">
+      </app-counter-data>
+      <app-messages></app-messages>
     </mat-toolbar>
-    <app-messages></app-messages>
+
     <ng-content></ng-content>
-  <!-- Add Content Here -->
-  
+    <!-- Add Content Here -->
   </mat-sidenav-content>
-
-
 </mat-sidenav-container>
