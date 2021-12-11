@@ -2,10 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
+import { CountriesService } from 'src/app/countries.service';
+import { State } from 'src/app/state';
 
 
 export interface User {
-  name: string;
+  title: string;
 }
 
 
@@ -15,12 +17,24 @@ export interface User {
   styleUrls: ['./user-login.component.scss'],
 })
 export class UserLoginComponent implements OnInit {
+  [x: string]: any;
+
   stateCtrl = new FormControl();
   filteredStates: Observable<State[]>;
   myControl = new FormControl();
-  options: User[] = [{ name: 'Mary' }, { name: 'Shelley' }, { name: 'Igor' }];
+  options: User[] = [
+    { title: 'Sir' },
+    { title: 'Madam' },
+    { title: 'Mr' },
+    { title: 'Mrs' },
+    { title: 'Ms' },
+    { title: 'Miss' },
+    { title: 'Dr' },
+    { title: 'Professor' },    
+  ];
   filteredOptions!: Observable<User[]>;
   dialogRef: any;
+  name!: string;
 
   ngOnInit(): void {
     this.filteredOptions = this.myControl.valueChanges.pipe(
@@ -31,45 +45,22 @@ export class UserLoginComponent implements OnInit {
   }
 
   displayFn(user: User): string {
-    return user && user.name ? user.name : '';
+    return user && user.title ? user.title : '';
   }
 
   private _filter(name: string): User[] {
     const filterValue = name.toLowerCase();
 
     return this.options.filter((option) =>
-      option.name.toLowerCase().includes(filterValue)
+      option.title.toLowerCase().includes(filterValue)
     );
   }
 
-  states: State[] = [
-    {
-      name: 'Arkansas',
-      population: '2.978M',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_Arkansas.svg
-      flag: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg',
-    },
-    {
-      name: 'California',
-      population: '39.14M',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_California.svg
-      flag: 'https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg',
-    },
-    {
-      name: 'Florida',
-      population: '20.27M',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_Florida.svg
-      flag: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg',
-    },
-    {
-      name: 'Texas',
-      population: '27.47M',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg
-      flag: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Texas.svg',
-    },
-  ];
+  states: State[] = [];
 
   constructor() {
+    countryService: CountriesService;
+
     this.filteredStates = this.stateCtrl.valueChanges.pipe(
       startWith(''),
       map((state) => (state ? this._filterStates(state) : this.states.slice()))
@@ -85,5 +76,11 @@ export class UserLoginComponent implements OnInit {
   }
   onNoClick(): void {
     this.dialogRef.close();
+  }
+  getCountryNames() {
+    this.countryService
+      .getStates()
+      .subscribe((states: State[]) => (this.states = states));
+    this.messageService.add('Country Service: OK');
   }
 }

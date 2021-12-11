@@ -11,7 +11,7 @@
 </button>
 
 <div *ngIf="!ToggleMessages" class="container">
-  <h2>Messages{{ name }}</h2>
+  <h2>Messages {{ name }}</h2>
 
   <button mat-raised-button (click)="messageService.clear()">
     Clear messages

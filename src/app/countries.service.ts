@@ -1,21 +1,18 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs/Observable";
-import { Option } from "./option.model";
-import { StyleManagerService } from "./style-manager.service";
+import { State } from "./state";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CountriesService {
-
-  
   constructor(
     private http: HttpClient,
-    private styleManager: StyleManagerService
-  ) { }
+    private countriesManager: CountriesService
+  ) {}
 
-  getThemeOptions(): Observable<Array<Option>> {
-    return this.http.get<Array<Option>>("assets/options.json");
+  getCountryNames(): Observable<Array<State>> {
+    return this.http.get<Array<State>>('assets/country-by-flag.json');
   }
 }
