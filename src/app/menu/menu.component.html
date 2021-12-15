@@ -4,8 +4,9 @@
     <mat-toolbar>
       <button mat-button (click)="openUserLogin()">
         <mat-icon aria-label="Home icon">home
-        </mat-icon>
-      </button><span class="side-nav-toolbar-spacer"></span>
+        </mat-icon><span class="side-nav-toolbar-spacer"></span>
+      </button>
+     
       <app-theme-switch [options]="options$ | async" (themeChange)="themeChangeHandler($event)">
       </app-theme-switch>
       Menu
@@ -51,7 +52,7 @@
       Show / Hide all tooltips
     </button>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content class='mat-sidenav-content'>
     <mat-toolbar id="jan" color="primary">
       <button matTooltip="Toggle sidenav menu" #tooltip="matTooltip" type="button" aria-label="Toggle sidenav menu"
         mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">

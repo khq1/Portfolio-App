@@ -7,5 +7,10 @@
     "editor.quickSuggestionsDelay": 30,
     "diffEditor.wordWrap": "on",
     "editor.wordWrap": "on",
-    "editor.wrappingStrategy": "advanced"
+    "editor.wrappingStrategy": "advanced",
+    "cSpell.words": [
+        "carusel",
+        "sidenav",
+        "Warzecha"
+    ]
 }

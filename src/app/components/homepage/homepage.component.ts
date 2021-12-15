@@ -10,18 +10,12 @@ import { MessageService } from 'src/app/message.service';
 })
 export class HomepageComponent implements OnInit {
   name: string | undefined;
+  english = true;
+  constructor(private messageService: MessageService) {}
 
-  constructor(
-    private messageService: MessageService
-  ) { }
+  ngOnInit() {}
 
-  ngOnInit() {
-    
-    
-  
-  }
-
-  CoppiedMsg() {
+  CopiedMsg() {
     this.messageService.add(`E-mail copied to Clipboard`);
   }
 }

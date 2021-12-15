@@ -16,12 +16,55 @@
   <div id="bio" class="homepage-tile">
     <h1>Bio</h1>
     <mat-tab-group>
+  
       <mat-tab label="Short">
-        <h2>Hi, I am John.</h2>
-        <p>Your best hr decision ever made</p></mat-tab>
+      <button mat-button (click)="english = !english">{{english ? 'polish' : 'english'}}
+<mat-icon>{{english ? 'play_circle_outline' : 'pause_circle_outline'}}</mat-icon>
 
-      <mat-tab label="Professional"> Content 2 </mat-tab>
-      <mat-tab label="Personal"> Content 3 </mat-tab>
+
+      </button>
+      english = {{english}}
+
+      <img class="bio-lang" src='./assets/img/english.png'>
+      <img src="assets/img/polish.png">
+      <br>
+      <div *ngIf="english; else polish">
+      <h1>Short Bio</h1><br>
+      <H2>Hi, I'm Jan</H2>
+      
+      <p>Self-Taught Coder</p>
+      <p>English speaker - C2</p>
+      <p>Graduated and experienced in Exploration Geology</p>
+      <p>Curious without limits </p>
+    
+    </div>
+
+
+      <ng-template #polish>
+      <h1>Krótka Biografia</h1><br>
+      <H2>Cześć, jestem Jan</H2>
+      
+      <p>Koder samouk</p>
+      <p>Anglojęzyczny - C2</p>
+      <p>Absolwent doświadczony w geologii poszukiwawczej</p>
+      <p>Ciekawy bez granic </p>
+      
+      </ng-template>
+        
+      
+      
+      </mat-tab>
+
+      <mat-tab label="Professional">
+        <h2>Read more about my professional career path</h2>
+      <p>Your best hr decision ever made</p>
+      </mat-tab>
+      
+      <mat-tab label="Personal"> 
+        <h2>Personal information</h2>
+        <p>Your best hr decision ever made</p>
+      </mat-tab>
+      
     </mat-tab-group>
   </div>
 
@@ -57,7 +100,7 @@
         <button
           mat-button
           cdkCopyToClipboard="ThisIsMyMail@mmail.com"
-          (click)="CoppiedMsg()"
+          (click)="CopiedMsg()"
         >
           <mat-icon>content_copy</mat-icon>Copy to clipboard
         </button>
