@@ -14,16 +14,15 @@
     </mat-form-field>
 <mat-form-field appearance="fill" class="example-full-width">
     <mat-label>What's your name?</mat-label>
-    <input matInput [(ngModel)]="title">
+    <input matInput [(ngModel)] ="name">
 </mat-form-field>
 
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Country</mat-label>
-        <input matInput aria-label="Country" [matAutocomplete]="auto1" [formControl]="stateCtrl">
+    <mat-form-field class="example-full-width" appearance="fill">        <mat-label>Country</mat-label>
+        <input matInput aria-label="Country" [matAutocomplete]="auto1" [formControl]="CountryCtrl">
         <mat-autocomplete #auto1="matAutocomplete">
-            <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
-                <img class="example-option-img" aria-hidden [src]="state.flag" height="25">
-                <span>{{state.name}}</span> |
+            <mat-option *ngFor="let Country of filteredStates | async" [value]="Country.name">
+                <img class="example-option-img" aria-hidden [src]="Country.flag" height="25">
+                <span>{{country.name}}</span> |
                 
             </mat-option>
         </mat-autocomplete>

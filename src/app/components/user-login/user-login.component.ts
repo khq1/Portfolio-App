@@ -3,7 +3,7 @@ import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { CountriesService } from 'src/app/countries.service';
-import { State } from 'src/app/state';
+import { Country } from 'src/app/country';
 
 
 export interface User {
@@ -19,8 +19,8 @@ export interface User {
 export class UserLoginComponent implements OnInit {
   [x: string]: any;
 
-  stateCtrl = new FormControl();
-  filteredStates: Observable<State[]>;
+  countryCtrl = new FormControl();
+  filteredCountries: Observable<Country[]>;
   myControl = new FormControl();
   options: User[] = [
     { title: 'Sir' },
@@ -56,22 +56,22 @@ export class UserLoginComponent implements OnInit {
     );
   }
 
-  states: State[] = [];
+  countries: Country[] = [];
 
   constructor() {
     countryService: CountriesService;
 
-    this.filteredStates = this.stateCtrl.valueChanges.pipe(
+    this.filteredCountries = this.countryCtrl.valueChanges.pipe(
       startWith(''),
-      map((state) => (state ? this._filterStates(state) : this.states.slice()))
+      map((country) => (country ? this._filterCountries(country) : this.countries.slice()))
     );
   }
 
-  private _filterStates(value: string): State[] {
+  private _filterCountries(value: string): Country[] {
     const filterValue = value.toLowerCase();
 
-    return this.states.filter((state) =>
-      state.name.toLowerCase().includes(filterValue)
+    return this.countries.filter((country) =>
+      country.name.toLowerCase().includes(filterValue)
     );
   }
   onNoClick(): void {
@@ -79,8 +79,8 @@ export class UserLoginComponent implements OnInit {
   }
   getCountryNames() {
     this.countryService
-      .getStates()
-      .subscribe((states: State[]) => (this.states = states));
+      .getCountries()
+      .subscribe((countries: Country[]) => (this.countries = countries));
     this.messageService.add('Country Service: OK');
   }
 }

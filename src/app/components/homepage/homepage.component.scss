@@ -105,11 +105,18 @@ $margin-promotion-sections-small: 152px;
 }
 #bio{
   height: 100%;
+
 }
+#bio mat-tab-group h1{
+font-size: 30px;
+}
+
+
 .contact-clipboard{
   width:auto;
   
   }
+
 
 /*comment out unused css
 

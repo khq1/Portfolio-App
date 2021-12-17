@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs/Observable";
-import { State } from "./state";
+import {Country } from "./country";
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +12,7 @@ export class CountriesService {
     private countriesManager: CountriesService
   ) {}
 
-  getCountryNames(): Observable<Array<State>> {
-    return this.http.get<Array<State>>('assets/country-by-flag.json');
+  getCountryNames(): Observable<Array<Country>> {
+    return this.http.get<Array<Country>>('assets/country-by-flag.json');
   }
 }
