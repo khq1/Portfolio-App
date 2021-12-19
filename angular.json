@@ -35,7 +35,11 @@
               "./src/assets/styles/deeppurple-amber.css",
               "./src/assets/styles/pink-bluegrey.css",
               "./src/assets/styles/indigo-pink.css",
-              "./src/assets/styles/purple-green.css"
+              "./src/assets/styles/purple-green.css",
+              "./src/assets/styles/dark.css",
+              "./src/assets/styles/light.css",
+              "./src/assets/styles/custom.css",
+              "./src/assets/styles/colors.css"
             ],
             "scripts": []
           },

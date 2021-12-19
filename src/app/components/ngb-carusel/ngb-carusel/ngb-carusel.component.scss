@@ -1,5 +1,5 @@
 .img-wrapper {
-  width: 84vw; //adapt angular good practises
+  width: 84vw; //adapt angular good practices
   height: 72vh;
   margin: 1em 0;
 }
@@ -56,10 +56,11 @@
   max-width: 100%;
 }
 .cycle_pause_button {
-  width: 25%;
+  width: auto;
+  min-width: max-content;
 }
 .slide-controls-panel {
-  width: 75%;
+  width: auto;
 }
 
 .button-group-panel {

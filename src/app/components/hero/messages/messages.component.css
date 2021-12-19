@@ -1,11 +1,11 @@
 .container{
-    background-color: black;
+    
     font-size: medium;
     position: absolute;
-
    right: 10px;
+   top:100px;
 
-    
+   
 width: 300px;
     height: auto;
     max-height: 90vh;
@@ -13,8 +13,6 @@ width: 300px;
 }
 .message{
     margin: 5px;
-
-   background-color: white;
-   color: black;
   
+    
 }

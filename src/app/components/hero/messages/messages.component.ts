@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from '../../../message.service';
 import { Injectable } from '@angular/core';
-import { UserLoginComponent } from '../../user-login/user-login.component';
+
 
 @Component({
   selector: 'app-messages',
@@ -10,7 +10,9 @@ import { UserLoginComponent } from '../../user-login/user-login.component';
 })
 @Injectable({ providedIn: 'root' })
 export class MessagesComponent implements OnInit {
-  name = "name";
+  titleForm = 'string';
+  nameForm = 'string';
+  countryForm = 'string';
   ToggleMessages = true;
 
   constructor(public messageService: MessageService) {}

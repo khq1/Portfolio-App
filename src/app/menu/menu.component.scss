@@ -4,9 +4,7 @@ body{max-height: 100%;
 overflow-y: hidden;
 
 }
-*:hover {
-    @include mat.elevation(8);
-  }
+
 .sidenav-container {
  height: 100%;
 }
@@ -22,6 +20,7 @@ overflow-y: hidden;
     font-weight: bold;
     line-height: 28px;    
   background: inherit;
+  
 }
 
 .mat-toolbar.mat-primary {
@@ -31,8 +30,8 @@ overflow-y: hidden;
   position: static;
   top: 0;
   z-index: 1;
-  background-color: black;
-  color:white;
+  
+  
 
   }
 
@@ -74,12 +73,14 @@ margin: 15px 0;
    transform: scale(1.2);
    color:white;
    
+   
 }
-.menu2{
-  background-color:rgb(95, 64, 64);
-}
+
+ 
+
+
 .tooltips-button{
-  
+  align-self: auto;
   
   @include mat.elevation(2);
     :hover {

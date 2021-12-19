@@ -18,10 +18,9 @@ export interface User {
 })
 export class UserLoginComponent implements OnInit {
   [x: string]: any;
-
-  countryCtrl = new FormControl();
+  countryForm = new FormControl();
   filteredCountries: Observable<Country[]>;
-  myControl = new FormControl();
+  loginForm = new FormControl();
   options: User[] = [
     { title: 'Sir' },
     { title: 'Madam' },
@@ -30,14 +29,14 @@ export class UserLoginComponent implements OnInit {
     { title: 'Ms' },
     { title: 'Miss' },
     { title: 'Dr' },
-    { title: 'Professor' },    
+    { title: 'Professor' },
   ];
   filteredOptions!: Observable<User[]>;
   dialogRef: any;
   name!: string;
 
   ngOnInit(): void {
-    this.filteredOptions = this.myControl.valueChanges.pipe(
+    this.filteredOptions = this.loginForm.valueChanges.pipe(
       startWith(''),
       map((value) => (typeof value === 'string' ? value : value.name)),
       map((name) => (name ? this._filter(name) : this.options.slice()))
@@ -59,11 +58,11 @@ export class UserLoginComponent implements OnInit {
   countries: Country[] = [];
 
   constructor() {
-    countryService: CountriesService;
-
-    this.filteredCountries = this.countryCtrl.valueChanges.pipe(
+    this.filteredCountries = this.countryForm.valueChanges.pipe(
       startWith(''),
-      map((country) => (country ? this._filterCountries(country) : this.countries.slice()))
+      map((country) =>
+        country ? this._filterCountries(country) : this.countries.slice()
+      )
     );
   }
 
@@ -78,9 +77,9 @@ export class UserLoginComponent implements OnInit {
     this.dialogRef.close();
   }
   getCountryNames() {
-    this.countryService
-      .getCountries()
-      .subscribe((countries: Country[]) => (this.countries = countries));
+    this.CountriesService.getCountries().subscribe(
+      (countries: Country[]) => (this.countries = countries)
+    );
     this.messageService.add('Country Service: OK');
   }
 }

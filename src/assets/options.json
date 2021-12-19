@@ -26,5 +26,33 @@
     "headingColor": "#9c27b0",
     "label": "Purple & Green",
     "value": "purple-green"
+  },
+  {
+    "backgroundColor": "#303030",
+    "buttonColor": "#4caf50",
+    "headingColor": "#9c27b0",
+    "label": "Dark",
+    "value": "dark"
+  },
+  {
+    "backgroundColor": "#303030",
+    "buttonColor": "#4caf50",
+    "headingColor": "#9c27b0",
+    "label": "Light",
+    "value": "light"
+  },
+  {
+    "backgroundColor": "#303030",
+    "buttonColor": "#4caf50",
+    "headingColor": "#9c27b0",
+    "label": "Custom",
+    "value": "custom"
+  },
+  {
+    "backgroundColor": "#303030",
+    "buttonColor": "#4caf50",
+    "headingColor": "#9c27b0",
+    "label": "Colors",
+    "value": "colors"
   }
 ]

@@ -2,7 +2,7 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar class="side-nav-toolbar-spacer">
-      <button mat-button (click)="openUserLogin()"
+      <button mat-icon-button (click)="openUserLogin()"
       matTooltip="Sign In" #tooltip="matTooltip" type="button" aria-label="Sign In"
       >
         <mat-icon aria-label="Home icon">home
@@ -31,7 +31,7 @@
           class="side-nav-but-spacer"></span>Projects
       </a>
 
-      <a mat-list-item class="menu-item" matTooltip="See more in-depth information about the author of this code portfolio"
+      <a mat-list-item class="menu-item" matTooltip="Read more in-depth information about the author of this code portfolio"
         routerLinkActive="active" (click)="buttonClick('about')" #tooltip="matTooltip" aria-tooltip="Aria description">
         <mat-icon>subject</mat-icon><span class="side-nav-but-spacer"></span>Fundament
       </a>
@@ -49,7 +49,7 @@
       </a>
     </mat-nav-list>
 <div class="menu2">
-    <button class="menu-item" mat-button class="tooltips-button"
+    <button class="menu-item" mat-button color='warn' class="tooltips-button"
       matTooltip="Button to toggle Show / hide all tooltips, also user can scroll mouse or swipe to hide tooltips"
       #tooltip="matTooltip" (mousemove)="show = false" (click)="showAllTooltips()">
       Show / Hide all tooltips
