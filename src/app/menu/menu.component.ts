@@ -46,7 +46,6 @@ export class MenuComponent implements OnInit {
 
   @ViewChildren('tooltip')
   tooltips!: { _results: any[] };
-
   items = [];
   show!: boolean;
 

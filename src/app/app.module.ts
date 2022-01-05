@@ -41,6 +41,7 @@ import { ThemeService } from './theme.service';
 import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.component';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     ProjectsGridComponent,
     ThemeSwitchComponent,
     UserLoginComponent,
+    SafeHtmlPipe,
   ],
   imports: [
     BrowserModule,

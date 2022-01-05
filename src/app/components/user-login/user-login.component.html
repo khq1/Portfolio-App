@@ -1,11 +1,11 @@
 <h1 mat-dialog-title>Sign In</h1>
-<div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>
+<div mat-dialog-content>Select your title, Enter name and select country</div>
 
 
 <form class="example-form">
     <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Title</mat-label>
-        <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        <input type="text" matInput [formControl]="titleForm" [matAutocomplete]="auto">
         <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
             <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
                 {{option.title}}
@@ -13,16 +13,16 @@
         </mat-autocomplete>
     </mat-form-field>
 <mat-form-field appearance="fill" class="example-full-width">
-    <mat-label>Name?</mat-label>
-    <input matInput [(ngModel)] ="name">
+    <mat-label>Name</mat-label>
+    <input type="text"  matInput>
 </mat-form-field>
 
     <mat-form-field class="example-full-width" appearance="fill">        <mat-label>Country</mat-label>
-        <input matInput aria-label="Country" [matAutocomplete]="auto1" [formControl]="CountryCtrl">
+        <input matInput aria-label="Country" [matAutocomplete]="auto1" [formControl]="countryForm">
         <mat-autocomplete #auto1="matAutocomplete">
-            <mat-option *ngFor="let Country of filteredStates | async" [value]="Country.name">
-                <img class="example-option-img" aria-hidden [src]="Country.flag" height="25">
-                <span>{{country.name}}</span> |
+            <mat-option *ngFor="let country of filteredCountries | async" [value]="country">
+                <img class="example-option-img" aria-hidden [src]="country.flag | safeHtml" height="25">
+                <span>{{country.name}}</span> 
                 
             </mat-option>
         </mat-autocomplete>

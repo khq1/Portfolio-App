@@ -7,10 +7,21 @@
       </div>
       <div class="docs-header-start"></div>
     </div>
+    <section>
+      <div class="example-label">Raised</div>
+      <div class="example-button-row">
+        <button mat-raised-button>Basic</button>
+        <button mat-raised-button color="primary">Primary</button>
+        <button mat-raised-button color="accent">Accent</button>
+        <button mat-raised-button color="warn">Warn</button>
+        <button mat-raised-button disabled>Disabled</button> 
+        <a mat-raised-button href="" target="_blank">Link</a>
+      </div>
+    </section>
   </header>
 
   <div id="bio" class="homepage-tile">
-    <h1>Bio</h1>
+    <h1 >Bio</h1>
     <button mat-button (click)="english = !english" matTooltip="Toggle language ( EN | PL )" #tooltip="matTooltip" type="button"
       aria-label="Toggle language ( EN | PL )">
       <mat-icon>{{english ? 'language' : 'language'}}</mat-icon>

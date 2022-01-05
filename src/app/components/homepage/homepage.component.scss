@@ -98,9 +98,15 @@ $margin-promotion-sections-small: 152px;
   h2{
     font-size: 20px;
     font-weight: 300;
-    line-height: 28px;
+    line-height: 20px;
     margin: 15px 0 25px 0;
-  
+    }
+    p {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 14px;
+    margin: 0 0 24px 0;
+    padding: 0;
   }
 }
 #bio{

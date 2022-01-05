@@ -1,18 +1,36 @@
-.container{
-    
-    font-size: medium;
-    position: absolute;
-   right: 10px;
-   top:100px;
-
-   
-width: 300px;
-    height: auto;
-    max-height: 90vh;
-    z-index: 2;
+.container {
+  font-size: medium;
+  position: absolute;
+  right: 5px;
+  top: 50px;
+  width: auto;
+  height: auto;
+  max-height: 90vh;
+  z-index: 2;
 }
-.message{
-    margin: 5px;
+
+.container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 15px 0px;
+}
+
+.container h2 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0px 0 25px 0;
+}
+.container p {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 14px;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.message {
+  margin: 5px;
   
-    
 }
