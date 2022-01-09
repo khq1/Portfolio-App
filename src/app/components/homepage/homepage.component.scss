@@ -85,9 +85,24 @@ $margin-promotion-sections-small: 152px;
   mat-icon {
     vertical-align: middle;
   }
-.container-fluid {
-  .homepage-tile{
-    min-height: 100vh;
+
+  .docs-header-button-group{
+    position: absolute;
+   display: flex;
+  flex-flow: row wrap;
+  row-gap: 1em;
+  column-gap: 1em;
+ align-items: center;
+  justify-content:space-evenly;
+  
+  bottom: 5%;
+  margin: 0 auto;
+ 
+  }
+.container-fluid {padding:0px;
+  .homepage-tile{height: auto;
+    
+    
   }
   h1 {
     font-size: 46px;

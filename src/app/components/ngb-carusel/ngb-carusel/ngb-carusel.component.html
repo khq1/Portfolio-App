@@ -31,14 +31,14 @@
                 Controls:
             </mat-panel-title>
             <mat-panel-description>
-                Controls {{panelOpenState ? 'open' : 'closed'}}
+                 {{panelOpenState ? 'Open' : 'Closed'}}
             </mat-panel-description>
         </mat-expansion-panel-header>
 
     <div class="button-group-panel" aria-label="Carousel toggle controls">
 
             <mat-form-field appearance="legacy" class="mat-elevation-z2 form-center" floatLabel="always">
-                <mat-label>1 second = 1000 miliseconds</mat-label>
+                <mat-label>1 second = 1000 ms</mat-label>
                 <input matInput type="number"  [formControl]="interval" class="interval-right-align"
                     placeholder={{interval.value}}>
                 <span matPrefix>Interval</span>
@@ -55,7 +55,8 @@
                                     indicators" (click)="showNavigationIndicators = !showNavigationIndicators">
                         <mat-icon>minimize</mat-icon>
                         <mat-icon>minimize</mat-icon>
-                        Toggle navigation indicators
+                        <mat-icon>minimize</mat-icon>
+                        Toggle  indicators
                     </button>
                     <button mat-raised-button (click)="pauseOnHover = !pauseOnHover">Pause on hover
                     </button>
@@ -65,11 +66,11 @@
                     </button>
 
                     <button mat-raised-button [(ngModel)]="unpauseOnArrow">
-                        Unpause when clicking on arrows
+                        Unpause when arrow click
                     </button>
 
                     <button mat-raised-button [(ngModel)]="pauseOnIndicator">
-                        Pause when clicking on indicator
+                        Pause when click indicator
                     </button>
                 </div>
             </mat-expansion-panel>

@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 import { MessageService } from 'src/app/message.service';
 
 
@@ -9,13 +10,24 @@ import { MessageService } from 'src/app/message.service';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class HomepageComponent implements OnInit {
+  [x: string]: any;
   name: string | undefined;
   english = true;
-  constructor(private messageService: MessageService) {}
+  constructor(
+    private router: Router,  
+    private messageService: MessageService
+  ) {}
 
   ngOnInit() {}
 
   CopiedMsg() {
     this.messageService.add(`E-mail copied to Clipboard`);
   }
+  public buttonClick(fragment: string): void {
+    this.router.navigate(['/Homepage']).then(() => {
+      window.location.hash = fragment;
+      this.messageService.add('Navigating to ' + fragment);
+    });
+  }
 }
+

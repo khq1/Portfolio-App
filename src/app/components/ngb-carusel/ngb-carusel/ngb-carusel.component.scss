@@ -1,7 +1,8 @@
 .img-wrapper {
-  width: 84vw; //adapt angular good practices
-  height: 72vh;
-  margin: 1em 0;
+  width:84vw; //adapt angular good practices
+  height:74vh;
+  
+  margin: auto auto;
 }
 .img_slide {
   width: inherit;
@@ -13,11 +14,12 @@
 .carousel-caption {
   white-space: pre-line; // \n\u2022 work properly in TS
   text-align: left;
-
+ 
+ background-color: black;
   position: absolute;
-  bottom: 5%;
+ 
   height: auto;
-  max-height: 50%;
+  max-height:60vh;
   text-shadow: 1px 1px 1px black;
   color: #fff;
   display: inline;
@@ -27,19 +29,19 @@
   box-decoration-break: clone;
 
   h1 {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
     line-height: 1em;
     margin: 15px 5px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5em;
     margin: 15px 0 25px 0;
   }
   h3 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     margin: 15px 0 25px 0;
@@ -47,12 +49,12 @@
 }
 .button-group {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   column-gap: 1em;
   row-gap: 1em;
   align-content: center;
   justify-content: space-around;
-  width: 100%;
+  
   max-width: 100%;
 }
 .cycle_pause_button {
@@ -60,7 +62,7 @@
   min-width: max-content;
 }
 .slide-controls-panel {
-  width: auto;
+  
 }
 
 .button-group-panel {
@@ -69,11 +71,13 @@
   flex-flow: row wrap;
   row-gap: 1em;
   column-gap: 1em;
-  justify-content: flex-flow;
-
+ align-content: center;
+  justify-content: space-around;
   .interval-right-align {
-    text-align: right;
+    text-align: center;
+    
     font-weight: 600;
+    width: min-content;
   }
 
   input.interval-right-align::-webkit-outer-spin-button,

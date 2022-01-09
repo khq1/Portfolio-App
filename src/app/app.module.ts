@@ -15,7 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CounterDataComponent } from './components/counter-data/counter-data.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCaruselComponent } from './components/ngb-carusel/ngb-carusel/ngb-carusel.component';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -88,7 +88,7 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
     MatMenuModule,
     MatAutocompleteModule,
   ],
-  providers: [StyleManagerService, ThemeService],
+  providers: [NgbCarouselConfig, StyleManagerService, ThemeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

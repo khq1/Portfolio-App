@@ -8,14 +8,13 @@
       <div class="docs-header-start"></div>
     </div>
     <section>
-      <div class="example-label">Raised</div>
-      <div class="example-button-row">
-        <button mat-raised-button>Basic</button>
-        <button mat-raised-button color="primary">Primary</button>
-        <button mat-raised-button color="accent">Accent</button>
-        <button mat-raised-button color="warn">Warn</button>
-        <button mat-raised-button disabled>Disabled</button> 
-        <a mat-raised-button href="" target="_blank">Link</a>
+      <div class="docs-header-button-group">
+      
+        <button mat-raised-button routerLinkActive="active" (click)="buttonClick('bio')">Bio</button>
+        <button mat-raised-button color="primary" routerLinkActive="active"
+          (click)="buttonClick('projects')">Projects</button>
+        <button mat-raised-button color="accent" routerLinkActive="active" (click)="buttonClick('about')">Fundament</button>
+        <button mat-raised-button color="warn" routerLinkActive="active" (click)="buttonClick('contact')">Contact</button>
       </div>
     </section>
   </header>
@@ -33,10 +32,10 @@
       <mat-tab label="Short">
         <div>
           <h1>Short Bio</h1><br>
-          <H2>Hi, I'm Jan</H2>
-          <p>Self-Taught Coder</p>
-          <p>English speaker - C2</p>
-          <p>Graduated and experienced in Exploration Geology</p>
+          <H2></H2>
+          <p>Coder</p>
+          <p></p>
+          <p></p>
           <p>Curious without limits </p>
         </div>
       </mat-tab>
