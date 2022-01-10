@@ -53,8 +53,7 @@
   column-gap: 1em;
   row-gap: 1em;
   align-content: center;
-  justify-content: space-around;
-  
+  justify-content: space-around;  
   max-width: 100%;
 }
 .cycle_pause_button {
@@ -62,7 +61,7 @@
   min-width: max-content;
 }
 .slide-controls-panel {
-  
+  width:inherit;
 }
 
 .button-group-panel {
@@ -73,11 +72,14 @@
   column-gap: 1em;
  align-content: center;
   justify-content: space-around;
+  @media (min-width: 800px) {
+    max-width: 50vw;
+  }
   .interval-right-align {
     text-align: center;
     
     font-weight: 600;
-    width: min-content;
+    
   }
 
   input.interval-right-align::-webkit-outer-spin-button,

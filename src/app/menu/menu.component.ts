@@ -73,16 +73,18 @@ export class MenuComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.themeService.setTheme('pink-bluegrey');
+    this.themeService.setTheme('dark');
     this.messageService.add('Theme switch: OK');
   }
 openUserLogin() {
-    this.dialog.open(UserLoginComponent);
+  this.dialog.open(UserLoginComponent);
+  this.messageService.add('User Login Component Opened: OK');
   }
 
 
   themeChangeHandler(themeToSet: string) {
     this.themeService.setTheme(themeToSet);
+    
   }
 
   public buttonClick(fragment: string): void {

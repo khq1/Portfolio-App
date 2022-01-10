@@ -9,20 +9,23 @@
     </div>
     <section>
       <div class="docs-header-button-group">
-      
+
         <button mat-raised-button routerLinkActive="active" (click)="buttonClick('bio')">Bio</button>
         <button mat-raised-button color="primary" routerLinkActive="active"
           (click)="buttonClick('projects')">Projects</button>
-        <button mat-raised-button color="accent" routerLinkActive="active" (click)="buttonClick('about')">Fundament</button>
-        <button mat-raised-button color="warn" routerLinkActive="active" (click)="buttonClick('contact')">Contact</button>
+        <button mat-raised-button color="warn" routerLinkActive="active" (click)="buttonClick('about')">About
+          me</button>
+        <button mat-raised-button color="accent" routerLinkActive="active"
+          (click)="buttonClick('contact')">Contact</button>
       </div>
     </section>
+    
   </header>
-
+<hr>
   <div id="bio" class="homepage-tile">
-    <h1 >Bio</h1>
-    <button mat-button (click)="english = !english" matTooltip="Toggle language ( EN | PL )" #tooltip="matTooltip" type="button"
-      aria-label="Toggle language ( EN | PL )">
+    <h1>Bio</h1>
+    <button mat-button (click)="english = !english" matTooltip="Toggle language ( EN | PL )" #tooltip="matTooltip"
+      type="button" aria-label="Toggle language ( EN | PL )">
       <mat-icon>{{english ? 'language' : 'language'}}</mat-icon>
 
       {{english ? 'PL' : 'EN'}}
@@ -30,29 +33,47 @@
     <mat-tab-group *ngIf="english; else polish">
 
       <mat-tab label="Short">
-        <div>
-          <h1>Short Bio</h1><br>
-          <H2></H2>
-          <p>Coder</p>
-          <p></p>
-          <p></p>
-          <p>Curious without limits </p>
+        <div class="mat-tab">
+          <h1>
+            Short bio
+          </h1>
+          <h2>
+            Hi, I'm Jan Warzecha from Wrocław, Poland
+          </h2>
+          <ul>
+            <li>
+              I'm a self-thought programmer, coding since July 2020
+            </li>
+            <li>
+              HTML, CSS, JavaScript, TypeScript, Angular
+            </li>
+            <li>
+              English B2/C1
+            </li>
+            <li>
+              MSc in Geology
+            </li>
+            <li>
+              8 year professional experience in resource exploration / mining /
+              drilling / environment / energy
+            </li>
+            <li>
+              I'm currently looking to remotely join frontend / full-stack team
+            </li>
+          </ul>
         </div>
       </mat-tab>
 
       <mat-tab label="Professional">
-        <div>
-          <h1>Short Bio</h1><br>
-          <H2>Hi, I'm Jan</H2>
-          <p>Self-Taught Coder</p>
-          <p>English speaker - C2</p>
-          <p>Graduated and experienced in Exploration Geology</p>
-          <p>Curious without limits </p>
+        <div class="mat-tab">
+          <h1>Professional Info</h1><br>
+
+
         </div>
       </mat-tab>
 
       <mat-tab label="Personal">
-        <div>
+        <div class="mat-tab">
           <h1>Short Bio</h1><br>
           <H2>Hi, I'm Jan</H2>
           <p>Self-Taught Coder</p>
@@ -66,50 +87,64 @@
 
     <ng-template #polish>
       <mat-tab-group>
-        <mat-tab label="W skrócie">
-          <h1>O mnie w skrócie</h1>
-          <h2>Witam nazywam się Jan.</h2>
+        <mat-tab class="mat-tab" label="W skrócie">
+          <h1>
+            Krótki życiorys
+          </h1>
+          <h2>
+            Cześć, jestem Jan Warzecha, Wrocław
+          </h2>
+          <ul>
+            <li>
+              Jestem programistą samoukiem, koduję od lipca 2020
+            </li>
+            <li>
+              HTML, CSS, Js, Ts, Angular
+            </li>
+            <li>
+              angielski B2/C1
+            </li>
+            <li>
+              Magister geologii
+            </li>
+            <li>
+              8 lat doświadczenia zawodowego w sektorach poszukiwania zasobów /
+              górnictwa / wiertnictwa / ochrony środowiska / energetyki
+            </li>
+            <li>
+              Obecnie chcę zdalnie dołączyć do zespołu frontend / full-stack
+            </li>
+          </ul>
+        </mat-tab>
 
-          <h3>Programuje od Lipca 2020<br>
-          Jestem magistrem geologii,
-          z 9 letnim stazem, 
-          angielski,
-        szkoły
-      jezyki
-    potencjał</h3>
-          </mat-tab>
+        <mat-tab label="Zawodowo">
+          <div class="mat-tab">
 
-          <mat-tab label="Zawodowo">
-          <h1>Kariera zawodowa</h1><br>
-          <H2>Hi, I'm Jan</H2>
-          <p>Self-Taught Coder</p>
-          <p>English speaker - C2</p>
-          <p>Graduated and experienced in Exploration Geology</p>
-          <p>Curious without limits </p>
+
+          </div>
         </mat-tab>
 
         <mat-tab label="Prywatnie">
-          <h1>Hobby etc.</h1><br>
-          <H2>Hi, I'm Jan</H2>
-          <p>Self-Taught Coder</p>
-          <p>English speaker - C2</p>
-          <p>Graduated and experienced in Exploration Geology</p>
-          <p>Curious without limits </p>
+          <div class="mat-tab">
+
+
+          </div>
         </mat-tab>
       </mat-tab-group>
     </ng-template>
+    <hr>
   </div>
 
   <div id="projects" class="homepage-tile">
     <h1>Projects</h1>
     <app-projects-grid></app-projects-grid>
   </div>
-
+<hr>
   <div id="about" class="homepage-tile">
     <h1>About me</h1>
     <app-ngb-carusel></app-ngb-carusel>
   </div>
-
+<hr>
   <div id="contact" class="homepage-tile">
     <h1>Contact me</h1>
 
@@ -124,7 +159,7 @@
 
 
 
-    
+
     <h2>Copy my mail</h2>
     <h3>
       <div class="contact-clipboard">

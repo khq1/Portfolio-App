@@ -52,7 +52,17 @@ margin: 15px 0;
     @include mat.elevation(8);
   }
 }
+.menu-item2{
 
+
+@include mat.elevation(4);
+    :hover {
+    @include mat.elevation(8);
+  }
+}
+.menu2{
+  
+}
 
 .side-nav-toolbar-spacer {
   flex: 1 1 auto;
@@ -80,9 +90,9 @@ margin: 15px 0;
 
 
 .tooltips-button{
-  align-self: auto;
-  
-  @include mat.elevation(2);
+  width: fit-content;
+  margin: 10px;
+  @include mat.elevation(4);
     :hover {
     @include mat.elevation(8);
   }
