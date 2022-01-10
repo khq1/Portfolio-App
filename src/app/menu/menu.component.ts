@@ -54,7 +54,7 @@ export class MenuComponent implements OnInit {
     if (this.show) {
       setTimeout(() => {
         this.tooltips._results.forEach((item) => item.show());
-      }, 5);
+      }, 2);
       this.messageService.add('All tooltips showing');
     } else {
       this.tooltips._results.forEach((item) => item.hide());
@@ -73,7 +73,7 @@ export class MenuComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.themeService.setTheme('dark');
+    this.themeService.setTheme('colors');
     this.messageService.add('Theme switch: OK');
   }
 openUserLogin() {
