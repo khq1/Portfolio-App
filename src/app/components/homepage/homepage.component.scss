@@ -30,7 +30,7 @@ $margin-promotion-sections-small: 152px;
   position: absolute;
   z-index: 1;
 
-  /*animation: slide 1s infinite 4s;
+  animation: slide .5s  1 3s;
 	 
   /* 
   CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
@@ -76,13 +76,13 @@ $margin-promotion-sections-small: 152px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
 }
 
-/* animation 
+
 
 @keyframes slide {
 	0% {transform:translateX(-100%);}
 	100% {transform:translateX(100%);}
 }
-*/
+
 .docs-header-section {
   width: 90vh;
   position: absolute;
@@ -108,9 +108,36 @@ $margin-promotion-sections-small: 152px;
       margin: 15px 0 25px 0;
     }
   }
+   @media only screen and (max-width: 600px) {
+.docs-header-background {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  
 }
+
+
+
+   .docs-header-headline
+  .mat-h1 {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 36px;
+      margin: 15px 5px;
+    }
+     .docs-header-headline
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 20px;
+      margin: 15px 0 25px 0;
+    }  
+   }
+}
+
 mat-divider {
   width: 100%;
+  
 }
 
 mat-icon {
@@ -125,13 +152,14 @@ mat-icon {
   column-gap: 1em;
   align-items: center;
   justify-content: space-evenly;
-  left:40vw;
+  right:5px;
 
   bottom: 15%;
   margin: 0 auto;
 }
 .container-fluid {
   padding: 0px;
+ 
   .homepage-tile {
     height: auto;
     h1 {
@@ -368,3 +396,4 @@ mat-icon {
 }
 
 */
+  

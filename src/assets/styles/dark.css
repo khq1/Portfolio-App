@@ -1786,7 +1786,7 @@ td.mat-footer-cell {
 }
 .mat-form-field-type-mat-native-select.mat-focused:not(.mat-form-field-invalid)
   .mat-form-field-infix::after {
-  color: #141414;
+  color: #d8d8d8;
 }
 .mat-form-field-type-mat-native-select.mat-focused:not(.mat-form-field-invalid).mat-accent
   .mat-form-field-infix::after {

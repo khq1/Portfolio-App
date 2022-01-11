@@ -10,8 +10,8 @@ import { MessageService } from 'src/app/message.service';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class HomepageComponent implements OnInit {
-  [x: string]: any;
-  name: string | undefined;
+ 
+ 
   english = true;
   constructor(
     private router: Router,  

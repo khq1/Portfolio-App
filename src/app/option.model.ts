@@ -3,5 +3,6 @@ export interface Option {
   buttonColor: string;
   headingColor: string;
   label: string;
+  labelTooltip: string;
   value: string;
 }

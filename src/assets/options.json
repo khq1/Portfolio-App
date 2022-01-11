@@ -4,6 +4,7 @@
     "buttonColor": "#607d8b",
     "headingColor": "#303030",
     "label": "Dark",
+    "labelTooltip": "Dark theme by Jan Warzecha",
     "value": "dark"
   },
    
@@ -11,50 +12,57 @@
     "backgroundColor": "#fff",
     "buttonColor": "#607d8b",
     "headingColor": "#fff",
-    "label": "Light",
+     "label": "Light",
+    "labelTooltip": "Light theme by Jan Warzecha",
     "value": "light"
   },
 
   {
     "backgroundColor": "#3f51b5",
     "buttonColor": "#ffc107",
-    "headingColor": "#303030",
-    "label": "Colors",
-    "value": "colors"
+    "headingColor": "#3f51b5",
+     "label": "Blue",
+    "labelTooltip": "Blue theme by Jan Warzecha",
+    "value": "blue"
   },
    {
     "backgroundColor": "#fff",
     "buttonColor": "#ffc107",
     "headingColor": "#e91e63",
-    "label": "Custom",
+     "label": "Custom",
+    "labelTooltip": "Custom theme by Jan Warzecha",
     "value": "custom"
   },
    {
     "backgroundColor": "#303030",
     "buttonColor": "#607d8b",
     "headingColor": "#e91e63",
-    "label": "Pink & Blue Grey - Angular Material",
+     "label": "Pink & Blue Grey",
+    "labelTooltip": "Pink & Blue Grey - Angular Material",
     "value": "pink-bluegrey"
   },
   {
     "backgroundColor": "#fff",
     "buttonColor": "#ffc107",
     "headingColor": "#9c27b0",
-    "label": "Deep Purple & Amber - Angular Material",
+     "label": "Deep Purple & Amber",
+    "labelTooltip": "Deep Purple & Amber - Angular Material",
     "value": "deeppurple-amber"
   },
    {
     "backgroundColor": "#303030",
     "buttonColor": "#4caf50",
     "headingColor": "#9c27b0",
-    "label": "Purple & Green - Angular Material",
+     "label": "Purple & Green",
+    "labelTooltip": "Purple & Green - Angular Material",
     "value": "purple-green"
   },
   {
     "backgroundColor": "#fff",
     "buttonColor": "#ff4081",
     "headingColor": "#3f51b5",
-    "label": "Indigo & Pink - Angular Material",
+     "label": "Indigo & Pink",
+    "labelTooltip": "Indigo & Pink - Angular Material",
     "value": "indigo-pink"
   }
  

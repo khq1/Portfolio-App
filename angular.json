@@ -39,7 +39,7 @@
               "./src/assets/styles/dark.css",
               "./src/assets/styles/light.css",
               "./src/assets/styles/custom.css",
-              "./src/assets/styles/colors.css"
+              "./src/assets/styles/blue.css"
             ],
             "scripts": []
           },
