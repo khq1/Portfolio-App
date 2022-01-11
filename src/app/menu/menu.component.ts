@@ -73,7 +73,7 @@ export class MenuComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.themeService.setTheme('blue');
+    this.themeService.setTheme('light');
     this.messageService.add('Theme switch: OK');
   }
 openUserLogin() {

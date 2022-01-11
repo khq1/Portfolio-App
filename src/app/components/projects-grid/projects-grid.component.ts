@@ -18,6 +18,18 @@ export class ProjectsGridComponent {
         this.messageService.add(`Projects - 1 column View`);
         return [
           {
+            title: 'Portfolio-App',
+            cols: 2,
+            rows: 2,
+            subtitle: "My way to learn google's frontend framework",
+            img_url: 'assets/img/homepage/projects-images/QuoPic.jpg',
+            gh_url: 'https://github.com/khq1/QuoPic',
+            gh_pages_url: 'https://khq1.github.io/QuoPic/',
+            description:
+              'Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module',
+          },
+
+          {
             title: 'QuoPic',
             cols: 2,
             rows: 2,
@@ -58,16 +70,27 @@ export class ProjectsGridComponent {
             gh_url: 'https://github.com/khq1/FutureGreenTech',
             gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
             description:
-              "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world —Denholm Reynholm, seconds before committing suicide ",
+              "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world —Denholm Reynholm, seconds before committing suicide ( IT CROWD",
           },
         ];
       }
       this.messageService.add(`Projects - 2 columns View`);
       return [
         {
+          title: 'Portfolio-App',
+          cols: 1,
+          rows: 1,
+          subtitle: "My way to learn Angular - google's frontend framework",
+          img_url: 'assets/img/homepage/projects-images/Portfolio-App.jpg ',
+          gh_url: 'https://github.com/khq1/Portfolio-App',
+          gh_pages_url: 'https://khq1.github.io/Portfolio-App/',
+          description:
+            'When I typed "ng serve -o" for the first time I was curious and excited. Now few months later, after multiple commits, hundreds of hours diving deep into software development docs, I am still excited and even more curious.',
+        },
+        {
           title: 'QuoPic',
-          cols: 2,
-          rows: 3,
+          cols: 1,
+          rows: 1,
           subtitle: 'Cafe and Clouds',
           img_url: 'assets/img/homepage/projects-images/QuoPic.jpg',
           gh_url: 'https://github.com/khq1/QuoPic',
@@ -77,8 +100,8 @@ export class ProjectsGridComponent {
         },
         {
           title: 'Nürburgring Nordschleife',
-          cols: 2,
-          rows: 2,
+          cols: 1,
+          rows: 1,
           subtitle: 'Record Lap Times',
           img_url: 'assets/img/homepage/projects-images/My-First-App.jpg',
           gh_url: 'https://github.com/khq1/My-First-App',
@@ -88,7 +111,7 @@ export class ProjectsGridComponent {
         {
           title: 'Responsive Gallery ',
           cols: 1,
-          rows: 2,
+          rows: 1,
           subtitle: 'Balanced App',
           img_url: 'assets/img/homepage/projects-images/Gallery.jpg',
           gh_url: 'https://khq1.github.io/Gallery/',
@@ -99,7 +122,7 @@ export class ProjectsGridComponent {
         {
           title: 'FutureGreenTech',
           cols: 1,
-          rows: 2,
+          rows: 1,
           subtitle: 'Visions For A Sustainable Future.',
           img_url: 'assets/img/homepage/projects-images/FutureGreenTech.jpg',
           gh_url: 'https://github.com/khq1/FutureGreenTech',

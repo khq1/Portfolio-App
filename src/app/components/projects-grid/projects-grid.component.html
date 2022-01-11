@@ -1,5 +1,5 @@
 <div class="grid-container">
-    <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-list cols="2" rowHeight="360px">
     <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.cols"  
 [rowspan]="card.rows" [title]="card.title" subtitle="card.subtitle" img_url="card.img_url" gh_url="card.gh_url" gh_pages_url="card.gh_pages_url" description="card.description">
       <mat-card tabindex="0" class="dashboard-card">
@@ -10,8 +10,10 @@
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
+              <button mat-menu-item>More</button>
+              
+              <a mat-menu-item href="{{card.gh_url}}" target="_blank">Github</a>
+              <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank">Visit</a>
             </mat-menu>
           </mat-card-title>
         </mat-card-header>
@@ -19,9 +21,7 @@
           <div class="card-subtitle">{{card.subtitle}}</div>
           <img mat-card-s-image [src]="card.img_url" class="img_project">
           <div class="card-description">{{card.description}}</div>
-        <mat-card-actions class="button-group">
-          <a mat-raised-button href="{{card.gh_url}}" target="_blank">Github Repo</a>
-          <a mat-raised-button href="{{card.gh_pages_url}}" target="_blank">See the project</a>
+        <mat-card-actions class="button-group">          
         </mat-card-actions>
 
         </mat-card-content>

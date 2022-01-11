@@ -30,7 +30,7 @@ $margin-promotion-sections-small: 152px;
   position: absolute;
   z-index: 1;
 
-  animation: slide .5s  1 3s;
+  animation: slide 1s  1 3s;
 	 
   /* 
   CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
@@ -162,6 +162,7 @@ mat-icon {
  
   .homepage-tile {
     height: auto;
+    
     h1 {
       font-size: 36px;
       font-weight: bold;
