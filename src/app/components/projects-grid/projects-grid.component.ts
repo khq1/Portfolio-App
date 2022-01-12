@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { MessageService } from 'src/app/message.service';
+import { Placeholder } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-projects-grid',
@@ -21,12 +22,12 @@ export class ProjectsGridComponent {
             title: 'Portfolio-App',
             cols: 2,
             rows: 2,
-            subtitle: "My way to learn google's frontend framework",
-            img_url: 'assets/img/homepage/projects-images/QuoPic.jpg',
-            gh_url: 'https://github.com/khq1/QuoPic',
-            gh_pages_url: 'https://khq1.github.io/QuoPic/',
+            subtitle: "My way to learn Angular - google's frontend framework",
+            img_url: 'assets/img/homepage/projects-images/Portfolio-App.jpg ',
+            gh_url: 'https://github.com/khq1/Portfolio-App',
+            gh_pages_url: 'https://khq1.github.io/Portfolio-App/',
             description:
-              'Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module',
+              'When I typed "ng serve -o" for the first time I was curious and excited. Now few months later, after multiple commits, hundreds of hours diving deep into software development docs, I am still excited and even more curious.',
           },
 
           {
@@ -38,7 +39,7 @@ export class ProjectsGridComponent {
             gh_url: 'https://github.com/khq1/QuoPic',
             gh_pages_url: 'https://khq1.github.io/QuoPic/',
             description:
-              'Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module',
+              'Sit back and enjoy random quotes combined with a random image, read by text to speech, build in browser synthesis module',
           },
           {
             title: 'Nürburgring Nordschleife',
@@ -48,7 +49,8 @@ export class ProjectsGridComponent {
             img_url: 'assets/img/homepage/projects-images/My-First-App.jpg',
             gh_url: 'https://github.com/khq1/My-First-App',
             gh_pages_url: 'https://khq1.github.io/My-First-App/',
-            description: '',
+            description:
+              'Angular Material App, that utilizes mat-autocomplete, sort and filter results with Http service and Angular Router. Which of these  cuties you pick for a late night cruise?',
           },
           {
             title: 'Responsive Gallery ',
@@ -63,14 +65,14 @@ export class ProjectsGridComponent {
           },
           {
             title: 'FutureGreenTech',
-            cols: 2,
-            rows: 2,
+            cols: 1,
+            rows: 1,
             subtitle: 'Visions For A Sustainable Future.',
             img_url: 'assets/img/homepage/projects-images/FutureGreenTech.jpg',
             gh_url: 'https://github.com/khq1/FutureGreenTech',
             gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
             description:
-              "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world —Denholm Reynholm, seconds before committing suicide ( IT CROWD",
+              "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm,  IT Crowd",
           },
         ];
       }
@@ -96,7 +98,7 @@ export class ProjectsGridComponent {
           gh_url: 'https://github.com/khq1/QuoPic',
           gh_pages_url: 'https://khq1.github.io/QuoPic/',
           description:
-            'Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module',
+            'Sit back and enjoy random quotes combined with a random image, read by text to speech, build in browser synthesis module',
         },
         {
           title: 'Nürburgring Nordschleife',
@@ -106,18 +108,19 @@ export class ProjectsGridComponent {
           img_url: 'assets/img/homepage/projects-images/My-First-App.jpg',
           gh_url: 'https://github.com/khq1/My-First-App',
           gh_pages_url: 'https://khq1.github.io/My-First-App/',
-          description: '',
+          description:
+            'Angular Material App, that utilizes mat-autocomplete, sort and filter results with Http service and Angular Router. Which of these  cuties you pick for a late night cruise?',
         },
         {
           title: 'Responsive Gallery ',
           cols: 1,
           rows: 1,
-          subtitle: 'Balanced App',
+          subtitle: 'Answered my question: Can I code what I want?',
           img_url: 'assets/img/homepage/projects-images/Gallery.jpg',
           gh_url: 'https://khq1.github.io/Gallery/',
           gh_pages_url: 'https://khq1.github.io/Gallery/',
           description:
-            'Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module',
+            "My first steps in html,css and js to create flex gallery, project is unfinished and glitchy, it's just a placeholder to populate projects section",
         },
         {
           title: 'FutureGreenTech',
@@ -128,7 +131,7 @@ export class ProjectsGridComponent {
           gh_url: 'https://github.com/khq1/FutureGreenTech',
           gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
           description:
-            "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world —Denholm Reynholm, seconds before committing suicide ",
+            "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm,  IT Crowd",
         },
       ];
 
