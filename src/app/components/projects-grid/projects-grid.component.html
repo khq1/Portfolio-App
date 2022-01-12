@@ -1,19 +1,21 @@
 <div class="grid-container">
     <mat-grid-list cols="2" rowHeight="360px">
-    <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.cols"  
+    <mat-grid-tile #tooltip="matTooltip" [matTooltip]="card.title" class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.cols"  
 [rowspan]="card.rows" [title]="card.title" subtitle="card.subtitle" img_url="card.img_url" gh_url="card.gh_url" gh_pages_url="card.gh_pages_url" description="card.description">
       <mat-card tabindex="0" class="dashboard-card">
         <mat-card-header>
           <mat-card-title class="card-title">
             {{card.title}}
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+            <button mat-icon-button class="more-button" #tooltip="matTooltip" matTooltip="more"  [matMenuTriggerFor]="menu" aria-label="Toggle menu">
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>More</button>
+              <button mat-menu-item #tooltip="matTooltip" matTooltip="Explore my projects">More</button>
               
-              <a mat-menu-item href="{{card.gh_url}}" target="_blank">Github</a>
-              <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank">Visit</a>
+              <a mat-menu-item href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
+                matTooltip="Explore my projects">Github</a>
+              <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
+                matTooltip="Explore my projects">Visit</a>
             </mat-menu>
           </mat-card-title>
         </mat-card-header>

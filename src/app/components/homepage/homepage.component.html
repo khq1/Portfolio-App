@@ -10,13 +10,13 @@
     <section>
       <div class="docs-header-button-group">
 
-        <button mat-raised-button routerLinkActive="active" (click)="buttonClick('bio')">Bio</button>
-        <button mat-raised-button color="primary" routerLinkActive="active"
+        <button mat-raised-button #tooltip="matTooltip" matTooltip="Read my bio" routerLinkActive="active" (click)="buttonClick('bio')">Bio</button>
+        <button mat-raised-button color="primary" #tooltip="matTooltip" matTooltip="Explore my projects" routerLinkActive="active"
           (click)="buttonClick('projects')">Projects</button>
-        <button mat-raised-button color="warn" routerLinkActive="active" (click)="buttonClick('about')">About
+        <button mat-raised-button color="warn" matTooltip="Info about me" routerLinkActive="active" (click)="buttonClick('about')">About
           me</button>
         <button mat-raised-button color="accent" routerLinkActive="active"
-          (click)="buttonClick('contact')">Contact</button>
+          (click)="buttonClick('contact')"  #tooltip="matTooltip" matTooltip="Contact me" >Contact</button>
       </div>
     </section>
     
