@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { MessageService } from 'src/app/message.service';
-import { Placeholder } from '@angular/compiler/src/i18n/i18n_ast';
+
 
 @Component({
   selector: 'app-projects-grid',
@@ -10,8 +10,8 @@ import { Placeholder } from '@angular/compiler/src/i18n/i18n_ast';
   styleUrls: ['./projects-grid.component.scss'],
 })
 export class ProjectsGridComponent {
+  panelOpenState = false;
 
- 
   /** Based on the screen size, switch from standard to one column per row */
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
@@ -50,7 +50,7 @@ export class ProjectsGridComponent {
             gh_url: 'https://github.com/khq1/My-First-App',
             gh_pages_url: 'https://khq1.github.io/My-First-App/',
             description:
-              'Angular Material App, that utilizes mat-autocomplete, sort and filter results with Http service and Angular Router. Which of these  cuties you pick for a late night cruise?',
+              'Angular Material App that utilizes mat-autocomplete, sort and filter results with HttpService and Angular Router. Which of these cars would you pick for a late night cruise?',
           },
           {
             title: 'Responsive Gallery ',
@@ -115,7 +115,7 @@ export class ProjectsGridComponent {
           title: 'Responsive Gallery ',
           cols: 1,
           rows: 1,
-          subtitle: 'Answered my question: Can I code what I want?',
+          subtitle: 'Sandbox project, that ',
           img_url: 'assets/img/homepage/projects-images/Gallery.jpg',
           gh_url: 'https://khq1.github.io/Gallery/',
           gh_pages_url: 'https://khq1.github.io/Gallery/',
@@ -126,7 +126,7 @@ export class ProjectsGridComponent {
           title: 'FutureGreenTech',
           cols: 1,
           rows: 1,
-          subtitle: 'Visions For A Sustainable Future.',
+          subtitle: 'WebSite project.',
           img_url: 'assets/img/homepage/projects-images/FutureGreenTech.jpg',
           gh_url: 'https://github.com/khq1/FutureGreenTech',
           gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
@@ -134,14 +134,14 @@ export class ProjectsGridComponent {
             "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm,  IT Crowd",
         },
       ];
-
     })
   );
 
-  constructor(private breakpointObserver: BreakpointObserver, private messageService: MessageService) { }
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private messageService: MessageService
+  ) {}
   ngOnInit() {
-
-    this.messageService.add("Projects: OK");
-
+    this.messageService.add('Projects: OK');
   }
 }

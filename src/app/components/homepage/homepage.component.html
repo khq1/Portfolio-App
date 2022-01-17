@@ -10,18 +10,20 @@
     <section>
       <div class="docs-header-button-group">
 
-        <button mat-raised-button #tooltip="matTooltip" matTooltip="Read my bio" routerLinkActive="active" (click)="buttonClick('bio')">Bio</button>
-        <button mat-raised-button color="primary" #tooltip="matTooltip" matTooltip="Explore my projects" routerLinkActive="active"
-          (click)="buttonClick('projects')">Projects</button>
-        <button mat-raised-button color="warn" matTooltip="Info about me" routerLinkActive="active" (click)="buttonClick('about')">About
+        <button mat-raised-button #tooltip="matTooltip" matTooltip="Read my bio" routerLinkActive="active"
+          (click)="buttonClick('bio')">Bio</button>
+        <button mat-raised-button color="primary" #tooltip="matTooltip" matTooltip="Explore my projects"
+          routerLinkActive="active" (click)="buttonClick('projects')">Projects</button>
+        <button mat-raised-button color="warn" matTooltip="Info about me" routerLinkActive="active"
+          (click)="buttonClick('about')">About
           me</button>
-        <button mat-raised-button color="accent" routerLinkActive="active"
-          (click)="buttonClick('contact')"  #tooltip="matTooltip" matTooltip="Contact me" >Contact</button>
+        <button mat-raised-button color="accent" routerLinkActive="active" (click)="buttonClick('contact')"
+          #tooltip="matTooltip" matTooltip="Contact me">Contact</button>
       </div>
     </section>
-    
+
   </header>
-<hr  mat-divider>
+  <hr mat-divider>
   <div id="bio" class="homepage-tile">
     <h1>Bio</h1>
     <button mat-button (click)="english = !english" matTooltip="Toggle language ( EN | PL )" #tooltip="matTooltip"
@@ -45,7 +47,7 @@
               I'm a self-thought programmer, coding since July 2020
             </li>
             <li>
-              HTML, CSS, JavaScript, TypeScript, Angular
+              HTML, CSS, JavaScript, TypeScript, Angular Material,
             </li>
             <li>
               English B2/C1
@@ -54,8 +56,8 @@
               MSc in Geology
             </li>
             <li>
-              8 year professional experience in resource exploration / mining /
-              drilling / environment / energy
+              8 years of professional experience in resource prospecting and exploration projects / mining / drilling /
+              environment / energy
             </li>
             <li>
               I'm currently looking to remotely join frontend / full-stack team
@@ -66,9 +68,67 @@
 
       <mat-tab label="Professional">
         <div class="mat-tab">
-          <h1>Professional Info</h1><br>
-
-
+          <h1>
+            Transport
+          </h1>
+          <h2>
+            Driver
+          </h2>
+          <p>2017 - 2021, Wrocław</p>
+          <ul>
+            <li>
+              VIP transport - cooperation with hotels etc.
+            </li>
+          </ul>
+          <h1>
+            PGE EJ 1 - First Nuclear Power Plant
+          </h1>
+          <h2>
+            Engineering Specialist
+          </h2>
+          <p>2016 - 2018 Pomerania, Poland</p>
+          <ul>
+            <li>
+              Hydro-geological monitoring
+            </li>
+            <li>
+              Drill site supervising
+            </li>
+            <li>
+              Quality assurance in sampling and logistics
+            </li>
+            <li>
+              Reporting
+            </li>
+          </ul>
+          <h1>
+            Research and Development Center Wrocław
+          </h1>
+          <h2>
+            Engineering Specialist - Exploration Geologist</h2>
+          <p>
+            2010 - 2016 Wrocław, Poland
+          </p>
+          <ul>
+            <li>
+              Database management
+            </li>
+            <li>
+              Maps and other graphics
+            </li>
+            <li>
+              Writing documentation
+            </li>
+            <li>
+              Resource estimation:copper, silver, nickel, coal
+            </li>
+            <li>
+              Investor representation, drill site supervising
+            </li>
+            <li>
+              Quality assurance, data logging, core sampling, logistics
+            </li>
+          </ul>
         </div>
       </mat-tab>
 
@@ -112,14 +172,74 @@
               górnictwa / wiertnictwa / ochrony środowiska / energetyki
             </li>
             <li>
-              Obecnie chcę zdalnie dołączyć do zespołu frontend / full-stack
+              Obecnie chcę dołączyć zdalnie do zespołu frontend / full-stack
             </li>
           </ul>
         </mat-tab>
 
         <mat-tab label="Zawodowo">
           <div class="mat-tab">
-
+<h1>
+  Transport
+</h1>
+<h2>
+  Kierowca
+</h2>
+<p>2017 - 2021, Wrocław</p>
+<ul>
+  <li>
+    transport VIP - współpraca z hotelami itp.
+  </li>
+</ul>
+<h1>
+  PGE EJ 1 - Pierwsza Elektrownia Jądrowa
+</h1>
+<h2>
+  Specjalista ds. Inżynierii
+</h2>
+<p>2016 - 2018 Pomorze, Polska</p>
+<ul>
+  <li>
+    Monitoring hydrogeologiczny
+  </li>
+  <li>
+    Nadzór nad miejscem wiercenia
+  </li>
+  <li>
+    Zapewnienie jakości w pobieraniu próbek i logistyce
+  </li>
+  <li>
+    Raportowanie
+  </li>
+</ul>
+<h1>
+  Centrum Badawczo-Rozwojowe Wrocław
+</h1>
+<h2>
+  Specjalista ds. Inżynierii - Geolog Poszukiwań</h2>
+<p>
+  2010 - 2016 Wrocław, Polska
+</p>
+<ul>
+  <li>
+    Zarządzania bazami danych
+  </li>
+  <li>
+    Mapy i inne grafiki
+  </li>
+  <li>
+    Pisanie dokumentacji
+  </li>
+  <li>
+    Szacowanie zasobów: miedź, srebro, nikiel, węgiel
+  </li>
+  <li>
+    Reprezentacja inwestora, nadzór nad budową wiertni
+  </li>
+  <li>
+    Zapewnienie jakości, rejestracja danych, pobieranie próbek podstawowych, logistyka
+  </li>
+</ul>
 
           </div>
         </mat-tab>
@@ -139,12 +259,12 @@
     <h1>Projects</h1>
     <app-projects-grid></app-projects-grid>
   </div>
-<hr   mat-divider >
+  <hr mat-divider>
   <div id="about" class="homepage-tile">
     <h1>About me</h1>
     <app-ngb-carusel></app-ngb-carusel>
   </div>
-<hr  mat-divider>
+  <hr mat-divider>
   <div id="contact" class="homepage-tile">
     <h1>Contact me</h1>
 

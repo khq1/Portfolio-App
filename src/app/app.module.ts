@@ -23,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import {MatDialogModule} from '@angular/material/dialog';
-import { MessagesComponent } from './components/hero/messages/messages.component';
+import { MessagesComponent } from './components/messages/messages.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
