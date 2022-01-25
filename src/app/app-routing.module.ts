@@ -8,7 +8,7 @@ import { ProjectsGridComponent } from './components/projects-grid/projects-grid.
 const routes: Routes = [
   { path: 'Homepage', component: HomepageComponent },
   { path: '', redirectTo: 'Homepage', pathMatch: 'full' },
-    { path: 'projects', component: ProjectsGridComponent },
+    { path: 'Projects', component: ProjectsGridComponent },
 
   
   { path: '**', redirectTo: 'Homepage' }, // Wildcard route for a 404 page

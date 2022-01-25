@@ -18,7 +18,7 @@ import {
 
   providers: [NgbCarouselConfig], // add NgbCarouselConfig to the component providers
 })
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class NgbCaruselComponent {
   panelOpenState = false;
   showNavigationArrows = true;
@@ -27,7 +27,7 @@ export class NgbCaruselComponent {
   pauseOnIndicator = false;
   pauseOnHover = false;
   pauseOnFocus = false;
-  paused = true;
+  paused = false;
   icon = '';
   @Input()
   interval: FormControl = new FormControl(5000);
@@ -35,7 +35,7 @@ export class NgbCaruselComponent {
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
 
-  togglePaused() {
+ togglePaused() {
     if (this.paused) {
       this.carousel.cycle();
     } else {
@@ -61,7 +61,7 @@ export class NgbCaruselComponent {
       this.togglePaused();
     }
   }
-  selectedHero?: Slide;
+
   slides: Slide[] = [];
 
   constructor(

@@ -1,6 +1,6 @@
 <div class="grid-container">
   <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows"
+    <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.colspan" [rowspan]="card.rowspan"
       [title]="card.title" subtitle="card.subtitle" img_url="card.img_url" gh_url="card.gh_url"
       gh_pages_url="card.gh_pages_url" description="card.description">
       <mat-card tabindex="0" class="dashboard-card" #tooltip="matTooltip" matTooltip=" {{card.title}} project card">
@@ -12,6 +12,11 @@
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
+                      <button mat-menu-item (click)="OnExpand()" class="toggle_expand_button">Expand</button>
+              <button mat-menu-item (click)="toggleExpanded()" class="toggle_expand_button">
+                {{expanded ? 'Expand' : 'Collapse'}}
+                
+              </button>
               <button mat-menu-item #tooltip="matTooltip"
                 matTooltip="Read more about {{card.title}} project">More</button>
 

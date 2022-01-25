@@ -16,7 +16,7 @@
     </mat-toolbar>
     <mat-nav-list class="menu-list-item">
       <a mat-list-item class="menu-item" #tooltip="matTooltip" matTooltip="Welcome header" routerLinkActive="active"
-        (click)="buttonClick('jan')" aria-tooltip="Welcome header">
+        (click)="buttonClick('welcome')" aria-tooltip="Welcome header">
         <mat-icon>face</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
       </a>
 
@@ -54,10 +54,11 @@
       #tooltip="matTooltip" (mousemove)="show = false" (click)="showAllTooltips()">
       Show / Hide all tooltips
     </button>
+    <app-file-tree></app-file-tree>>
 </div>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar id="jan" color="primary">
+    <mat-toolbar id="welcome" color="primary">
       <button matTooltip="Toggle sidenav menu" #tooltip="matTooltip" type="button" aria-label="Toggle sidenav menu"
         mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>

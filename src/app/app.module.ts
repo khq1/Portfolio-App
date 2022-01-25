@@ -42,6 +42,8 @@ import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.com
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
+import { FileTreeComponent } from './components/file-tree/file-tree.component';
+import { MatTreeModule } from '@angular/material/tree';
 
 
 @NgModule({
@@ -56,6 +58,7 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
     ThemeSwitchComponent,
     UserLoginComponent,
     SafeHtmlPipe,
+    FileTreeComponent
   ],
   imports: [
     BrowserModule,
@@ -87,8 +90,9 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
     MatGridListModule,
     MatMenuModule,
     MatAutocompleteModule,
+    MatTreeModule,
   ],
-  providers: [NgbCarouselConfig, StyleManagerService, ThemeService],
+  providers: [SafeHtmlPipe, NgbCarouselConfig, StyleManagerService, ThemeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

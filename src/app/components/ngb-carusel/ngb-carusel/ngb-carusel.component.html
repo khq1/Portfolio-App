@@ -37,12 +37,11 @@
 
     <div class="button-group-panel" aria-label="Carousel toggle controls">
 
-            <mat-form-field appearance="legacy" class="mat-elevation-z2 form-center" floatLabel="always">
+            <mat-form-field class="mat-elevation-z2 form-center" floatLabel="always">
                 <mat-label>1 second = 1000 ms</mat-label>
                 <input matInput type="number"  [formControl]="interval" class="interval-right-align"
                     placeholder={{interval.value}}>
-                <span matPrefix>Interval</span>
-                <span matSuffix>miliseconds</span>
+                
             </mat-form-field>
 
                     <button mat-raised-button aria-label="Toggle navigation arrows" (click)="showNavigationArrows = !showNavigationArrows">
