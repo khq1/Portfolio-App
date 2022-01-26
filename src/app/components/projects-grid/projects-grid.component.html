@@ -1,10 +1,19 @@
-<div class="grid-container">
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.colspan" [rowspan]="card.rowspan"
+<div cdkDropListGroup  class="grid-container">
+  <mat-grid-list cdkDropList
+    [cdkDropListEnterPredicate]="dropListEnterPredicate"
+    (cdkDropListDropped)="dropListDropped()" cols="2" rowHeight="350px">
+    <mat-grid-tile cdkDropList class="grid-tile" *ngFor="let card of cards | async" [cdkDropListEnterPredicate]="dropListEnterPredicate"
+    (cdkDropListDropped)="dropListDropped()" [colspan]="card.colspan" [rowspan]="card.rowspan"
       [title]="card.title" subtitle="card.subtitle" img_url="card.img_url" gh_url="card.gh_url"
       gh_pages_url="card.gh_pages_url" description="card.description">
-      <mat-card tabindex="0" class="dashboard-card" #tooltip="matTooltip" matTooltip=" {{card.title}} project card">
-        <mat-card-header>
+      <div mat-card cdkDrag
+      class="example-box"
+      (cdkDragMoved)="dragMoved($event)"
+      (click)="onClick($event)" tabindex="0" class="dashboard-card"  #tooltip="matTooltip" matTooltip=" {{card.title}} project card"
+      >
+        <mat-card-header>{{card}}
+        
+        
           <mat-card-title class="card-title">
             {{card.title}}
             <button mat-icon-button class="more-button" #tooltip="matTooltip" matTooltip="more"
@@ -12,17 +21,17 @@
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
-                      <button mat-menu-item (click)="OnExpand()" class="toggle_expand_button">Expand</button>
-              <button mat-menu-item (click)="toggleExpanded()" class="toggle_expand_button">
+                      <button mat-menu-card (click)="OnExpand()" class="toggle_expand_button">Expand</button>
+              <button mat-menu-card (click)="toggleExpanded()" class="toggle_expand_button">
                 {{expanded ? 'Expand' : 'Collapse'}}
                 
               </button>
-              <button mat-menu-item #tooltip="matTooltip"
+              <button mat-menu-card #tooltip="matTooltip"
                 matTooltip="Read more about {{card.title}} project">More</button>
 
-              <a mat-menu-item href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
+              <a mat-menu-card href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
                 matTooltip="Github page">Github</a>
-              <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
+              <a mat-menu-card href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
                 matTooltip="Visit project website">Visit</a>
             </mat-menu>
           </mat-card-title>
@@ -33,9 +42,8 @@
           <div class="card-description">{{card.description}}</div>
           <mat-card-actions class="button-group">
           </mat-card-actions>
-
         </mat-card-content>
-      </mat-card>
+      </div>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

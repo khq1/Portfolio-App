@@ -12,6 +12,7 @@ import { MessageService } from "src/app/message.service";
 import { MatBadgeModule } from '@angular/material/badge';
 import { UpperCasePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
+import { UserLoginComponent } from '../components/user-login/user-login.component';
 
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
