@@ -20,9 +20,7 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit() {}
 
-  CopiedMsg() {
-    this.messageService.add(`E-mail copied to Clipboard`);
-  }
+ 
   public buttonClick(fragment: string): void {
     this.router.navigate(['/Homepage']).then(() => {
       window.location.hash = fragment;

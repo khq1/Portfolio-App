@@ -44,6 +44,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { MatTreeModule } from '@angular/material/tree';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { MatTreeModule } from '@angular/material/tree';
     ThemeSwitchComponent,
     UserLoginComponent,
     SafeHtmlPipe,
-    FileTreeComponent
+    FileTreeComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

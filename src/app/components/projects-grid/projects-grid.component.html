@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <mat-grid-list cols="2" rowHeight="350px">
+  <mat-grid-list cols="2" rowHeight="400px">
     <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.colspan"
       [rowspan]="card.rowspan" [title]="card.title" subtitle="card.subtitle" img_url="card.img_url" gh_url="card.gh_url"
       gh_pages_url="card.gh_pages_url" description="card.description">
