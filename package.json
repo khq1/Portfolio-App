@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "typedoc": "typedoc --mode modules -module commonjs --exclude **/*.spec.ts --out docs/typedoc src/app"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +48,7 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typedoc": "^0.22.11",
+    "typedoc-ngx-theme": "^0.0.1",
     "typescript": "~4.4.4"
   }
 }

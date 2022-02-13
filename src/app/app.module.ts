@@ -60,7 +60,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
     UserLoginComponent,
     SafeHtmlPipe,
     FileTreeComponent,
-    ContactPageComponent
+    ContactPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -93,8 +93,14 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
     MatMenuModule,
     MatAutocompleteModule,
     MatTreeModule,
+
   ],
-  providers: [SafeHtmlPipe, NgbCarouselConfig, StyleManagerService, ThemeService],
+  providers: [
+    SafeHtmlPipe,
+    NgbCarouselConfig,
+    StyleManagerService,
+    ThemeService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
