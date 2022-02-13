@@ -41,7 +41,7 @@ import { ThemeService } from './theme.service';
 import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.component';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { SafeHtmlPipe } from './pipes/safe-html.pipe';
+
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
@@ -58,7 +58,6 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
     ProjectsGridComponent,
     ThemeSwitchComponent,
     UserLoginComponent,
-    SafeHtmlPipe,
     FileTreeComponent,
     ContactPageComponent,
   ],
@@ -96,7 +95,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 
   ],
   providers: [
-    SafeHtmlPipe,
+    
     NgbCarouselConfig,
     StyleManagerService,
     ThemeService,
