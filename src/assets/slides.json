@@ -3,14 +3,14 @@
         "id": "1",
         "title": "My Coding Experience:",
         "image_url": "assets/img/homepage/carusel-images/i1.jpg",
-        "description": "\u2022 Coding since June 2020 Front-end route:\n\u2022  HTML, CSS, JavaScript, TypeScript, Angular \n\u2022 Self-taught \n\u2022 Enthusiastic learner, aspiring for Fullstack developer position",
+        "description": "Coding since June 2020 Front-end route:\n\u2022  HTML, CSS, JavaScript, TypeScript, Angular \n\u2022 Self-taught \n\u2022 Enthusiastic learner, aspiring for Fullstack developer position",
         "img_alt": "Image by birgl from Pixabay"
     },
     {
         "id": "2",
         "title": "Graduation",
         "image_url": "assets/img/homepage/carusel-images/i2.jpg",
-        "description": "\n\u2022 Geology - master's degree at the University\n\u2022 Specialization: Geochemistry",
+        "description": "Geology - master's degree at the University\n\u2022 Specialization: Geochemistry",
         "img_alt": "Image by McElspeth from Pixabay"
     },
     {
@@ -24,35 +24,35 @@
         "id": "4",
         "title": "Projects and documentations",
         "image_url": "assets/img/homepage/carusel-images/i4.jpg",
-        "description": "\n\u2022 Exploration projects and resource documentations\n\u2022 Creaing documentation chapters, e.g. administration, geology, mineralization characteristics, chronostratigraphy, tectonics.\n\u2022 Tasks from investor relations to approval of documentation by the Ministry of the Environment \n\u2022 Cooperation on drilling projects in Poland and Germany",
+        "description": "Exploration projects and resource documentations\n\u2022 Creaing documentation chapters, e.g. administration, geology, mineralization characteristics, chronostratigraphy, tectonics.\n\u2022 Tasks from investor relations to approval of documentation by the Ministry of the Environment \n\u2022 Cooperation on drilling projects in Poland and Germany",
         "img_alt": "Image by György Károly Tóth from Pixabay"
     },
     {
         "id": "5",
         "title": "Drilling:",
         "image_url": "assets/img/homepage/carusel-images/i5.jpg",
-        "description": "\n\u2022 Representation of the investor on the premises of the geological and drilling works \n\u2022 Supervision and reporting of drilling works\n\u2022 Consulting and expertise in the field of core drilling \n\u2022 Management of data, drill cores, samples of water, ore and gas, documents",
+        "description": "Representation of the investor on the premises of the geological and drilling works \n\u2022 Supervision and reporting of drilling works\n\u2022 Consulting and expertise in the field of core drilling \n\u2022 Management of data, drill cores, samples of water, ore and gas, documents",
         "img_alt": "Image by Terry McGraw from Pixabay"
     },
     {
         "id": "6",
         "title": "First Nuclear Power Plant in Poland Project:",
         "image_url": "assets/img/homepage/carusel-images/i6.jpg",
-        "description": "\n\u2022 Supervisor of the hydrological drilling rigs\n\u2022 Quality assurance in soil, rock, fluid, cores and logistics\n\u2022 Hydrogeological mesurements and monitoring \n\u2022 Periodic, formal raports",
+        "description": "Supervisor of the hydrological drilling rigs\n\u2022 Quality assurance in soil, rock, fluid, cores and logistics\n\u2022 Hydrogeological mesurements and monitoring \n\u2022 Periodic, formal raports",
         "img_alt": "Image by Markus Distelrath from Pixabay"
     },
     {
         "id": "7",
         "title": "Chauffeuring services:",
         "image_url": "assets/img/homepage/carusel-images/i7.jpg",
-        "description": "\n\u2022 VIP transport in cooperation with major companies and hotels located in Wrocław \n\u2022 Ensure promptness, safety and comfort",
+        "description": "VIP transport in cooperation with major companies and hotels located in Wrocław \n\u2022 Ensure promptness, safety and comfort",
         "img_alt": "Image by Free-Photos from Pixabay"
     },
     {
         "id": "8",
         "title": "Profesional goals:",
         "image_url": "assets/img/homepage/carusel-images/i8.jpg",
-        "description": "\n\u2022 Get a contract of employment as a developer \n\u2022 Join international development team, grow to create value by gaining competence \n\u2022 Become Full Stack Developer",
+        "description": "Get a contract of employment as a developer \n\u2022 Join international development team, grow to create value by gaining competence \n\u2022 Become Full Stack Developer",
         "img_alt": "Image by borozdor from Pixabay"
     }
 ]

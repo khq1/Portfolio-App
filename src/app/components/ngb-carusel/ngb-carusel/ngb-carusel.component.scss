@@ -1,7 +1,7 @@
 .img-wrapper {
-  width:84vw; //adapt angular good practices
-  height:74vh;
-  
+  width: 84vw; //adapt angular good practices
+  height: 74vh;
+
   margin: auto auto;
 }
 .img_slide {
@@ -13,39 +13,20 @@
 
 .carousel-caption {
   white-space: pre-line; // \n\u2022 work properly in TS
-  text-align: left;
- 
- background-color: black;
+  padding: 0px 5px;
+  
+  color: white;
+mix-blend-mode: difference;
+
   position: absolute;
- 
+  transform: translateY(0%);
   height: auto;
-  max-height:60vh;
-  text-shadow: 1px 1px 1px black;
-  color: #fff;
+  text-align: left;
+  // text-shadow: 1px 1px 1px black;
   display: inline;
-  padding: 0px;
 
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-
-  h1 {
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 1em;
-    margin: 15px 5px;
-  }
-  h2 {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5em;
-    margin: 15px 0 25px 0;
-  }
-  h3 {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 15px 0 25px 0;
-  }
 }
 .button-group {
   display: flex;
@@ -53,7 +34,7 @@
   column-gap: 1em;
   row-gap: 1em;
   align-content: center;
-  justify-content: space-around;  
+  justify-content: space-around;
   max-width: 100%;
 }
 .cycle_pause_button {
@@ -61,7 +42,7 @@
   min-width: max-content;
 }
 .slide-controls-panel {
-  width:inherit;
+  width: inherit;
 }
 
 .button-group-panel {
@@ -70,16 +51,15 @@
   flex-flow: row wrap;
   row-gap: 1em;
   column-gap: 1em;
- align-content: center;
+  align-content: center;
   justify-content: space-around;
   @media (min-width: 800px) {
     max-width: 50vw;
   }
   .interval-right-align {
     text-align: center;
-    
+
     font-weight: 600;
-    
   }
 
   input.interval-right-align::-webkit-outer-spin-button,
