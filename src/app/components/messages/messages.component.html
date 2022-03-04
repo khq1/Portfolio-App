@@ -5,8 +5,9 @@
 
 <div *ngIf="!ToggleMessages" class="container">
  <h1>Messages:</h1>
+
   <h2>
-    Hi,{{title}} {{ name }} from {{country}}</h2>
+    Hi,{{firstName}} {{lastName}} from {{city}}</h2>
 
 
   <div *ngFor="let message of messageService.messages">

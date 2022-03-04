@@ -182,7 +182,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/homepage/homepage.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/homepage/homepage.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -263,14 +263,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="24"
-                            class="link-to-prism">src/app/components/homepage/homepage.component.ts:24</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/components/homepage/homepage.component.ts:23</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Navigate Router to Homepage with fragment ID <a href="https://marked.js.org/">Markdown</a></p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -332,8 +334,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="21"
-                            class="link-to-prism">src/app/components/homepage/homepage.component.ts:21</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/components/homepage/homepage.component.ts:19</a></div>
                 </td>
             </tr>
 
@@ -373,10 +375,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/homepage/homepage.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/homepage/homepage.component.ts:16</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Language toogle boolean - BIO section <a href="https://marked.js.org/">Markdown</a></p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -398,20 +406,20 @@ import { MessageService } from &#x27;src/app/message.service&#x27;;
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class HomepageComponent implements OnInit {
- 
- 
+  /**
+   * Language toogle boolean - BIO section [Markdown](https://marked.js.org/)
+   */
   english &#x3D; true;
-  constructor(
-    private router: Router,  
-    private messageService: MessageService
-  ) {}
+  constructor(private router: Router, private messageService: MessageService) {}
 
   ngOnInit() {}
-
- 
+  /**
+   * Navigate Router to Homepage with fragment ID [Markdown](https://marked.js.org/)
+   */
   public buttonClick(fragment: string): void {
     this.router.navigate([&#x27;/Homepage&#x27;]).then(() &#x3D;&gt; {
       window.location.hash &#x3D; fragment;
+
       this.messageService.add(&#x27;Navigating to &#x27; + fragment);
     });
   }

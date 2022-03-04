@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 import { Observable } from 'rxjs';
@@ -13,6 +13,7 @@ import { MatInput } from '@angular/material/input';
 import { FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { FormArray } from '@angular/forms';
+
 
 export interface User {
 
@@ -42,7 +43,7 @@ export class UserLoginComponent {
   get aliases() {
     return this.profileForm.get('aliases') as FormArray;
   }
-
+  /*
   titleForm = new FormControl();
   countryForm = new FormControl();
   loginForm = new FormControl();
@@ -62,9 +63,9 @@ export class UserLoginComponent {
   dialogRef: any;
 
   countries: Country[] = [];
-
+*/
   OnInit(): void {}
-
+  /*
   displayFn(user: User): string {
     return user && user.title ? user.title : '';
   }
@@ -72,6 +73,8 @@ export class UserLoginComponent {
   onNoClick(): void {
     this.dialogRef.close();
   }
+*/
+
 
   constructor(
     private fb: FormBuilder,
@@ -79,7 +82,7 @@ export class UserLoginComponent {
     private countriesService: CountriesService,
     private messageService: MessageService
   ) {}
-
+/*
   ngOnInit() {
     this.getCountries();
     this.messageService.add(`Countries: OK`);
@@ -118,6 +121,7 @@ export class UserLoginComponent {
       option.title.toLowerCase().includes(filterValue)
     );
   }
+*/
 
   updateProfile() {
     this.profileForm.patchValue({
@@ -139,8 +143,8 @@ export class UserLoginComponent {
     */
   onSubmit() {
     // TODO: Use EventEmitter with form value
+    
     console.warn(this.profileForm.value);
     this.messageService.add(this.profileForm.value);
   }
 }
-

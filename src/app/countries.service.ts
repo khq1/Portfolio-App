@@ -7,11 +7,12 @@ import { Country } from "./country";
   providedIn: 'root',
 })
 export class CountriesService {
-  constructor(
-    private http: HttpClient,
-    
-  ) {}
+  constructor(private http: HttpClient) {}
+  /**
+   * This comment CCCCSSSSAAA_supports_ [Markdown](https://marked.js.org/)
+   */
 
+  
   getCountries(): Observable<Array<Country>> {
     return this.http.get<Array<Country>>('assets/country-by-flag.json');
   }

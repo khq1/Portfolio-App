@@ -10,9 +10,10 @@ import { Injectable } from '@angular/core';
 })
 @Injectable({ providedIn: 'root' })
 export class MessagesComponent implements OnInit {
-  title = 'string';
-  name = 'string';
-  country = 'string';
+  firstName = '';
+  lastName = '';
+  city = '';
+
  
   ToggleMessages = true;
 

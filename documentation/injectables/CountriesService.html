@@ -167,14 +167,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="15"
-                            class="link-to-prism">src/app/countries.service.ts:15</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app/countries.service.ts:16</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>This comment CCCCSSSSAAA_supports_ <a href="https://marked.js.org/">Markdown</a></p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="../interfaces/Country.html" target="_self" >Observable&lt;Array&lt;Country&gt;&gt;</a></code>
@@ -199,11 +201,12 @@ import { Country } from &quot;./country&quot;;
   providedIn: &#x27;root&#x27;,
 })
 export class CountriesService {
-  constructor(
-    private http: HttpClient,
-    
-  ) {}
+  constructor(private http: HttpClient) {}
+  /**
+   * This comment CCCCSSSSAAA_supports_ [Markdown](https://marked.js.org/)
+   */
 
+  
   getCountries(): Observable&lt;Array&lt;Country&gt;&gt; {
     return this.http.get&lt;Array&lt;Country&gt;&gt;(&#x27;assets/country-by-flag.json&#x27;);
   }

@@ -16,7 +16,7 @@ import { UserLoginComponent } from '../components/user-login/user-login.componen
 
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
-  showDelay: 800,
+  showDelay: 500,
   hideDelay: 100,
   touchendHideDelay: 200,
   position: 'right',
@@ -73,7 +73,7 @@ export class MenuComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.themeService.setTheme('dark');
+    this.themeService.setTheme('light');
     this.messageService.add('Theme switch: OK');
   }
 openUserLogin() {
