@@ -46,6 +46,11 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { PortfolioComponent } from './components/project-pages/portfolio/portfolio.component';
+import { NordschleifeComponent } from './components/project-pages/nordschleife/nordschleife.component';
+import { FutureGreenTechComponent } from './components/project-pages/future-green-tech/future-green-tech.component';
+import { QuoPicComponent } from './components/project-pages/quo-pic/quo-pic.component';
+import { RespGalleryComponent } from './components/project-pages/resp-gallery/resp-gallery.component';
 
 
 @NgModule({
@@ -61,6 +66,11 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
     UserLoginComponent,
     FileTreeComponent,
     ContactPageComponent,
+    PortfolioComponent,
+    NordschleifeComponent,
+    FutureGreenTechComponent,
+    QuoPicComponent,
+    RespGalleryComponent,
   ],
   imports: [
     BrowserModule,
