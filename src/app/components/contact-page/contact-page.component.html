@@ -1,16 +1,13 @@
-<div >
+<div  class="contact-clipboard" >
 
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Leave a comment</mat-label>
-    <textarea matInput placeholder="yeah... write something"></textarea>
-  </mat-form-field>
+  
 
-  <h2>Copy my mail</h2>
+  <h2>Send me an email</h2>
   <h3>
-    <div class="contact-clipboard">
-      My Mail
-      <button mat-button cdkCopyToClipboard="ThisIsMyMail@mmail.com" (click)="CopiedMsg()">
+    <div><a href="mailto:panjanwarzecha@gmail.com">panjanwarzecha@gmail.com</a>
+      
+      <button mat-button cdkCopyToClipboard="panjanwarzecha@gmail.com" (click)="CopiedMsg()">
         <mat-icon>content_copy</mat-icon>Copy to clipboard
       </button>
     </div>

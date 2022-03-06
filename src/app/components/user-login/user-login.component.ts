@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit } from '@angular/core';
+import { Component,Output, EventEmitter, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 import { Observable } from 'rxjs';
@@ -75,14 +75,13 @@ export class UserLoginComponent {
   }
 */
 
-
   constructor(
     private fb: FormBuilder,
     public dialog: MatDialog,
     private countriesService: CountriesService,
     private messageService: MessageService
   ) {}
-/*
+  /*
   ngOnInit() {
     this.getCountries();
     this.messageService.add(`Countries: OK`);
@@ -143,8 +142,8 @@ export class UserLoginComponent {
     */
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    
-    console.warn(this.profileForm.value);
+
+    console.log(this.profileForm.value);
     this.messageService.add(this.profileForm.value);
   }
 }
