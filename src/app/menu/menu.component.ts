@@ -9,8 +9,6 @@ import { MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions } from '@angular/
 import { Option } from ".././option.model";
 import { ThemeService } from ".././theme.service";
 import { MessageService } from "src/app/message.service";
-import { MatBadgeModule } from '@angular/material/badge';
-import { UpperCasePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { UserLoginComponent } from '../components/user-login/user-login.component';
 
@@ -73,12 +71,13 @@ export class MenuComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.messageService.add('Good Day, welcome to my portfolio webpage. Feel free to explore and notice ');
     this.themeService.setTheme('light');
     this.messageService.add('Theme switch: OK');
   }
 openUserLogin() {
   this.dialog.open(UserLoginComponent);
-  this.messageService.add('User Login Component Opened: OK');
+  this.messageService.add('User Login Component Open');
   }
 
 

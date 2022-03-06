@@ -7,3 +7,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-drawer-inner-container::-webkit-scrollbar {
     display: none;
 }
+mat-sidenav-content::-webkit-scrollbar {
+    display: none;
+}
+
+mat-tab-body::-webkit-scrollbar {
+    display: none;
+}
