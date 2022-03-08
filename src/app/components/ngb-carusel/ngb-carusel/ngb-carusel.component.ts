@@ -16,7 +16,7 @@ import {
   templateUrl: './ngb-carusel.component.html',
   styleUrls: ['./ngb-carusel.component.scss'],
 
-  providers: [NgbCarouselConfig], // add NgbCarouselConfig to the component providers
+  providers: [NgbCarouselConfig], 
 })
 @Injectable()
 export class NgbCaruselComponent {

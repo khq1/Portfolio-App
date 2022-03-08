@@ -1,20 +1,16 @@
-<button mat-icon-button (click)="ToggleMessageComponent()">
-  <mat-icon matBadge="12" matBadgeColor="accent" class="badge-icon favorite-icon" aria-label="Toggle Display Messages"
+<button mat-icon-button (click)="ToggleMessageComponent()" [ngClass]="['first', 'second']">
+  <mat-icon matBadge="{{ messageService.messages.length }}" matBadgeColor="accent" class="badge-icon favorite-icon" aria-label="Toggle Display Messages"
     matTooltip="Toggle Display Messages" #tooltip="matTooltip">message</mat-icon>
 </button>
-
 <div *ngIf="!ToggleMessages" class="container">
- <h1>Messages:</h1>
-
-  <h2>
-    Hi,{{firstName}} {{lastName}} from {{city}}</h2>
-
-
+ <h1>Messages:</h1> 
   <div *ngFor="let message of messageService.messages">
     <p class="message">
       {{ message }}</p>
+      
   </div>
+  
   <button mat-raised-button (click)="messageService.clear()">
-    Clear messages
+    Clear
   </button>
 </div>

@@ -10,21 +10,21 @@ import { Injectable } from '@angular/core';
 })
 @Injectable({ providedIn: 'root' })
 export class MessagesComponent implements OnInit {
-  firstName = '';
-  lastName = '';
-  city = '';
-
- 
   ToggleMessages = true;
-
+  messagesNumber: Number | undefined;
   constructor(public messageService: MessageService) {}
 
   ngOnInit() {
-    this.messageService.add('Message Service: OK');
+    this.messageService.add('AI TBIS1: Welcome HumanBeing! Let me be your guide. Repeat After me: 0101010101');
   }
 
   ToggleMessageComponent() {
     this.ToggleMessages = !this.ToggleMessages;
+    ngDoCheck('first', 'second');
   }
+}
+
+function ngDoCheck(arg0: string, arg1: string) {
+  throw new Error('Function not implemented.');
 }
 

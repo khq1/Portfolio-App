@@ -15,7 +15,7 @@ export class ProjectsGridComponent {
         this.messageService.add(`Handset Device Detected`);
         return [
           {
-            title: 'Portfolio-App',
+            title: "Jan's Code",
             colspan: 2,
             rowspan: 1,
             subtitle: "My way to learn Angular - google's frontend framework",
@@ -28,15 +28,15 @@ export class ProjectsGridComponent {
           },
 
           {
-            title: 'QuoPic',
+            title: 'Cafe and Clouds',
             colspan: 2,
             rowspan: 1,
-            subtitle: 'Cafe and Clouds',
+            subtitle: 'Inspire Yourself Daily',
             img_url: 'assets/img/homepage/projects-images/QuoPic.jpg',
             gh_url: 'https://github.com/khq1/QuoPic',
             gh_pages_url: 'https://khq1.github.io/QuoPic/',
             description:
-              'Sit back and enjoy random quotes combined with a random image, read by text to speech, build in browspaner synthesis module',
+              'Sit back and enjoy random quotes combined with a random image, TTS, build in browspaner synthesis module',
             routerLink: 'QuoPic',
           },
           {
@@ -92,15 +92,15 @@ export class ProjectsGridComponent {
           routerLink: 'Portfolio',
         },
         {
-          title: 'QuoPic',
+          title: 'Cafe and Clouds',
           colspan: 1,
           rowspan: 1,
-          subtitle: 'Cafe and Clouds',
+          subtitle: 'Inspire Yourself Daily',
           img_url: 'assets/img/homepage/projects-images/QuoPic.jpg',
           gh_url: 'https://github.com/khq1/QuoPic',
           gh_pages_url: 'https://khq1.github.io/QuoPic/',
           description:
-            'Sit back and enjoy random quotes combined with a random image, read by text to speech, build in browspaner synthesis module',
+            'Sit back and enjoy random quotes combined with a random image, TTS, build in browspaner synthesis module',
           routerLink: 'QuoPic',
         },
         {

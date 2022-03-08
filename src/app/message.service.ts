@@ -5,15 +5,14 @@ export class MessageService {
 
   messages: string[] = [];
   
-  
-
   add(message: string) {
     this.messages.push(message);
   }
-  count(_messagesNumber: Number): void {
-   this.messages.length
- }
 
+  count(_messagesNumber: Number): void {
+    this.messages.length
+  }
+  
   clear() {
     this.messages = [];
   }

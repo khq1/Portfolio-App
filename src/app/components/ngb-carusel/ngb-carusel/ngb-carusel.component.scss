@@ -1,7 +1,6 @@
 .img-wrapper {
-  width: 84vw; //adapt angular good practices
+  width: 84vw;
   height: 74vh;
-
   margin: auto auto;
 }
 .img_slide {
@@ -12,19 +11,15 @@
 }
 
 .carousel-caption {
-  white-space: pre-line; // \n\u2022 work properly in TS
-  padding: 0px 5px;
-  
-  color: white;
-mix-blend-mode: difference;
+  white-space: pre-line; 
 
+  color: white;
   position: absolute;
   transform: translateY(0%);
   height: auto;
   text-align: left;
-  // text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
   display: inline;
-
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }

@@ -1,22 +1,31 @@
 *{
-   z-index: 11
+   z-index: 11;
+}
+
+.first{
+position:sticky;
+}
+second
+{position: static;
+
 }
 .container {
   font-size: medium;
   position: fixed;
   right: 10px;
   top: 60px;
-  width: auto;
+  width: 30vw;
   height: auto;
-  max-height: 90vh;
- 
-  
+  max-height: 90vh;   
+  max-width: 30vw;
+  overflow-wrap: break-word;
+  padding:0px;
+  overflow-wrap: break-word;
 }
 
 .container h1 {
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 22px;
+  font-size: 20px;
+  font-weight: bold; 
   margin: 5px 0px;
 }
 
@@ -24,17 +33,17 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
-  margin: 0px 0 10px 0;
+  margin: 0px 0 12px 0;
 }
 .container p {
   font-size: 12px;
   font-weight: 200;
   line-height: 12px;
-  margin: 5px 0px;
+  margin: 10px 5px;
   padding: 0;
+overflow-wrap: break-word;
 }
 
 .message {
-  margin: 5px 0px;
-  
+  margin: 0px 0px;  
 }

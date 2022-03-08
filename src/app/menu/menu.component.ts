@@ -53,10 +53,9 @@ export class MenuComponent implements OnInit {
       setTimeout(() => {
         this.tooltips._results.forEach((item) => item.show());
       }, 2);
-      this.messageService.add('All tooltips showing');
-    } else {
+     } else {
       this.tooltips._results.forEach((item) => item.hide());
-      this.messageService.add('All tooltips hidden');
+      this.messageService.add("What's next?");
     }
   }
   
@@ -71,19 +70,18 @@ export class MenuComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.messageService.add('Good Day, welcome to my portfolio webpage. Feel free to explore and notice ');
+    this.messageService.add('Hi, take a look around');
     this.themeService.setTheme('light');
-    this.messageService.add('Theme switch: OK');
+    this.messageService.add('Try theme switch');
   }
-openUserLogin() {
+toogleUserLogin() {
   this.dialog.open(UserLoginComponent);
-  this.messageService.add('User Login Component Open');
+  this.messageService.add('Fill the form to login');
   }
 
 
   themeChangeHandler(themeToSet: string) {
     this.themeService.setTheme(themeToSet);
-    
   }
 
   public buttonClick(fragment: string): void {

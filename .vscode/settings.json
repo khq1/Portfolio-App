@@ -7,11 +7,5 @@
     "editor.quickSuggestionsDelay": 30,
     "diffEditor.wordWrap": "on",
     "editor.wordWrap": "on",
-    "editor.wrappingStrategy": "advanced",
-    "cSpell.words": [
-        "carusel",
-        "deeppurple",
-        "sidenav",
-        "Warzecha"
-    ]
+    "editor.wrappingStrategy": "advanced"
 }
