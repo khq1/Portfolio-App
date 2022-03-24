@@ -30,9 +30,6 @@ overflow-y: hidden;
   z-index: 1;
     }
 
-
-
-
 .menu-list-item{
 
   font-size: 26px;
@@ -79,12 +76,7 @@ margin: 15px 0;
   
 }
 
- 
-
-
 .tooltips-button{
-  width: fit-content;
-  margin: 10px;
   @include mat.elevation(2);
     :hover {
     @include mat.elevation(4);

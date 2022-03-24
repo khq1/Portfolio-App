@@ -12,14 +12,14 @@ export class NordschleifeComponent implements OnInit {
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
-        this.messageService.add(`Handset Device Detected`);
+        
         return [
                     {
             title: 'Nürburgring Nordschleife',
             colspan: 2,
             rowspan: 2,
             subtitle: 'Record Lap Times',
-            img_url: 'assets/img/homepage/projects-images/My-First-App.jpg',
+            img_url: 'assets/img/projects-images/My-First-App.jpg',
             gh_url: 'https://github.com/khq1/My-First-App',
             gh_pages_url: 'https://khq1.github.io/My-First-App/',
             description:
@@ -28,7 +28,7 @@ export class NordschleifeComponent implements OnInit {
           },
         ];
       }
-      this.messageService.add(`NoHandset Device`);
+      
       return [
         
         
@@ -37,7 +37,7 @@ export class NordschleifeComponent implements OnInit {
           colspan: 2,
           rowspan: 2,
           subtitle: 'Record Lap Times',
-          img_url: 'assets/img/homepage/projects-images/My-First-App.jpg',
+          img_url: 'assets/img/projects-images/My-First-App.jpg',
           gh_url: 'https://github.com/khq1/My-First-App',
           gh_pages_url: 'https://khq1.github.io/My-First-App/',
           description:
@@ -58,6 +58,6 @@ export class NordschleifeComponent implements OnInit {
     private messageService: MessageService
   ) {}
   ngOnInit() {
-    this.messageService.add('Projects: OK');
+    
   }
 }

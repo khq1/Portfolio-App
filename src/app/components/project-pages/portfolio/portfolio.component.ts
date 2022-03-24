@@ -12,14 +12,14 @@ export class PortfolioComponent implements OnInit {
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
-        this.messageService.add(`Handset Device Detected`);
+      
         return [
           {
             title: 'Portfolio-App',
             colspan: 2,
             rowspan: 2,
             subtitle: "My way to learn Angular - google's frontend framework",
-            img_url: 'assets/img/homepage/projects-images/Portfolio-App.jpg ',
+            img_url: 'assets/img/projects-images/Portfolio-App.jpg ',
             gh_url: 'https://github.com/khq1/Portfolio-App',
             gh_pages_url: 'https://khq1.github.io/Portfolio-App/',
             description:
@@ -35,7 +35,7 @@ export class PortfolioComponent implements OnInit {
           colspan: 2,
           rowspan: 2,
           subtitle: "My way to learn Angular - google's frontend framework",
-          img_url: 'assets/img/homepage/projects-images/Portfolio-App.jpg ',
+          img_url: 'assets/img/projects-images/Portfolio-App.jpg ',
           gh_url: 'https://github.com/khq1/Portfolio-App',
           gh_pages_url: 'https://khq1.github.io/Portfolio-App/',
           description:
@@ -57,6 +57,6 @@ export class PortfolioComponent implements OnInit {
     private messageService: MessageService
   ) {}
   ngOnInit() {
-    this.messageService.add('Projects: OK');
+  
   }
 }

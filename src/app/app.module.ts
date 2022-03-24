@@ -21,8 +21,7 @@ import { NgbCaruselComponent } from './components/ngb-carusel/ngb-carusel/ngb-ca
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
+
 import {MatDialogModule} from '@angular/material/dialog';
 import { MessagesComponent } from './components/messages/messages.component';
 import { MatExpansionModule } from '@angular/material/expansion';

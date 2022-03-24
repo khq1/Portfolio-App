@@ -9,9 +9,7 @@ export class MessageService {
     this.messages.push(message);
   }
 
-  count(_messagesNumber: Number): void {
-    this.messages.length
-  }
+ 
   
   clear() {
     this.messages = [];

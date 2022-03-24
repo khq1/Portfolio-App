@@ -2,22 +2,16 @@
    z-index: 11;
 }
 
-.first{
-position:sticky;
-}
-second
-{position: static;
-
-}
 .container {
   font-size: medium;
   position: fixed;
   right: 10px;
   top: 60px;
-  width: 30vw;
-  height: auto;
+  min-width: 10vw;
+  width: auto;
+  height: 30vw;
   max-height: 90vh;   
-  max-width: 30vw;
+  max-width: 35vw;
   overflow-wrap: break-word;
   padding:0px;
   }

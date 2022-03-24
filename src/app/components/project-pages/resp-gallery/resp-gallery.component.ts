@@ -12,15 +12,13 @@ export class RespGalleryComponent implements OnInit {
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
-        this.messageService.add(`Handset Device Detected`);
         return [
-          
           {
             title: 'Responsive Gallery ',
             colspan: 2,
             rowspan: 2,
             subtitle: 'Balanced App',
-            img_url: 'assets/img/homepage/projects-images/Gallery.jpg',
+            img_url: 'assets/img/projects-images/Gallery.jpg',
             gh_url: 'https://khq1.github.io/Gallery/',
             gh_pages_url: 'https://khq1.github.io/Gallery/',
             description:
@@ -29,15 +27,13 @@ export class RespGalleryComponent implements OnInit {
           },
         ];
       }
-      this.messageService.add(`NoHandset Device`);
-      return [
-        
+        return [        
         {
           title: 'Responsive Gallery ',
           colspan: 2,
           rowspan: 2,
           subtitle: 'Sandbox project, that ',
-          img_url: 'assets/img/homepage/projects-images/Gallery.jpg',
+          img_url: 'assets/img/projects-images/Gallery.jpg',
           gh_url: 'https://khq1.github.io/Gallery/',
           gh_pages_url: 'https://khq1.github.io/Gallery/',
           description:
@@ -58,6 +54,6 @@ export class RespGalleryComponent implements OnInit {
     private messageService: MessageService
   ) {}
   ngOnInit() {
-    this.messageService.add('Projects: OK');
+   
   }
 }

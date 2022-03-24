@@ -3,8 +3,7 @@
         <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.colspan"
             [rowspan]="card.rowspan" [title]="card.title" subtitle="card.subtitle" img_url="card.img_url"
             gh_url="card.gh_url" gh_pages_url="card.gh_pages_url" description="card.description">
-            <mat-card tabindex="0" class="dashboard-card" #tooltip="matTooltip"
-                matTooltip=" {{card.title}} project card">
+            <mat-card tabindex="0" class="dashboard-card">
                 <mat-card-header>
                     <mat-card-title class="card-title">
                         {{card.title}}
@@ -17,9 +16,9 @@
 
 
 
-                            <button mat-menu-item #tooltip="matTooltip" routerLink="/{{card.routerLink}}"
+                            <button mat-menu-item #tooltip="matTooltip" routerLink="/Homepage"
                                 routerLinkActive="active"
-                                matTooltip="Read more about {{card.title}} project">More</button>
+                                matTooltip="Homepage">Back</button>
 
                             <a mat-menu-item href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
                                 matTooltip="Github page">Github</a>
@@ -31,7 +30,7 @@
                 <mat-card-content class="dashboard-card-content">
                     <div class="card-subtitle">{{card.subtitle}}</div>
                     <img mat-card-s-image [src]="card.img_url" class="img_project">
-                    <div class="card-description">{{card.description}}</div>
+                    <div  class="card-description">{{card.description}}</div>
                     <mat-card-actions class="button-group">
 
                         <a mat-raised-button href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"

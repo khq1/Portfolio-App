@@ -1,4 +1,4 @@
-<button mat-icon-button (click)="ToggleMessageComponent()" [ngClass]="['first', 'second']">
+<button mat-icon-button (click)="ToggleMessageComponent()">
   <mat-icon matBadge="{{ messageService.messages.length }}" matBadgeColor="accent" class="badge-icon favorite-icon" aria-label="Toggle Display Messages"
     matTooltip="Toggle Display Messages" #tooltip="matTooltip">message</mat-icon>
 </button>

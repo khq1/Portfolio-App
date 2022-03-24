@@ -12,14 +12,14 @@ export class ProjectsGridComponent {
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
-        this.messageService.add(`Handset Device Detected`);
+        this.messageService.add(`Handset Detected`);
         return [
           {
             title: "Jan's Code",
             colspan: 2,
             rowspan: 1,
             subtitle: "My way to learn Angular - google's frontend framework",
-            img_url: 'assets/img/homepage/projects-images/Portfolio-App.jpg ',
+            img_url: 'assets/img/projects-images/Portfolio-App.jpg ',
             gh_url: 'https://github.com/khq1/Portfolio-App',
             gh_pages_url: 'https://khq1.github.io/Portfolio-App/',
             description:
@@ -32,7 +32,7 @@ export class ProjectsGridComponent {
             colspan: 2,
             rowspan: 1,
             subtitle: 'Inspire Yourself Daily',
-            img_url: 'assets/img/homepage/projects-images/QuoPic.jpg',
+            img_url: 'assets/img/projects-images/QuoPic.jpg',
             gh_url: 'https://github.com/khq1/QuoPic',
             gh_pages_url: 'https://khq1.github.io/QuoPic/',
             description:
@@ -44,7 +44,7 @@ export class ProjectsGridComponent {
             colspan: 2,
             rowspan: 1,
             subtitle: 'Record Lap Times',
-            img_url: 'assets/img/homepage/projects-images/My-First-App.jpg',
+            img_url: 'assets/img/projects-images/My-First-App.jpg',
             gh_url: 'https://github.com/khq1/My-First-App',
             gh_pages_url: 'https://khq1.github.io/My-First-App/',
             description:
@@ -56,7 +56,7 @@ export class ProjectsGridComponent {
             colspan: 2,
             rowspan: 1,
             subtitle: 'Balanced App',
-            img_url: 'assets/img/homepage/projects-images/Gallery.jpg',
+            img_url: 'assets/img/projects-images/Gallery.jpg',
             gh_url: 'https://khq1.github.io/Gallery/',
             gh_pages_url: 'https://khq1.github.io/Gallery/',
             description:
@@ -68,7 +68,7 @@ export class ProjectsGridComponent {
             colspan: 2,
             rowspan: 1,
             subtitle: 'Visions For A Sustainable Future.',
-            img_url: 'assets/img/homepage/projects-images/FutureGreenTech.jpg',
+            img_url: 'assets/img/projects-images/FutureGreenTech.jpg',
             gh_url: 'https://github.com/khq1/FutureGreenTech',
             gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
             description:
@@ -77,14 +77,14 @@ export class ProjectsGridComponent {
           },
         ];
       }
-      this.messageService.add(`NoHandset Device`);
+      this.messageService.add(`NoHandset Detected`);
       return [
         {
           title: 'Portfolio-App',
           colspan: 1,
           rowspan: 1,
           subtitle: "My way to learn Angular - google's frontend framework",
-          img_url: 'assets/img/homepage/projects-images/Portfolio-App.jpg ',
+          img_url: 'assets/img/projects-images/Portfolio-App.jpg ',
           gh_url: 'https://github.com/khq1/Portfolio-App',
           gh_pages_url: 'https://khq1.github.io/Portfolio-App/',
           description:
@@ -96,7 +96,7 @@ export class ProjectsGridComponent {
           colspan: 1,
           rowspan: 1,
           subtitle: 'Inspire Yourself Daily',
-          img_url: 'assets/img/homepage/projects-images/QuoPic.jpg',
+          img_url: 'assets/img/projects-images/QuoPic.jpg',
           gh_url: 'https://github.com/khq1/QuoPic',
           gh_pages_url: 'https://khq1.github.io/QuoPic/',
           description:
@@ -108,7 +108,7 @@ export class ProjectsGridComponent {
           colspan: 1,
           rowspan: 1,
           subtitle: 'Record Lap Times',
-          img_url: 'assets/img/homepage/projects-images/My-First-App.jpg',
+          img_url: 'assets/img/projects-images/My-First-App.jpg',
           gh_url: 'https://github.com/khq1/My-First-App',
           gh_pages_url: 'https://khq1.github.io/My-First-App/',
           description:
@@ -120,11 +120,11 @@ export class ProjectsGridComponent {
           colspan: 1,
           rowspan: 1,
           subtitle: 'WebSite project.',
-          img_url: 'assets/img/homepage/projects-images/FutureGreenTech.jpg',
+          img_url: 'assets/img/projects-images/FutureGreenTech.jpg',
           gh_url: 'https://github.com/khq1/FutureGreenTech',
           gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
           description:
-            "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm,  IT Crowd",
+            "Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn't sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm, IT Crowd",
           routerLink: 'FutureGreenTech',
         },
         {
@@ -132,7 +132,7 @@ export class ProjectsGridComponent {
           colspan: 1,
           rowspan: 1,
           subtitle: 'Sandbox project, that ',
-          img_url: 'assets/img/homepage/projects-images/Gallery.jpg',
+          img_url: 'assets/img/projects-images/Gallery.jpg',
           gh_url: 'https://khq1.github.io/Gallery/',
           gh_pages_url: 'https://khq1.github.io/Gallery/',
           description:
@@ -153,6 +153,6 @@ export class ProjectsGridComponent {
     private messageService: MessageService
   ) {}
   ngOnInit() {
-    this.messageService.add('Projects: OK');
+   
   }
 }

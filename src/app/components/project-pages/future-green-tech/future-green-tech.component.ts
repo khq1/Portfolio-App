@@ -12,7 +12,7 @@ export class FutureGreenTechComponent implements OnInit {
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
-        this.messageService.add(`Handset Device Detected`);
+        
         return [
           
           {
@@ -20,7 +20,7 @@ export class FutureGreenTechComponent implements OnInit {
             colspan: 2,
             rowspan: 2,
             subtitle: 'Visions For A Sustainable Future.',
-            img_url: 'assets/img/homepage/projects-images/FutureGreenTech.jpg',
+            img_url: 'assets/img/projects-images/FutureGreenTech.jpg',
             gh_url: 'https://github.com/khq1/FutureGreenTech',
             gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
             description:
@@ -29,7 +29,7 @@ export class FutureGreenTechComponent implements OnInit {
           },
         ];
       }
-      this.messageService.add(`NoHandset Device`);
+     
       return [
        
         {
@@ -37,7 +37,7 @@ export class FutureGreenTechComponent implements OnInit {
           colspan: 2,
           rowspan: 2,
           subtitle: 'WebSite project.',
-          img_url: 'assets/img/homepage/projects-images/FutureGreenTech.jpg',
+          img_url: 'assets/img/projects-images/FutureGreenTech.jpg',
           gh_url: 'https://github.com/khq1/FutureGreenTech',
           gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
           description:
@@ -59,7 +59,7 @@ export class FutureGreenTechComponent implements OnInit {
     private messageService: MessageService
   ) {}
   ngOnInit() {
-    this.messageService.add('Projects: OK');
+    
   }
 }
 
