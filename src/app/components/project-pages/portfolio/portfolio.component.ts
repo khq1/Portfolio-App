@@ -42,16 +42,10 @@ export class PortfolioComponent implements OnInit {
             'When I typed "ng serve -o" for the first time I was curious and excited. Now few months later, after multiple commits, hundreds of hours diving deep into software development docs, I am still excited and even more curious.',
           routerLink: 'Portfolio',
         },
-        
       ];
     })
   );
-  /** Based on the screen size, switch from standard to one column per row */
-  panelOpenState = false;
-  colspan: number = 1;
-  rowspan: number = 1;
-  /** Based on the screen size, switch from standard to one column per row */
-
+ 
   constructor(
     private breakpointObserver: BreakpointObserver,
     private messageService: MessageService

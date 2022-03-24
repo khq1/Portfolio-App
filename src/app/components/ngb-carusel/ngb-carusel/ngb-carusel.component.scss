@@ -11,17 +11,22 @@
 }
 
 .carousel-caption {
-  white-space: pre-line; 
-
+  white-space: pre-line;
   color: white;
   position: absolute;
   transform: translateY(0%);
   height: auto;
   text-align: left;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px rgb(78, 78, 78);
   display: inline;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+}
+.carousel-caption .carousel-title {
+  font-weight: bold;
+}
+.carousel-caption .carousel-description {
+  font-weight: 200;
 }
 .button-group {
   display: flex;
@@ -53,7 +58,6 @@
   }
   .interval-right-align {
     text-align: center;
-
     font-weight: 600;
   }
 

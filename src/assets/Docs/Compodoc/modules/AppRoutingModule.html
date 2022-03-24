@@ -76,15 +76,27 @@
 import { ExtraOptions, RouterModule, Routes } from &#x27;@angular/router&#x27;;
 import { HomepageComponent } from &#x27;./components/homepage/homepage.component&#x27;;
 
+
+import { NordschleifeComponent } from &#x27;./components/project-pages/nordschleife/nordschleife.component&#x27;;
+import { PortfolioComponent } from &#x27;./components/project-pages/portfolio/portfolio.component&#x27;;
+import { QuoPicComponent } from &#x27;./components/project-pages/quo-pic/quo-pic.component&#x27;;
+import { FutureGreenTechComponent } from &#x27;./components/project-pages/future-green-tech/future-green-tech.component&#x27;;
+import { RespGalleryComponent } from &#x27;./components/project-pages/resp-gallery/resp-gallery.component&#x27;;
+
 import { ProjectsGridComponent } from &#x27;./components/projects-grid/projects-grid.component&#x27;;
 
 
 const routes: Routes &#x3D; [
   { path: &#x27;Homepage&#x27;, component: HomepageComponent },
   { path: &#x27;&#x27;, redirectTo: &#x27;Homepage&#x27;, pathMatch: &#x27;full&#x27; },
-    { path: &#x27;Projects&#x27;, component: ProjectsGridComponent },
-
+  { path: &#x27;Projects&#x27;, component: ProjectsGridComponent },
   
+  { path: &#x27;Nordschleife&#x27;, component: NordschleifeComponent },
+  { path: &#x27;FutureGreenTech&#x27;, component: FutureGreenTechComponent },
+  { path: &#x27;Portfolio&#x27;, component: PortfolioComponent },
+  { path: &#x27;QuoPic&#x27;, component: QuoPicComponent },
+  { path: &#x27;RespGallery&#x27;, component: RespGalleryComponent },
+
   { path: &#x27;**&#x27;, redirectTo: &#x27;Homepage&#x27; }, // Wildcard route for a 404 page
 ];
 

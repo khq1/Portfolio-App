@@ -327,10 +327,10 @@ the descendants data from the database.</p>
                 <tr>
                     <td class="col-md-4">
                         <i>Default value : </i><code>new Map&lt;string, string[]&gt;([
-    [&#x27;src&#x27;, [&#x27;app&#x27;, &#x27;assets&#x27;, &#x27;environments&#x27;]],
-    [&#x27;app&#x27;, [&#x27;Tomato&#x27;, &#x27;Potato&#x27;, &#x27;Onion&#x27;]],
-    [&#x27;Apple&#x27;, [&#x27;Fuji&#x27;, &#x27;Macintosh&#x27;]],
-    [&#x27;Onion&#x27;, [&#x27;Yellow&#x27;, &#x27;White&#x27;, &#x27;Purple&#x27;]],
+    [&#x27;Portfolio-App&#x27;, [&#x27;Home&#x27;, &#x27;Documentations&#x27;, &#x27;Menu&#x27;]],
+    [&#x27;Home&#x27;, [&#x27;User Login&#x27;,&#x27;Tooltips&#x27;, &#x27;Theme Switch&#x27;, &#x27;Custom Data Pipe&#x27;, &#x27;Messages&#x27;]],
+    [&#x27;Documentations&#x27;, [&#x27;Compodoc&#x27;, &#x27;Typedoc&#x27;]],
+    [&#x27;Menu&#x27;, [&#x27;Welcome&#x27;, &#x27;Bio&#x27;, &#x27;Projects&#x27;, &#x27;About me&#x27;, &#x27;Contact&#x27;]],
   ])</code>
                     </td>
                 </tr>
@@ -362,7 +362,7 @@ the descendants data from the database.</p>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>[&#x27;src&#x27;]</code>
+                        <i>Default value : </i><code>[&#x27;Portfolio-App&#x27;]</code>
                     </td>
                 </tr>
                     <tr>
@@ -411,13 +411,13 @@ export class DynamicFlatNode {
 @Injectable({ providedIn: &#x27;root&#x27; })
 export class DynamicDatabase {
   dataMap &#x3D; new Map&lt;string, string[]&gt;([
-    [&#x27;src&#x27;, [&#x27;app&#x27;, &#x27;assets&#x27;, &#x27;environments&#x27;]],
-    [&#x27;app&#x27;, [&#x27;Tomato&#x27;, &#x27;Potato&#x27;, &#x27;Onion&#x27;]],
-    [&#x27;Apple&#x27;, [&#x27;Fuji&#x27;, &#x27;Macintosh&#x27;]],
-    [&#x27;Onion&#x27;, [&#x27;Yellow&#x27;, &#x27;White&#x27;, &#x27;Purple&#x27;]],
+    [&#x27;Portfolio-App&#x27;, [&#x27;Home&#x27;, &#x27;Documentations&#x27;, &#x27;Menu&#x27;]],
+    [&#x27;Home&#x27;, [&#x27;User Login&#x27;,&#x27;Tooltips&#x27;, &#x27;Theme Switch&#x27;, &#x27;Custom Data Pipe&#x27;, &#x27;Messages&#x27;]],
+    [&#x27;Documentations&#x27;, [&#x27;Compodoc&#x27;, &#x27;Typedoc&#x27;]],
+    [&#x27;Menu&#x27;, [&#x27;Welcome&#x27;, &#x27;Bio&#x27;, &#x27;Projects&#x27;, &#x27;About me&#x27;, &#x27;Contact&#x27;]],
   ]);
 
-  rootLevelNodes: string[] &#x3D; [&#x27;src&#x27;];
+  rootLevelNodes: string[] &#x3D; [&#x27;Portfolio-App&#x27;];
 
   /** Initial data from database */
   initialData(): DynamicFlatNode[] {

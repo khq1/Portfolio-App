@@ -38,7 +38,7 @@
   <li>Components</li>
   <li
   >
-  ProjectsGridComponent</li>
+  PortfolioComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -64,12 +64,18 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/components/projects-grid/projects-grid.component.ts</code>
+    <code>src/app/components/project-pages/portfolio/portfolio.component.ts</code>
 </p>
 
 
 
 
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
 
 
 <section>
@@ -89,19 +95,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-projects-grid</code></td>
+                <td class="col-md-9"><code>app-portfolio</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./projects-grid.component.scss</code></td>
+                <td class="col-md-9"><code>./portfolio.component.scss</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./projects-grid.component.html</code></td>
+                <td class="col-md-9"><code>./portfolio.component.html</code></td>
             </tr>
 
 
@@ -177,7 +183,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="148" class="link-to-prism">src/app/components/projects-grid/projects-grid.component.ts:148</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/components/project-pages/portfolio/portfolio.component.ts:52</a></div>
                             </td>
                         </tr>
 
@@ -258,8 +264,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="155"
-                            class="link-to-prism">src/app/components/projects-grid/projects-grid.component.ts:155</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/components/project-pages/portfolio/portfolio.component.ts:59</a></div>
                 </td>
             </tr>
 
@@ -297,12 +303,12 @@
                         <i>Default value : </i><code>this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) &#x3D;&gt; {
       if (matches) {
-        this.messageService.add(&#x60;Handset Detected&#x60;);
+      
         return [
           {
-            title: &quot;Jan&#x27;s Code&quot;,
+            title: &#x27;Portfolio-App&#x27;,
             colspan: 2,
-            rowspan: 1,
+            rowspan: 2,
             subtitle: &quot;My way to learn Angular - google&#x27;s frontend framework&quot;,
             img_url: &#x27;assets/img/projects-images/Portfolio-App.jpg &#x27;,
             gh_url: &#x27;https://github.com/khq1/Portfolio-App&#x27;,
@@ -311,63 +317,14 @@
               &#x27;When I typed &quot;ng serve -o&quot; for the first time I was curious and excited. Now few months later, after multiple commits, hundreds of hours diving deep into software development docs, I am still excited and even more curious.&#x27;,
             routerLink: &#x27;Portfolio&#x27;,
           },
-
-          {
-            title: &#x27;Cafe and Clouds&#x27;,
-            colspan: 2,
-            rowspan: 1,
-            subtitle: &#x27;Inspire Yourself Daily&#x27;,
-            img_url: &#x27;assets/img/projects-images/QuoPic.jpg&#x27;,
-            gh_url: &#x27;https://github.com/khq1/QuoPic&#x27;,
-            gh_pages_url: &#x27;https://khq1.github.io/QuoPic/&#x27;,
-            description:
-              &#x27;Sit back and enjoy random quotes combined with a random image, TTS, build in browspaner synthesis module&#x27;,
-            routerLink: &#x27;QuoPic&#x27;,
-          },
-          {
-            title: &#x27;Nürburgring Nordschleife&#x27;,
-            colspan: 2,
-            rowspan: 1,
-            subtitle: &#x27;Record Lap Times&#x27;,
-            img_url: &#x27;assets/img/projects-images/My-First-App.jpg&#x27;,
-            gh_url: &#x27;https://github.com/khq1/My-First-App&#x27;,
-            gh_pages_url: &#x27;https://khq1.github.io/My-First-App/&#x27;,
-            description:
-              &#x27;Angular Material App that utilizes mat-autocomplete, sort and filter results with HttpService and Angular Router. Which of these cars would you pick for a late night cruise?&#x27;,
-            routerLink: &#x27;Nordschleife&#x27;,
-          },
-          {
-            title: &#x27;Responsive Gallery &#x27;,
-            colspan: 2,
-            rowspan: 1,
-            subtitle: &#x27;Balanced App&#x27;,
-            img_url: &#x27;assets/img/projects-images/Gallery.jpg&#x27;,
-            gh_url: &#x27;https://khq1.github.io/Gallery/&#x27;,
-            gh_pages_url: &#x27;https://khq1.github.io/Gallery/&#x27;,
-            description:
-              &#x27;Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module&#x27;,
-            routerLink: &#x27;RespGallery&#x27;,
-          },
-          {
-            title: &#x27;FutureGreenTech&#x27;,
-            colspan: 2,
-            rowspan: 1,
-            subtitle: &#x27;Visions For A Sustainable Future.&#x27;,
-            img_url: &#x27;assets/img/projects-images/FutureGreenTech.jpg&#x27;,
-            gh_url: &#x27;https://github.com/khq1/FutureGreenTech&#x27;,
-            gh_pages_url: &#x27;https://khq1.github.io/FutureGreenTech/&#x27;,
-            description:
-              &quot;Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn&#x27;t sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm,  IT Crowd&quot;,
-            routerLink: &#x27;FutureGreenTech&#x27;,
-          },
         ];
       }
-      this.messageService.add(&#x60;NoHandset Detected&#x60;);
+      this.messageService.add(&#x60;NoHandset Device&#x60;);
       return [
         {
           title: &#x27;Portfolio-App&#x27;,
-          colspan: 1,
-          rowspan: 1,
+          colspan: 2,
+          rowspan: 2,
           subtitle: &quot;My way to learn Angular - google&#x27;s frontend framework&quot;,
           img_url: &#x27;assets/img/projects-images/Portfolio-App.jpg &#x27;,
           gh_url: &#x27;https://github.com/khq1/Portfolio-App&#x27;,
@@ -376,54 +333,7 @@
             &#x27;When I typed &quot;ng serve -o&quot; for the first time I was curious and excited. Now few months later, after multiple commits, hundreds of hours diving deep into software development docs, I am still excited and even more curious.&#x27;,
           routerLink: &#x27;Portfolio&#x27;,
         },
-        {
-          title: &#x27;Cafe and Clouds&#x27;,
-          colspan: 1,
-          rowspan: 1,
-          subtitle: &#x27;Inspire Yourself Daily&#x27;,
-          img_url: &#x27;assets/img/projects-images/QuoPic.jpg&#x27;,
-          gh_url: &#x27;https://github.com/khq1/QuoPic&#x27;,
-          gh_pages_url: &#x27;https://khq1.github.io/QuoPic/&#x27;,
-          description:
-            &#x27;Sit back and enjoy random quotes combined with a random image, TTS, build in browspaner synthesis module&#x27;,
-          routerLink: &#x27;QuoPic&#x27;,
-        },
-        {
-          title: &#x27;Nürburgring Nordschleife&#x27;,
-          colspan: 1,
-          rowspan: 1,
-          subtitle: &#x27;Record Lap Times&#x27;,
-          img_url: &#x27;assets/img/projects-images/My-First-App.jpg&#x27;,
-          gh_url: &#x27;https://github.com/khq1/My-First-App&#x27;,
-          gh_pages_url: &#x27;https://khq1.github.io/My-First-App/&#x27;,
-          description:
-            &#x27;Angular Material App, that utilizes mat-autocomplete, sort and filter results with Http service and Angular Router. Which of these  cuties you pick for a late night cruise?&#x27;,
-          routerLink: &#x27;Nordschleife&#x27;,
-        },
-        {
-          title: &#x27;FutureGreenTech&#x27;,
-          colspan: 1,
-          rowspan: 1,
-          subtitle: &#x27;WebSite project.&#x27;,
-          img_url: &#x27;assets/img/projects-images/FutureGreenTech.jpg&#x27;,
-          gh_url: &#x27;https://github.com/khq1/FutureGreenTech&#x27;,
-          gh_pages_url: &#x27;https://khq1.github.io/FutureGreenTech/&#x27;,
-          description:
-            &quot;Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn&#x27;t sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm, IT Crowd&quot;,
-          routerLink: &#x27;FutureGreenTech&#x27;,
-        },
-        {
-          title: &#x27;Responsive Gallery &#x27;,
-          colspan: 1,
-          rowspan: 1,
-          subtitle: &#x27;Sandbox project, that &#x27;,
-          img_url: &#x27;assets/img/projects-images/Gallery.jpg&#x27;,
-          gh_url: &#x27;https://khq1.github.io/Gallery/&#x27;,
-          gh_pages_url: &#x27;https://khq1.github.io/Gallery/&#x27;,
-          description:
-            &quot;My first steps in html,css and js to create flex gallery, project is unfinished and glitchy, it&#x27;s just a placeholder to populate projects section&quot;,
-          routerLink: &#x27;RespGallery&#x27;,
-        },
+        
       ];
     })
   )</code>
@@ -431,7 +341,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/projects-grid/projects-grid.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/project-pages/portfolio/portfolio.component.ts:12</a></div>
                         </td>
                     </tr>
 
@@ -462,7 +372,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="147" class="link-to-prism">src/app/components/projects-grid/projects-grid.component.ts:147</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/components/project-pages/portfolio/portfolio.component.ts:51</a></div>
                         </td>
                     </tr>
 
@@ -487,7 +397,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/app/components/projects-grid/projects-grid.component.ts:146</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/project-pages/portfolio/portfolio.component.ts:50</a></div>
                         </td>
                     </tr>
 
@@ -524,7 +434,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="148" class="link-to-prism">src/app/components/projects-grid/projects-grid.component.ts:148</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/components/project-pages/portfolio/portfolio.component.ts:52</a></div>
                         </td>
                     </tr>
 
@@ -537,26 +447,26 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Breakpoints, BreakpointObserver } from &#x27;@angular/cdk/layout&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { map } from &#x27;rxjs/operators&#x27;;
-import { Breakpoints, BreakpointObserver } from &#x27;@angular/cdk/layout&#x27;;
 import { MessageService } from &#x27;src/app/message.service&#x27;;
 
 @Component({
-  selector: &#x27;app-projects-grid&#x27;,
-  templateUrl: &#x27;./projects-grid.component.html&#x27;,
-  styleUrls: [&#x27;./projects-grid.component.scss&#x27;],
+  selector: &#x27;app-portfolio&#x27;,
+  templateUrl: &#x27;./portfolio.component.html&#x27;,
+  styleUrls: [&#x27;./portfolio.component.scss&#x27;],
 })
-export class ProjectsGridComponent {
+export class PortfolioComponent implements OnInit {
   cards &#x3D; this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) &#x3D;&gt; {
       if (matches) {
-        this.messageService.add(&#x60;Handset Detected&#x60;);
+      
         return [
           {
-            title: &quot;Jan&#x27;s Code&quot;,
+            title: &#x27;Portfolio-App&#x27;,
             colspan: 2,
-            rowspan: 1,
+            rowspan: 2,
             subtitle: &quot;My way to learn Angular - google&#x27;s frontend framework&quot;,
             img_url: &#x27;assets/img/projects-images/Portfolio-App.jpg &#x27;,
             gh_url: &#x27;https://github.com/khq1/Portfolio-App&#x27;,
@@ -565,63 +475,14 @@ export class ProjectsGridComponent {
               &#x27;When I typed &quot;ng serve -o&quot; for the first time I was curious and excited. Now few months later, after multiple commits, hundreds of hours diving deep into software development docs, I am still excited and even more curious.&#x27;,
             routerLink: &#x27;Portfolio&#x27;,
           },
-
-          {
-            title: &#x27;Cafe and Clouds&#x27;,
-            colspan: 2,
-            rowspan: 1,
-            subtitle: &#x27;Inspire Yourself Daily&#x27;,
-            img_url: &#x27;assets/img/projects-images/QuoPic.jpg&#x27;,
-            gh_url: &#x27;https://github.com/khq1/QuoPic&#x27;,
-            gh_pages_url: &#x27;https://khq1.github.io/QuoPic/&#x27;,
-            description:
-              &#x27;Sit back and enjoy random quotes combined with a random image, TTS, build in browspaner synthesis module&#x27;,
-            routerLink: &#x27;QuoPic&#x27;,
-          },
-          {
-            title: &#x27;Nürburgring Nordschleife&#x27;,
-            colspan: 2,
-            rowspan: 1,
-            subtitle: &#x27;Record Lap Times&#x27;,
-            img_url: &#x27;assets/img/projects-images/My-First-App.jpg&#x27;,
-            gh_url: &#x27;https://github.com/khq1/My-First-App&#x27;,
-            gh_pages_url: &#x27;https://khq1.github.io/My-First-App/&#x27;,
-            description:
-              &#x27;Angular Material App that utilizes mat-autocomplete, sort and filter results with HttpService and Angular Router. Which of these cars would you pick for a late night cruise?&#x27;,
-            routerLink: &#x27;Nordschleife&#x27;,
-          },
-          {
-            title: &#x27;Responsive Gallery &#x27;,
-            colspan: 2,
-            rowspan: 1,
-            subtitle: &#x27;Balanced App&#x27;,
-            img_url: &#x27;assets/img/projects-images/Gallery.jpg&#x27;,
-            gh_url: &#x27;https://khq1.github.io/Gallery/&#x27;,
-            gh_pages_url: &#x27;https://khq1.github.io/Gallery/&#x27;,
-            description:
-              &#x27;Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module&#x27;,
-            routerLink: &#x27;RespGallery&#x27;,
-          },
-          {
-            title: &#x27;FutureGreenTech&#x27;,
-            colspan: 2,
-            rowspan: 1,
-            subtitle: &#x27;Visions For A Sustainable Future.&#x27;,
-            img_url: &#x27;assets/img/projects-images/FutureGreenTech.jpg&#x27;,
-            gh_url: &#x27;https://github.com/khq1/FutureGreenTech&#x27;,
-            gh_pages_url: &#x27;https://khq1.github.io/FutureGreenTech/&#x27;,
-            description:
-              &quot;Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn&#x27;t sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm,  IT Crowd&quot;,
-            routerLink: &#x27;FutureGreenTech&#x27;,
-          },
         ];
       }
-      this.messageService.add(&#x60;NoHandset Detected&#x60;);
+      this.messageService.add(&#x60;NoHandset Device&#x60;);
       return [
         {
           title: &#x27;Portfolio-App&#x27;,
-          colspan: 1,
-          rowspan: 1,
+          colspan: 2,
+          rowspan: 2,
           subtitle: &quot;My way to learn Angular - google&#x27;s frontend framework&quot;,
           img_url: &#x27;assets/img/projects-images/Portfolio-App.jpg &#x27;,
           gh_url: &#x27;https://github.com/khq1/Portfolio-App&#x27;,
@@ -630,69 +491,22 @@ export class ProjectsGridComponent {
             &#x27;When I typed &quot;ng serve -o&quot; for the first time I was curious and excited. Now few months later, after multiple commits, hundreds of hours diving deep into software development docs, I am still excited and even more curious.&#x27;,
           routerLink: &#x27;Portfolio&#x27;,
         },
-        {
-          title: &#x27;Cafe and Clouds&#x27;,
-          colspan: 1,
-          rowspan: 1,
-          subtitle: &#x27;Inspire Yourself Daily&#x27;,
-          img_url: &#x27;assets/img/projects-images/QuoPic.jpg&#x27;,
-          gh_url: &#x27;https://github.com/khq1/QuoPic&#x27;,
-          gh_pages_url: &#x27;https://khq1.github.io/QuoPic/&#x27;,
-          description:
-            &#x27;Sit back and enjoy random quotes combined with a random image, TTS, build in browspaner synthesis module&#x27;,
-          routerLink: &#x27;QuoPic&#x27;,
-        },
-        {
-          title: &#x27;Nürburgring Nordschleife&#x27;,
-          colspan: 1,
-          rowspan: 1,
-          subtitle: &#x27;Record Lap Times&#x27;,
-          img_url: &#x27;assets/img/projects-images/My-First-App.jpg&#x27;,
-          gh_url: &#x27;https://github.com/khq1/My-First-App&#x27;,
-          gh_pages_url: &#x27;https://khq1.github.io/My-First-App/&#x27;,
-          description:
-            &#x27;Angular Material App, that utilizes mat-autocomplete, sort and filter results with Http service and Angular Router. Which of these  cuties you pick for a late night cruise?&#x27;,
-          routerLink: &#x27;Nordschleife&#x27;,
-        },
-        {
-          title: &#x27;FutureGreenTech&#x27;,
-          colspan: 1,
-          rowspan: 1,
-          subtitle: &#x27;WebSite project.&#x27;,
-          img_url: &#x27;assets/img/projects-images/FutureGreenTech.jpg&#x27;,
-          gh_url: &#x27;https://github.com/khq1/FutureGreenTech&#x27;,
-          gh_pages_url: &#x27;https://khq1.github.io/FutureGreenTech/&#x27;,
-          description:
-            &quot;Gentlemen. When I first started Reynholm Industries, I had only two things in my possession: A dream...and six million pounds. Now I have a business empire the like of which the world has never seen the like of which! I hope it doesn&#x27;t sound arrogant when I say that I am the greatest man in the world -Denholm Reynholm, IT Crowd&quot;,
-          routerLink: &#x27;FutureGreenTech&#x27;,
-        },
-        {
-          title: &#x27;Responsive Gallery &#x27;,
-          colspan: 1,
-          rowspan: 1,
-          subtitle: &#x27;Sandbox project, that &#x27;,
-          img_url: &#x27;assets/img/projects-images/Gallery.jpg&#x27;,
-          gh_url: &#x27;https://khq1.github.io/Gallery/&#x27;,
-          gh_pages_url: &#x27;https://khq1.github.io/Gallery/&#x27;,
-          description:
-            &quot;My first steps in html,css and js to create flex gallery, project is unfinished and glitchy, it&#x27;s just a placeholder to populate projects section&quot;,
-          routerLink: &#x27;RespGallery&#x27;,
-        },
+        
       ];
     })
   );
   /** Based on the screen size, switch from standard to one column per row */
-   panelOpenState &#x3D; false;
+  panelOpenState &#x3D; false;
   colspan: number &#x3D; 1;
   rowspan: number &#x3D; 1;
   /** Based on the screen size, switch from standard to one column per row */
- 
+
   constructor(
     private breakpointObserver: BreakpointObserver,
     private messageService: MessageService
   ) {}
   ngOnInit() {
-   
+  
   }
 }
 </code></pre>
@@ -700,42 +514,72 @@ export class ProjectsGridComponent {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;grid-container&quot;&gt;
-  &lt;mat-grid-list cols&#x3D;&quot;2&quot; rowHeight&#x3D;&quot;350px&quot;&gt;
-    &lt;mat-grid-tile class&#x3D;&quot;grid-tile&quot; *ngFor&#x3D;&quot;let card of cards | async&quot; [colspan]&#x3D;&quot;card.colspan&quot;
-      [rowspan]&#x3D;&quot;card.rowspan&quot; [title]&#x3D;&quot;card.title&quot; subtitle&#x3D;&quot;card.subtitle&quot; img_url&#x3D;&quot;card.img_url&quot; gh_url&#x3D;&quot;card.gh_url&quot;
-      gh_pages_url&#x3D;&quot;card.gh_pages_url&quot; description&#x3D;&quot;card.description&quot;&gt;
-      &lt;mat-card mat-button routerLink&#x3D;&quot;/{{card.routerLink}}&quot; routerLinkActive&#x3D;&quot;active&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;dashboard-card&quot; #tooltip&#x3D;&quot;matTooltip&quot; matTooltip&#x3D;&quot; {{card.title}} project card&quot;&gt;
-        &lt;mat-card-header&gt;
-          &lt;mat-card-title class&#x3D;&quot;card-title&quot;&gt;
-            {{card.title}}
-            &lt;button mat-icon-button class&#x3D;&quot;more-button&quot; #tooltip&#x3D;&quot;matTooltip&quot; matTooltip&#x3D;&quot;more&quot;
-              [matMenuTriggerFor]&#x3D;&quot;menu&quot; aria-label&#x3D;&quot;Toggle menu&quot;&gt;
-              &lt;mat-icon&gt;more_vert&lt;/mat-icon&gt;
-            &lt;/button&gt;
-            &lt;mat-menu #menu&#x3D;&quot;matMenu&quot; xPosition&#x3D;&quot;before&quot;&gt;
-              
-              &lt;button mat-menu-item #tooltip&#x3D;&quot;matTooltip&quot;  routerLink&#x3D;&quot;/{{card.routerLink}}&quot; routerLinkActive&#x3D;&quot;active&quot;
-                matTooltip&#x3D;&quot;Read more about {{card.title}} project&quot;&gt;More&lt;/button&gt;
+    &lt;mat-grid-list cols&#x3D;&quot;2&quot; rowHeight&#x3D;&quot;350px&quot;&gt;
+        &lt;mat-grid-tile class&#x3D;&quot;grid-tile&quot; *ngFor&#x3D;&quot;let card of cards | async&quot; [colspan]&#x3D;&quot;card.colspan&quot;
+            [rowspan]&#x3D;&quot;card.rowspan&quot; [title]&#x3D;&quot;card.title&quot; subtitle&#x3D;&quot;card.subtitle&quot; img_url&#x3D;&quot;card.img_url&quot;
+            gh_url&#x3D;&quot;card.gh_url&quot; gh_pages_url&#x3D;&quot;card.gh_pages_url&quot; description&#x3D;&quot;card.description&quot;&gt;
+            &lt;mat-card tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;dashboard-card&quot;&gt;
+                &lt;mat-card-header&gt;
+                    &lt;mat-card-title class&#x3D;&quot;card-title&quot;&gt;
+                        {{card.title}}
+                        &lt;button mat-icon-button class&#x3D;&quot;more-button&quot; #tooltip&#x3D;&quot;matTooltip&quot; matTooltip&#x3D;&quot;more&quot;
+                            [matMenuTriggerFor]&#x3D;&quot;menu&quot; aria-label&#x3D;&quot;Toggle menu&quot;&gt;
+                            &lt;mat-icon&gt;more_vert&lt;/mat-icon&gt;
+                        &lt;/button&gt;
+                        &lt;mat-menu #menu&#x3D;&quot;matMenu&quot; xPosition&#x3D;&quot;before&quot;&gt;
 
-              &lt;a mat-menu-item href&#x3D;&quot;{{card.gh_url}}&quot; target&#x3D;&quot;_blank&quot; #tooltip&#x3D;&quot;matTooltip&quot;
-                matTooltip&#x3D;&quot;Github page&quot;&gt;Github&lt;/a&gt;
-              &lt;a mat-menu-item href&#x3D;&quot;{{card.gh_pages_url}}&quot; target&#x3D;&quot;_blank&quot; #tooltip&#x3D;&quot;matTooltip&quot;
-                matTooltip&#x3D;&quot;Visit project website&quot;&gt;Visit&lt;/a&gt;
-            &lt;/mat-menu&gt;
-          &lt;/mat-card-title&gt;
-        &lt;/mat-card-header&gt;
-        &lt;mat-card-content class&#x3D;&quot;dashboard-card-content&quot;&gt;
+
+
+
+                            &lt;button mat-menu-item #tooltip&#x3D;&quot;matTooltip&quot; routerLink&#x3D;&quot;/Homepage&quot; routerLinkActive&#x3D;&quot;active&quot;
+                                matTooltip&#x3D;&quot;Homepage&quot;&gt;Back&lt;/button&gt;
+
+                            &lt;a mat-menu-item href&#x3D;&quot;{{card.gh_url}}&quot; target&#x3D;&quot;_blank&quot; #tooltip&#x3D;&quot;matTooltip&quot;
+                                matTooltip&#x3D;&quot;Github page&quot;&gt;Github&lt;/a&gt;
+                            &lt;a mat-menu-item href&#x3D;&quot;{{card.gh_pages_url}}&quot; target&#x3D;&quot;_blank&quot; #tooltip&#x3D;&quot;matTooltip&quot;
+                                matTooltip&#x3D;&quot;Visit project website&quot;&gt;Visit&lt;/a&gt;
+                        &lt;/mat-menu&gt;
+                    &lt;/mat-card-title&gt;
+                &lt;/mat-card-header&gt;
+                &lt;mat-card-content class&#x3D;&quot;dashboard-card-content&quot;&gt;
+                    &lt;div class&#x3D;&quot;card-subtitle&quot;&gt;{{card.subtitle}}&lt;/div&gt;
                     &lt;img mat-card-s-image [src]&#x3D;&quot;card.img_url&quot; class&#x3D;&quot;img_project&quot;&gt;
-                      &lt;/mat-card-content&gt;
-      &lt;/mat-card&gt;
-    &lt;/mat-grid-tile&gt;
-  &lt;/mat-grid-list&gt;
+                    &lt;div class&#x3D;&quot;card-description&quot;&gt;{{card.description}}&lt;/div&gt;
+                    &lt;mat-card-actions class&#x3D;&quot;button-group&quot;&gt;
+
+                        &lt;a mat-raised-button href&#x3D;&quot;{{card.gh_url}}&quot; target&#x3D;&quot;_blank&quot; #tooltip&#x3D;&quot;matTooltip&quot;
+                            matTooltip&#x3D;&quot;Github page&quot;&gt;Github&lt;/a&gt;
+                        &lt;a mat-raised-button href&#x3D;&quot;{{card.gh_pages_url}}&quot; target&#x3D;&quot;_blank&quot; #tooltip&#x3D;&quot;matTooltip&quot;
+                            matTooltip&#x3D;&quot;Visit project website&quot;&gt;Visit&lt;/a&gt;
+
+                        &lt;a mat-raised-button matTooltip&#x3D;&quot;Compodoc documentation for Portfolio-App&quot;
+                            #tooltip&#x3D;&quot;matTooltip&quot; aria-tooltip&#x3D;&quot;Documentation by Compodoc&quot;
+                            href&#x3D;&quot;assets/Docs/Compodoc/index.html&quot; target&#x3D;&quot;_blank&quot;&gt;
+                            
+                            &lt;img
+                                src&#x3D;&quot;assets/Docs/Compodoc/compodoc-vectorise-inverted.png&quot; alt&#x3D;&quot;Compodoc&quot;
+                                class&#x3D;&quot;menu-docs-logo&quot; /&gt;&lt;span class&#x3D;&quot;side-nav-but-spacer&quot;&gt;&lt;/span&gt;Compodoc Docs
+                        &lt;/a&gt;
+
+                        &lt;a mat-raised-button  matTooltip&#x3D;&quot;Typedoc documentation for Portfolio-App&quot;
+                            #tooltip&#x3D;&quot;matTooltip&quot; aria-tooltip&#x3D;&quot;Documentation by Typedoc&quot;
+                            href&#x3D;&quot;assets/Docs/Typedoc/index.html&quot; target&#x3D;&quot;_blank&quot;&gt;
+                            &lt;img
+                                src&#x3D;&quot;assets/Docs/Typedoc/typedoc.png&quot; alt&#x3D;&quot;Typdedoc&quot; class&#x3D;&quot;menu-docs-logo&quot; /&gt;&lt;span
+                                class&#x3D;&quot;side-nav-but-spacer&quot;&gt;&lt;/span&gt;Typedoc Docs&lt;/a&gt;
+
+                    &lt;/mat-card-actions&gt;
+
+                &lt;/mat-card-content&gt;
+            &lt;/mat-card&gt;
+        &lt;/mat-grid-tile&gt;
+    &lt;/mat-grid-list&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./projects-grid.component.scss</code>
+                    <code>./portfolio.component.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">@use &#x27;@angular/material&#x27; as mat;
 
@@ -752,14 +596,16 @@ height: 100%;
   bottom: 15px;
   padding: 0;
   width: 90%;
-  height: 90%;
-   margin-left:auto;
-   margin-right:auto;
+  height: auto;
+  max-width: 100%;
+max-height: auto;
+ margin-left:auto;
+    margin-right:auto;
   
 }
 
-mat-card:hover {
-    @include mat.elevation(4);
+ mat-raised-button:hover {
+    @include mat.elevation(8);
   }
 
 .card-title{
@@ -810,14 +656,26 @@ height: 100%;
     }
     
 
-mat-card img{
+mat-card .img_project{
         width: 100%;
         height: auto;       
   display:block;
   margin-left:auto;
   margin-right:auto;
-   max-width: 500px;
+  margin-top: 3%;
+  max-width: 500px;
   
+}
+.menu-item{
+margin: 15px 0;
+@include mat.elevation(2);
+    :hover {
+    @include mat.elevation(4);
+  }
+}
+.menu-docs-logo{
+  width:24px;
+  height: 24px;
 }
 </code></pre>
     </div>
@@ -847,10 +705,10 @@ mat-card img{
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="grid-container">  <mat-grid-list cols="2" rowHeight="350px">    <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.colspan"      [rowspan]="card.rowspan" [title]="card.title" subtitle="card.subtitle" img_url="card.img_url" gh_url="card.gh_url"      gh_pages_url="card.gh_pages_url" description="card.description">      <mat-card mat-button routerLink="/{{card.routerLink}}" routerLinkActive="active" tabindex="0" class="dashboard-card" #tooltip="matTooltip" matTooltip=" {{card.title}} project card">        <mat-card-header>          <mat-card-title class="card-title">            {{card.title}}            <button mat-icon-button class="more-button" #tooltip="matTooltip" matTooltip="more"              [matMenuTriggerFor]="menu" aria-label="Toggle menu">              <mat-icon>more_vert</mat-icon>            </button>            <mat-menu #menu="matMenu" xPosition="before">                            <button mat-menu-item #tooltip="matTooltip"  routerLink="/{{card.routerLink}}" routerLinkActive="active"                matTooltip="Read more about {{card.title}} project">More</button>              <a mat-menu-item href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"                matTooltip="Github page">Github</a>              <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"                matTooltip="Visit project website">Visit</a>            </mat-menu>          </mat-card-title>        </mat-card-header>        <mat-card-content class="dashboard-card-content">                    <img mat-card-s-image [src]="card.img_url" class="img_project">                      </mat-card-content>      </mat-card>    </mat-grid-tile>  </mat-grid-list></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="grid-container">    <mat-grid-list cols="2" rowHeight="350px">        <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.colspan"            [rowspan]="card.rowspan" [title]="card.title" subtitle="card.subtitle" img_url="card.img_url"            gh_url="card.gh_url" gh_pages_url="card.gh_pages_url" description="card.description">            <mat-card tabindex="0" class="dashboard-card">                <mat-card-header>                    <mat-card-title class="card-title">                        {{card.title}}                        <button mat-icon-button class="more-button" #tooltip="matTooltip" matTooltip="more"                            [matMenuTriggerFor]="menu" aria-label="Toggle menu">                            <mat-icon>more_vert</mat-icon>                        </button>                        <mat-menu #menu="matMenu" xPosition="before">                            <button mat-menu-item #tooltip="matTooltip" routerLink="/Homepage" routerLinkActive="active"                                matTooltip="Homepage">Back</button>                            <a mat-menu-item href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"                                matTooltip="Github page">Github</a>                            <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"                                matTooltip="Visit project website">Visit</a>                        </mat-menu>                    </mat-card-title>                </mat-card-header>                <mat-card-content class="dashboard-card-content">                    <div class="card-subtitle">{{card.subtitle}}</div>                    <img mat-card-s-image [src]="card.img_url" class="img_project">                    <div class="card-description">{{card.description}}</div>                    <mat-card-actions class="button-group">                        <a mat-raised-button href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"                            matTooltip="Github page">Github</a>                        <a mat-raised-button href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"                            matTooltip="Visit project website">Visit</a>                        <a mat-raised-button matTooltip="Compodoc documentation for Portfolio-App"                            #tooltip="matTooltip" aria-tooltip="Documentation by Compodoc"                            href="assets/Docs/Compodoc/index.html" target="_blank">                                                        <img                                src="assets/Docs/Compodoc/compodoc-vectorise-inverted.png" alt="Compodoc"                                class="menu-docs-logo" /><span class="side-nav-but-spacer"></span>Compodoc Docs                        </a>                        <a mat-raised-button  matTooltip="Typedoc documentation for Portfolio-App"                            #tooltip="matTooltip" aria-tooltip="Documentation by Typedoc"                            href="assets/Docs/Typedoc/index.html" target="_blank">                            <img                                src="assets/Docs/Typedoc/typedoc.png" alt="Typdedoc" class="menu-docs-logo" /><span                                class="side-nav-but-spacer"></span>Typedoc Docs</a>                    </mat-card-actions>                </mat-card-content>            </mat-card>        </mat-grid-tile>    </mat-grid-list></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'FutureGreenTechComponent', 'selector': 'app-future-green-tech'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'NordschleifeComponent', 'selector': 'app-nordschleife'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'QuoPicComponent', 'selector': 'app-quo-pic'},{'name': 'RespGalleryComponent', 'selector': 'app-resp-gallery'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'ProjectsGridComponent'};
+    var ACTUAL_COMPONENT = {'name': 'PortfolioComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -895,7 +753,7 @@ mat-card img{
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'ProjectsGridComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'PortfolioComponent.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

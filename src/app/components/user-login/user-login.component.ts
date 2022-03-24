@@ -48,7 +48,7 @@ export class UserLoginComponent {
   updateProfile() {
     this.profileForm.patchValue({
       firstName: 'Name',
-      lastName: 'Lastbame',
+      lastName: 'Lastname',
       address: {
         street: 'Street',
         city: 'City ',

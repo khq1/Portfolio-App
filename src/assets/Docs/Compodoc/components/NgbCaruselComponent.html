@@ -821,7 +821,7 @@ import {
   templateUrl: &#x27;./ngb-carusel.component.html&#x27;,
   styleUrls: [&#x27;./ngb-carusel.component.scss&#x27;],
 
-  providers: [NgbCarouselConfig], // add NgbCarouselConfig to the component providers
+  providers: [NgbCarouselConfig], 
 })
 @Injectable()
 export class NgbCaruselComponent {
@@ -876,7 +876,7 @@ export class NgbCaruselComponent {
 
   ngOnInit() {
     this.getSlides();
-    this.messageService.add(&#x60;Slides: OK&#x60;);
+    
   }
 
   getSlides(): void {
@@ -946,7 +946,7 @@ export class NgbCaruselComponent {
                         &lt;mat-icon&gt;minimize&lt;/mat-icon&gt;
                         &lt;mat-icon&gt;minimize&lt;/mat-icon&gt;
                         &lt;mat-icon&gt;minimize&lt;/mat-icon&gt;
-                        Toggle  indicators
+                        Toggle indicators
                     &lt;/button&gt;
                     &lt;button mat-raised-button (click)&#x3D;&quot;pauseOnHover &#x3D; !pauseOnHover&quot;&gt;Pause on hover
                     &lt;/button&gt;
@@ -975,9 +975,8 @@ export class NgbCaruselComponent {
                     <code>./ngb-carusel.component.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">.img-wrapper {
-  width: 84vw; //adapt angular good practices
+  width: 84vw;
   height: 74vh;
-
   margin: auto auto;
 }
 .img_slide {
@@ -988,19 +987,15 @@ export class NgbCaruselComponent {
 }
 
 .carousel-caption {
-  white-space: pre-line; // \n\u2022 work properly in TS
-  padding: 0px 5px;
-  
-  color: white;
-mix-blend-mode: difference;
+  white-space: pre-line; 
 
+  color: white;
   position: absolute;
   transform: translateY(0%);
   height: auto;
   text-align: left;
-  // text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
   display: inline;
-
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -1075,8 +1070,8 @@ mix-blend-mode: difference;
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="container">    <ngb-carousel #carousel  [showNavigationArrows]="showNavigationArrows"        [showNavigationIndicators]="showNavigationIndicators" [pauseOnHover]="pauseOnHover"[interval]="interval.value" (slide)="onSlide($event)">                         <ng-template ngbSlide *ngFor="let slide of slides"        (ngModelChange)="(onSelect)"                 >            <div class="img-wrapper">                <img [src]="slide.image_url" class="img_slide" alt={{slide.img_alt}}>            </div>            <div class="carousel-caption">                <h3>{{slide.title}}</h3>                <p>{{slide.description}}.</p>                </div>                </ng-template>                </ngb-carousel><hr>    <div class="button-group" aria-label="Carousel toggle controls">        <button mat-raised-button isIconButton:true (click)="togglePaused()" class="cycle_pause_button">            {{paused ? \'Cycle\' : \'Pause\'}}            <mat-icon>{{paused ? \'play_circle_outline\' : \'pause_circle_outline\'}}</mat-icon>        </button>    <mat-accordion class="slide-controls-panel">    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">        <mat-expansion-panel-header>            <mat-panel-title>                Controls:            </mat-panel-title>            <mat-panel-description>                 {{panelOpenState ? \'Open\' : \'Closed\'}}            </mat-panel-description>        </mat-expansion-panel-header>    <div class="button-group-panel" aria-label="Carousel toggle controls">            <mat-form-field class="mat-elevation-z2 form-center" floatLabel="always">                <mat-label>1 second = 1000 ms</mat-label>                <input matInput type="number"  [formControl]="interval" class="interval-right-align"                    placeholder={{interval.value}}>                            </mat-form-field>                    <button mat-raised-button aria-label="Toggle navigation arrows" (click)="showNavigationArrows = !showNavigationArrows">                        <mat-icon>keyboard_arrow_left</mat-icon>                        Toggle navigation arrows                        <mat-icon>keyboard_arrow_right</mat-icon>                    </button>                    <button mat-raised-button aria-label="Toggle navigation                                    indicators" (click)="showNavigationIndicators = !showNavigationIndicators">                        <mat-icon>minimize</mat-icon>                        <mat-icon>minimize</mat-icon>                        <mat-icon>minimize</mat-icon>                        Toggle  indicators                    </button>                    <button mat-raised-button (click)="pauseOnHover = !pauseOnHover">Pause on hover                    </button>                    <button mat-raised-button [(ngModel)]="pauseOnFocus">                        Pause on focus                    </button>                    <button mat-raised-button [(ngModel)]="unpauseOnArrow">                        Unpause when arrow click                    </button>                    <button mat-raised-button [(ngModel)]="pauseOnIndicator">                        Pause when click indicator                    </button>                </div>            </mat-expansion-panel>                        </mat-accordion>    </div>   </div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
+        var COMPONENT_TEMPLATE = '<div><div class="container">    <ngb-carousel #carousel  [showNavigationArrows]="showNavigationArrows"        [showNavigationIndicators]="showNavigationIndicators" [pauseOnHover]="pauseOnHover"[interval]="interval.value" (slide)="onSlide($event)">                         <ng-template ngbSlide *ngFor="let slide of slides"        (ngModelChange)="(onSelect)"                 >            <div class="img-wrapper">                <img [src]="slide.image_url" class="img_slide" alt={{slide.img_alt}}>            </div>            <div class="carousel-caption">                <h3>{{slide.title}}</h3>                <p>{{slide.description}}.</p>                </div>                </ng-template>                </ngb-carousel><hr>    <div class="button-group" aria-label="Carousel toggle controls">        <button mat-raised-button isIconButton:true (click)="togglePaused()" class="cycle_pause_button">            {{paused ? \'Cycle\' : \'Pause\'}}            <mat-icon>{{paused ? \'play_circle_outline\' : \'pause_circle_outline\'}}</mat-icon>        </button>    <mat-accordion class="slide-controls-panel">    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">        <mat-expansion-panel-header>            <mat-panel-title>                Controls:            </mat-panel-title>            <mat-panel-description>                 {{panelOpenState ? \'Open\' : \'Closed\'}}            </mat-panel-description>        </mat-expansion-panel-header>    <div class="button-group-panel" aria-label="Carousel toggle controls">            <mat-form-field class="mat-elevation-z2 form-center" floatLabel="always">                <mat-label>1 second = 1000 ms</mat-label>                <input matInput type="number"  [formControl]="interval" class="interval-right-align"                    placeholder={{interval.value}}>                            </mat-form-field>                    <button mat-raised-button aria-label="Toggle navigation arrows" (click)="showNavigationArrows = !showNavigationArrows">                        <mat-icon>keyboard_arrow_left</mat-icon>                        Toggle navigation arrows                        <mat-icon>keyboard_arrow_right</mat-icon>                    </button>                    <button mat-raised-button aria-label="Toggle navigation                                    indicators" (click)="showNavigationIndicators = !showNavigationIndicators">                        <mat-icon>minimize</mat-icon>                        <mat-icon>minimize</mat-icon>                        <mat-icon>minimize</mat-icon>                        Toggle indicators                    </button>                    <button mat-raised-button (click)="pauseOnHover = !pauseOnHover">Pause on hover                    </button>                    <button mat-raised-button [(ngModel)]="pauseOnFocus">                        Pause on focus                    </button>                    <button mat-raised-button [(ngModel)]="unpauseOnArrow">                        Unpause when arrow click                    </button>                    <button mat-raised-button [(ngModel)]="pauseOnIndicator">                        Pause when click indicator                    </button>                </div>            </mat-expansion-panel>                        </mat-accordion>    </div>   </div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'FutureGreenTechComponent', 'selector': 'app-future-green-tech'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'NordschleifeComponent', 'selector': 'app-nordschleife'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'QuoPicComponent', 'selector': 'app-quo-pic'},{'name': 'RespGalleryComponent', 'selector': 'app-resp-gallery'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NgbCaruselComponent'};
 </script>

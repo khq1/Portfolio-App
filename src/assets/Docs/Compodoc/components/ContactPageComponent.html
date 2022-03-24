@@ -310,19 +310,12 @@ export class ContactPageComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div &gt;
-
-
-  &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
-    &lt;mat-label&gt;Leave a comment&lt;/mat-label&gt;
-    &lt;textarea matInput placeholder&#x3D;&quot;yeah... write something&quot;&gt;&lt;/textarea&gt;
-  &lt;/mat-form-field&gt;
-
-  &lt;h2&gt;Copy my mail&lt;/h2&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div  class&#x3D;&quot;contact-clipboard&quot; &gt;
+  &lt;h2&gt;Send me an email&lt;/h2&gt;
   &lt;h3&gt;
-    &lt;div class&#x3D;&quot;contact-clipboard&quot;&gt;
-      My Mail
-      &lt;button mat-button cdkCopyToClipboard&#x3D;&quot;ThisIsMyMail@mmail.com&quot; (click)&#x3D;&quot;CopiedMsg()&quot;&gt;
+    &lt;div&gt;&lt;a href&#x3D;&quot;mailto:panjanwarzecha@gmail.com&quot;&gt;panjanwarzecha@gmail.com&lt;/a&gt;
+      
+      &lt;button mat-button cdkCopyToClipboard&#x3D;&quot;panjanwarzecha@gmail.com&quot; (click)&#x3D;&quot;CopiedMsg()&quot;&gt;
         &lt;mat-icon&gt;content_copy&lt;/mat-icon&gt;Copy to clipboard
       &lt;/button&gt;
     &lt;/div&gt;
@@ -335,7 +328,11 @@ export class ContactPageComponent implements OnInit {
                 <p class="comment">
                     <code>./contact-page.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">
+.contact-clipboard{
+text-align: center;
+margin:100px auto;
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -363,8 +360,8 @@ export class ContactPageComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div >  <mat-form-field class="example-full-width">    <mat-label>Leave a comment</mat-label>    <textarea matInput placeholder="yeah... write something"></textarea>  </mat-form-field>  <h2>Copy my mail</h2>  <h3>    <div class="contact-clipboard">      My Mail      <button mat-button cdkCopyToClipboard="ThisIsMyMail@mmail.com" (click)="CopiedMsg()">        <mat-icon>content_copy</mat-icon>Copy to clipboard      </button>    </div>  </h3></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
+        var COMPONENT_TEMPLATE = '<div><div  class="contact-clipboard" >  <h2>Send me an email</h2>  <h3>    <div><a href="mailto:panjanwarzecha@gmail.com">panjanwarzecha@gmail.com</a>            <button mat-button cdkCopyToClipboard="panjanwarzecha@gmail.com" (click)="CopiedMsg()">        <mat-icon>content_copy</mat-icon>Copy to clipboard      </button>    </div>  </h3></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'FutureGreenTechComponent', 'selector': 'app-future-green-tech'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'NordschleifeComponent', 'selector': 'app-nordschleife'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'QuoPicComponent', 'selector': 'app-quo-pic'},{'name': 'RespGalleryComponent', 'selector': 'app-resp-gallery'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ContactPageComponent'};
 </script>

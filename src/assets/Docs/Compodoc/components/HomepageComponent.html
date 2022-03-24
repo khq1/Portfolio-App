@@ -430,7 +430,7 @@ export class HomepageComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;welcome-page&quot; class&#x3D;&quot;container-fluid&quot;&gt;
-    &lt;header class&#x3D;&quot;docs-header-background&quot; aria-label&#x3D;&quot;Get started&quot; id&#x3D;&quot;homepage-header&quot;&gt;
+  &lt;header class&#x3D;&quot;docs-header-background&quot; aria-label&#x3D;&quot;Welcome&quot; id&#x3D;&quot;homepage-header&quot;&gt;
     &lt;div class&#x3D;&quot;docs-header-section&quot;&gt;
       &lt;div class&#x3D;&quot;docs-header-headline&quot;&gt;
         &lt;h1 class&#x3D;&quot;mat-h1&quot;&gt;Jan Warzecha&lt;/h1&gt;
@@ -467,9 +467,11 @@ export class HomepageComponent implements OnInit {
 
       &lt;mat-tab label&#x3D;&quot;Short&quot;&gt;
         &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
-       
+          &lt;h1&gt;
+            Brief info
+            &lt;/h1&gt;
           &lt;h2&gt;
-           I&#x27;m Jan Warzecha from Wrocław, Poland
+            I&#x27;m Jan Warzecha from Wrocław, Poland
           &lt;/h2&gt;
           &lt;ul&gt;
             &lt;li&gt;
@@ -486,10 +488,10 @@ export class HomepageComponent implements OnInit {
             &lt;/li&gt;
             &lt;li&gt;
               8 years of professional experience in resource prospecting and exploration projects / mining / drilling /
-              environment / energy
+              environment / energy / documentation / mapping / moddeling
             &lt;/li&gt;
             &lt;li&gt;
-            &lt;b&gt; I&#x27;m currently looking to remotely join frontend / full-stack team&lt;/b&gt;
+              &lt;b&gt;I&#x27;m currently looking to remotely join frontend / full-stack team&lt;/b&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
@@ -506,7 +508,7 @@ export class HomepageComponent implements OnInit {
           &lt;p&gt;2017 - 2021, Wrocław&lt;/p&gt;
           &lt;ul&gt;
             &lt;li&gt;
-              VIP transport - cooperation with hotels etc.
+              VIP transport
             &lt;/li&gt;
           &lt;/ul&gt;
           &lt;h1&gt;
@@ -563,12 +565,50 @@ export class HomepageComponent implements OnInit {
 
       &lt;mat-tab label&#x3D;&quot;Personal&quot;&gt;
         &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
-          &lt;h1&gt;Short Bio&lt;/h1&gt;&lt;br&gt;
-          &lt;H2&gt;Hi, I&#x27;m Jan&lt;/H2&gt;
-          &lt;p&gt;Self-Taught Coder&lt;/p&gt;
-          &lt;p&gt;English speaker - C2&lt;/p&gt;
-          &lt;p&gt;Graduated and experienced in Exploration Geology&lt;/p&gt;
-          &lt;p&gt;Curious without limits &lt;/p&gt;
+          &lt;h2&gt;
+            Fast learner
+          &lt;/h2&gt;
+          &lt;p&gt;
+            I&#x27;m curious of the world, new material naturally connects with my
+            knowledge and is remembered through repetition.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Team player
+          &lt;/h2&gt;
+          &lt;p&gt;
+            When you aim to be a great team player, others will follow.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Adaptive
+          &lt;/h2&gt;
+          &lt;p&gt;
+            Adjust, change is permanent.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Communicative
+          &lt;/h2&gt;
+          &lt;p&gt;
+            Listen, listen, listen.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Problem Solver
+          &lt;/h2&gt;
+          &lt;p&gt;
+            There are no such things as problems, Mr. Green. Only people and
+            situations - Revolver movie
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Good Cook
+          &lt;/h2&gt;
+          &lt;p&gt;
+            It comes naturally.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Dog Whisperer
+          &lt;/h2&gt;
+          &lt;p&gt;
+            We just connect.
+          &lt;/p&gt;
         &lt;/div&gt;
       &lt;/mat-tab&gt;
     &lt;/mat-tab-group&gt;
@@ -578,17 +618,17 @@ export class HomepageComponent implements OnInit {
       &lt;mat-tab-group&gt;
         &lt;mat-tab class&#x3D;&quot;mat-tab&quot; label&#x3D;&quot;W skrócie&quot;&gt;
           &lt;h1&gt;
-            Krótki życiorys
+            Krótkie info o mnie
           &lt;/h1&gt;
           &lt;h2&gt;
-            Cześć, jestem Jan Warzecha, Wrocław
+            Cześć, jestem Jan Warzecha z Wrocławia
           &lt;/h2&gt;
           &lt;ul&gt;
             &lt;li&gt;
               Jestem programistą samoukiem, koduję od lipca 2020
             &lt;/li&gt;
             &lt;li&gt;
-              HTML, CSS, Js, Ts, Angular
+              HTML, CSS, JavaScript, TypeScript, Angular 13, Material
             &lt;/li&gt;
             &lt;li&gt;
               angielski B2/C1
@@ -601,81 +641,125 @@ export class HomepageComponent implements OnInit {
               górnictwa / wiertnictwa / ochrony środowiska / energetyki
             &lt;/li&gt;
             &lt;li&gt;
-              Obecnie chcę dołączyć zdalnie do zespołu frontend / full-stack
+              Obecnie chcę dołączyć do zespołu Developerów
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/mat-tab&gt;
 
         &lt;mat-tab label&#x3D;&quot;Zawodowo&quot;&gt;
           &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
-&lt;h1&gt;
-  Transport
-&lt;/h1&gt;
-&lt;h2&gt;
-  Kierowca
-&lt;/h2&gt;
-&lt;p&gt;2017 - 2021, Wrocław&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    transport VIP - współpraca z hotelami itp.
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;
-  PGE EJ 1 - Pierwsza Elektrownia Jądrowa
-&lt;/h1&gt;
-&lt;h2&gt;
-  Specjalista ds. Inżynierii
-&lt;/h2&gt;
-&lt;p&gt;2016 - 2018 Pomorze, Polska&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    Monitoring hydrogeologiczny
-  &lt;/li&gt;
-  &lt;li&gt;
-    Nadzór nad miejscem wiercenia
-  &lt;/li&gt;
-  &lt;li&gt;
-    Zapewnienie jakości w pobieraniu próbek i logistyce
-  &lt;/li&gt;
-  &lt;li&gt;
-    Raportowanie
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;
-  Centrum Badawczo-Rozwojowe Wrocław
-&lt;/h1&gt;
-&lt;h2&gt;
-  Specjalista ds. Inżynierii - Geolog Poszukiwań&lt;/h2&gt;
-&lt;p&gt;
-  2010 - 2016 Wrocław, Polska
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    Zarządzania bazami danych
-  &lt;/li&gt;
-  &lt;li&gt;
-    Mapy i inne grafiki
-  &lt;/li&gt;
-  &lt;li&gt;
-    Pisanie dokumentacji
-  &lt;/li&gt;
-  &lt;li&gt;
-    Szacowanie zasobów: miedź, srebro, nikiel, węgiel
-  &lt;/li&gt;
-  &lt;li&gt;
-    Reprezentacja inwestora, nadzór nad budową wiertni
-  &lt;/li&gt;
-  &lt;li&gt;
-    Zapewnienie jakości, rejestracja danych, pobieranie próbek podstawowych, logistyka
-  &lt;/li&gt;
-&lt;/ul&gt;
+            &lt;h1&gt;
+              Transport
+            &lt;/h1&gt;
+            &lt;h2&gt;
+              Kierowca
+            &lt;/h2&gt;
+            &lt;p&gt;2017 - 2021, Wrocław&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                transport VIP
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;h1&gt;
+              PGE EJ 1 - Pierwsza Elektrownia Jądrowa
+            &lt;/h1&gt;
+            &lt;h2&gt;
+              Specjalista ds. Inżynierii
+            &lt;/h2&gt;
+            &lt;p&gt;2016 - 2018 Pomorze, Polska&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                Monitoring hydrogeologiczny
+              &lt;/li&gt;
+              &lt;li&gt;
+                Nadzór nad miejscem wiercenia
+              &lt;/li&gt;
+              &lt;li&gt;
+                Zapewnienie jakości w pobieraniu próbek i logistyce
+              &lt;/li&gt;
+              &lt;li&gt;
+                Raportowanie
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;h1&gt;
+              Centrum Badawczo-Rozwojowe Wrocław
+            &lt;/h1&gt;
+            &lt;h2&gt;
+              Specjalista ds. Inżynierii - Geolog Poszukiwawczy&lt;/h2&gt;
+            &lt;p&gt;
+              2010 - 2016 Wrocław, Polska
+            &lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                Zarządzania bazami danych
+              &lt;/li&gt;
+              &lt;li&gt;
+                Mapy i inne grafiki
+              &lt;/li&gt;
+              &lt;li&gt;
+                Pisanie dokumentacji
+              &lt;/li&gt;
+              &lt;li&gt;
+                Szacowanie zasobów: miedź, srebro, nikiel, węgiel
+              &lt;/li&gt;
+              &lt;li&gt;
+                Reprezentacja inwestora, nadzór nad robotami wiertniczymi
+              &lt;/li&gt;
+              &lt;li&gt;
+                Koordynacja pracy urządzeń wiertniczych, zapewnienie jakości, cyrkulacja danych i dokumentów, pobieranie
+                próbek podstawowych, logistyka
+                &lt;/li&gt;
+                &lt;/ul&gt;
 
           &lt;/div&gt;
         &lt;/mat-tab&gt;
 
         &lt;mat-tab label&#x3D;&quot;Prywatnie&quot;&gt;
           &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
-
+            &lt;h2&gt;
+              Szybko się uczę
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Jestem ciekawy świata, nowy materiał w naturalny sposób łączy się z moją
+              wiedzą. Dobrze zapamiętuję poprzez powtarzanie.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Gracz zespołowy
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Kiedy jesteś świetnym graczem zespołowym, inni idą za tobą.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Adaptacyjny
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Dostosuj się, zmiana jest jedyną stałą.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Komunikacywny
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Słuchaj, słuchaj, słuchaj.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Rozwiązuje problemów
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Nie ma takich rzeczy jak problemy, panie Green. Tylko ludzie i
+              sytuacje - film Revolver
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Dobry kucharz
+            &lt;/h2&gt;
+            &lt;p&gt;
+              To przychodzi naturalnie.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Zaklinacz psów
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Po prostu się łączymy.
+            &lt;/p&gt;
 
           &lt;/div&gt;
         &lt;/mat-tab&gt;
@@ -694,9 +778,16 @@ export class HomepageComponent implements OnInit {
     &lt;app-ngb-carusel&gt;&lt;/app-ngb-carusel&gt;
   &lt;/div&gt;
   &lt;hr mat-divider&gt;
-  &lt;div id&#x3D;&quot;contact&quot; class&#x3D;&quot;homepage-tile&quot;&gt;
+  &lt;div id&#x3D;&quot;contact&quot; class&#x3D;&quot;homepage-tile contact&quot;&gt;
     &lt;h1&gt;Contact me&lt;/h1&gt;
-&lt;app-contact-page&gt;&lt;/app-contact-page&gt;</code></pre>
+    &lt;app-contact-page&gt;&lt;/app-contact-page&gt;
+    &lt;/div&gt;
+    &lt;hr mat-divider&gt;
+
+  &lt;div id&#x3D;&quot;footer&quot; class&#x3D;&quot;homepage-tile&quot;&gt;
+    &lt;h2&gt;Explore more&lt;/h2&gt;
+    &lt;app-file-tree&gt;&lt;/app-file-tree&gt;
+  &lt;/div&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -736,11 +827,7 @@ $margin-promotion-sections-small: 152px;
   z-index: 1;
 
   animation: slide 1s  1 3s;
-	 
-  /* 
-  CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
-  
-  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+	
   background: -webkit-gradient(
     linear,
     left top,
@@ -806,7 +893,7 @@ $margin-promotion-sections-small: 152px;
       line-height: 56px;
       margin: 15px 5px;
     }
-    h2 {
+    .mat-h2 {
       font-size: 20px;
       font-weight: 300;
       line-height: 28px;
@@ -831,7 +918,7 @@ $margin-promotion-sections-small: 152px;
       margin: 15px 5px;
     }
      .docs-header-headline
-    h2 {
+    .mat-h2 {
       font-size: 20px;
       font-weight: 300;
       line-height: 20px;
@@ -852,7 +939,7 @@ mat-icon {
 .docs-header-button-group {
   position: absolute;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   row-gap: 1em;
   column-gap: 1em;
   align-items: center;
@@ -879,7 +966,7 @@ mat-icon {
 #bio {
   
   mat-tab-group {
-    
+
     h1 {
       font-size: 22px;
       font-weight: bold;
@@ -904,211 +991,14 @@ mat-icon {
       line-height: 12px;
       margin: 15px 10px;
       padding: 0;
+      
     }
   }
 }
+
 .contact-clipboard {
   width: auto;
-}
-
-/*comment out unused css
-
-.docs-homepage-promo {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: px;
-  width: 100%;
-  margin: auto;
-
-  a {
-    text-decoration: none;
-  }
-
-  h2 {
-    font-size: 25px;
-    font-weight: 400;
-    margin: 0 0 16px;
-    padding: 0;
-  }
-
-  p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    margin: 0 0 24px 0;
-    padding: 0;
-  }
-
-}
-
-.carousel-item {
-  width: 48%;
-
-  &amp; + &amp; {
-    margin-left: 2%;
-  }
-
-  @media (min-width: 1020px) {
-    max-width: 32%;
-  }
-}
-
-.docs-homepage-row {
-  display: flex;
-  flex-direction: row;
-  margin: $margin-promotion-sections 0;
-}
-
-.docs-homepage-carousel-row {
-  margin: $margin-promotion-sections 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  h2 {
-    margin-top: 0;
-  }
-}
-
-.docs-homepage-header {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-
-  h2 {
-    margin: 0;
-  }
-}
-
-.docs-link {
-  display: inline-flex;
-  align-items: center;
-}
-
-.docs-homepage-guides {
-  .docs-homepage-guides-card-divider {
-    width: 30%;
-    height: 5px;
-    margin: 15px auto;
-  }
-
-  .docs-homepage-guides-carousel-item {
-    display: flex;
-    text-decoration: none;
-    box-sizing: border-box;
-
-    // We need a slight padding so the box shadow doesn&#x27;t get cut off by the carousel.
-    padding: 3px;
-
-    .mat-card {
-      // Ensures that the cards stretch to the full width of the item.
-      width: 100%;
-      min-height: 140px;
-    }
-  }
-
-  .docs-homepage-guides-card.mat-card {
-    text-align: center;
-  }
-
-  .docs-homepage-guides-card .mat-card-title {
-    height: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-  }
-}
-
-.docs-homepage-featured-components {
-  .docs-featured-components-carousel-item {
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 18px;
-
-    .docs-homepage-img-container {
-      overflow: hidden;
-      margin-bottom: 16px;
-      max-height: 200px;
-    }
-
-    img {
-      transition: 0.3s ease-in-out;
-      width: 100%;
-    }
-
-    &amp;:hover, &amp;:focus {
-      img {
-        transform: scale(1.1);
-      }
-    }
-  }
-}
-
-.docs-homepage-row-column {
-  display: flex;
-  flex-direction: column;
-  width: 32%;
-
-  &amp; + &amp; {
-    margin-left: 2%;
-  }
-}
-
-.docs-header-start {
-  text-align: center;
-  margin: $margin-promotion-sections 0 0 0;
-
-  .mat-raised-button {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .docs-header-background {
-    height: 330px;
-  }
-  .docs-header-background:before {
-    background-image: none;
-  }
-}
-
-@media (max-width: 850px) {
-
-  .docs-header-background:before {
-    background-image: none;
-  }
-  .docs-introduction {
-    flex-direction: column;
-  }
-
-  .docs-homepage-row-column {
-    width: 100%;
-
-    &amp; + &amp; {
-      margin-left: 0;
-    }
-  }
-}
-
-/**
-  * Rules for when the device is detected to be a small screen.//
-  
-@media (max-width: 720px) {
-  .docs-header-start {
-    margin: $margin-promotion-sections-small 0 0 0;
-  }
-
-  .docs-homepage-row, .docs-homepage-carousel-row {
-    margin: $margin-promotion-sections-small 0;
-  }
-}
-
-*/
-  </code></pre>
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -1136,8 +1026,8 @@ mat-icon {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div id="welcome-page" class="container-fluid">    <header class="docs-header-background" aria-label="Get started" id="homepage-header">    <div class="docs-header-section">      <div class="docs-header-headline">        <h1 class="mat-h1">Jan Warzecha</h1>        <h2 class="mat-h2">Full Stack Developer</h2>      </div>      <div class="docs-header-start"></div>    </div>    <section>      <div class="docs-header-button-group">        <button mat-raised-button #tooltip="matTooltip" matTooltip="Read my bio" routerLinkActive="active"          (click)="buttonClick(\'bio\')">Bio</button>        <button mat-raised-button color="primary" #tooltip="matTooltip" matTooltip="Explore my projects"          routerLinkActive="active" (click)="buttonClick(\'projects\')">Projects</button>        <button mat-raised-button color="warn" matTooltip="Info about me" routerLinkActive="active"          (click)="buttonClick(\'about\')">About          me</button>        <button mat-raised-button color="accent" routerLinkActive="active" (click)="buttonClick(\'contact\')"          #tooltip="matTooltip" matTooltip="Contact me">Contact</button>      </div>    </section>  </header>  <hr mat-divider>  <div id="bio" class="homepage-tile">    <h1>Bio</h1>    <button mat-button (click)="english = !english" matTooltip="Toggle language ( EN | PL )" #tooltip="matTooltip"      type="button" aria-label="Toggle language ( EN | PL )">      <mat-icon>{{english ? \'language\' : \'language\'}}</mat-icon>      {{english ? \'PL\' : \'EN\'}}    </button>    <mat-tab-group *ngIf="english; else polish">      <mat-tab label="Short">        <div class="mat-tab">                 <h2>           I\'m Jan Warzecha from Wrocław, Poland          </h2>          <ul>            <li>              Self-thought programmer, coding since July 2020            </li>            <li>              HTML, CSS, JavaScript, TypeScript, Angular 13, Angular Material,            </li>            <li>              English B2/C1            </li>            <li>              MSc in Geology            </li>            <li>              8 years of professional experience in resource prospecting and exploration projects / mining / drilling /              environment / energy            </li>            <li>            <b> I\'m currently looking to remotely join frontend / full-stack team</b>            </li>          </ul>        </div>      </mat-tab>      <mat-tab label="Professional">        <div class="mat-tab">          <h1>            Transport          </h1>          <h2>            Driver          </h2>          <p>2017 - 2021, Wrocław</p>          <ul>            <li>              VIP transport - cooperation with hotels etc.            </li>          </ul>          <h1>            PGE EJ 1 - First Nuclear Power Plant          </h1>          <h2>            Engineering Specialist          </h2>          <p>2016 - 2018 Pomerania, Poland</p>          <ul>            <li>              Hydro-geological monitoring            </li>            <li>              Drill site supervising            </li>            <li>              Quality assurance in sampling and logistics            </li>            <li>              Reporting            </li>          </ul>          <h1>            Research and Development Center Wrocław          </h1>          <h2>            Engineering Specialist - Exploration Geologist</h2>          <p>            2010 - 2016 Wrocław, Poland          </p>          <ul>            <li>              Database management            </li>            <li>              Maps and other graphics            </li>            <li>              Writing documentation            </li>            <li>              Resource estimation:copper, silver, nickel, coal            </li>            <li>              Investor representation, drill site supervising            </li>            <li>              Quality assurance, data logging, core sampling, logistics            </li>          </ul>        </div>      </mat-tab>      <mat-tab label="Personal">        <div class="mat-tab">          <h1>Short Bio</h1><br>          <H2>Hi, I\'m Jan</H2>          <p>Self-Taught Coder</p>          <p>English speaker - C2</p>          <p>Graduated and experienced in Exploration Geology</p>          <p>Curious without limits </p>        </div>      </mat-tab>    </mat-tab-group>    <ng-template #polish>      <mat-tab-group>        <mat-tab class="mat-tab" label="W skrócie">          <h1>            Krótki życiorys          </h1>          <h2>            Cześć, jestem Jan Warzecha, Wrocław          </h2>          <ul>            <li>              Jestem programistą samoukiem, koduję od lipca 2020            </li>            <li>              HTML, CSS, Js, Ts, Angular            </li>            <li>              angielski B2/C1            </li>            <li>              Magister geologii            </li>            <li>              8 lat doświadczenia zawodowego w sektorach poszukiwania zasobów /              górnictwa / wiertnictwa / ochrony środowiska / energetyki            </li>            <li>              Obecnie chcę dołączyć zdalnie do zespołu frontend / full-stack            </li>          </ul>        </mat-tab>        <mat-tab label="Zawodowo">          <div class="mat-tab"><h1>  Transport</h1><h2>  Kierowca</h2><p>2017 - 2021, Wrocław</p><ul>  <li>    transport VIP - współpraca z hotelami itp.  </li></ul><h1>  PGE EJ 1 - Pierwsza Elektrownia Jądrowa</h1><h2>  Specjalista ds. Inżynierii</h2><p>2016 - 2018 Pomorze, Polska</p><ul>  <li>    Monitoring hydrogeologiczny  </li>  <li>    Nadzór nad miejscem wiercenia  </li>  <li>    Zapewnienie jakości w pobieraniu próbek i logistyce  </li>  <li>    Raportowanie  </li></ul><h1>  Centrum Badawczo-Rozwojowe Wrocław</h1><h2>  Specjalista ds. Inżynierii - Geolog Poszukiwań</h2><p>  2010 - 2016 Wrocław, Polska</p><ul>  <li>    Zarządzania bazami danych  </li>  <li>    Mapy i inne grafiki  </li>  <li>    Pisanie dokumentacji  </li>  <li>    Szacowanie zasobów: miedź, srebro, nikiel, węgiel  </li>  <li>    Reprezentacja inwestora, nadzór nad budową wiertni  </li>  <li>    Zapewnienie jakości, rejestracja danych, pobieranie próbek podstawowych, logistyka  </li></ul>          </div>        </mat-tab>        <mat-tab label="Prywatnie">          <div class="mat-tab">          </div>        </mat-tab>      </mat-tab-group>    </ng-template>    <hr mat-divider>  </div>  <div id="projects" class="homepage-tile">    <h1>Projects</h1>    <app-projects-grid></app-projects-grid>  </div>  <hr mat-divider>  <div id="about" class="homepage-tile">    <h1>About me</h1>    <app-ngb-carusel></app-ngb-carusel>  </div>  <hr mat-divider>  <div id="contact" class="homepage-tile">    <h1>Contact me</h1><app-contact-page></app-contact-page></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
+        var COMPONENT_TEMPLATE = '<div><div id="welcome-page" class="container-fluid">  <header class="docs-header-background" aria-label="Welcome" id="homepage-header">    <div class="docs-header-section">      <div class="docs-header-headline">        <h1 class="mat-h1">Jan Warzecha</h1>        <h2 class="mat-h2">Full Stack Developer</h2>      </div>      <div class="docs-header-start"></div>    </div>    <section>      <div class="docs-header-button-group">        <button mat-raised-button #tooltip="matTooltip" matTooltip="Read my bio" routerLinkActive="active"          (click)="buttonClick(\'bio\')">Bio</button>        <button mat-raised-button color="primary" #tooltip="matTooltip" matTooltip="Explore my projects"          routerLinkActive="active" (click)="buttonClick(\'projects\')">Projects</button>        <button mat-raised-button color="warn" matTooltip="Info about me" routerLinkActive="active"          (click)="buttonClick(\'about\')">About          me</button>        <button mat-raised-button color="accent" routerLinkActive="active" (click)="buttonClick(\'contact\')"          #tooltip="matTooltip" matTooltip="Contact me">Contact</button>      </div>    </section>  </header>  <hr mat-divider>  <div id="bio" class="homepage-tile">    <h1>Bio</h1>    <button mat-button (click)="english = !english" matTooltip="Toggle language ( EN | PL )" #tooltip="matTooltip"      type="button" aria-label="Toggle language ( EN | PL )">      <mat-icon>{{english ? \'language\' : \'language\'}}</mat-icon>      {{english ? \'PL\' : \'EN\'}}    </button>    <mat-tab-group *ngIf="english; else polish">      <mat-tab label="Short">        <div class="mat-tab">          <h1>            Brief info            </h1>          <h2>            I\'m Jan Warzecha from Wrocław, Poland          </h2>          <ul>            <li>              Self-thought programmer, coding since July 2020            </li>            <li>              HTML, CSS, JavaScript, TypeScript, Angular 13, Angular Material,            </li>            <li>              English B2/C1            </li>            <li>              MSc in Geology            </li>            <li>              8 years of professional experience in resource prospecting and exploration projects / mining / drilling /              environment / energy / documentation / mapping / moddeling            </li>            <li>              <b>I\'m currently looking to remotely join frontend / full-stack team</b>            </li>          </ul>        </div>      </mat-tab>      <mat-tab label="Professional">        <div class="mat-tab">          <h1>            Transport          </h1>          <h2>            Driver          </h2>          <p>2017 - 2021, Wrocław</p>          <ul>            <li>              VIP transport            </li>          </ul>          <h1>            PGE EJ 1 - First Nuclear Power Plant          </h1>          <h2>            Engineering Specialist          </h2>          <p>2016 - 2018 Pomerania, Poland</p>          <ul>            <li>              Hydro-geological monitoring            </li>            <li>              Drill site supervising            </li>            <li>              Quality assurance in sampling and logistics            </li>            <li>              Reporting            </li>          </ul>          <h1>            Research and Development Center Wrocław          </h1>          <h2>            Engineering Specialist - Exploration Geologist</h2>          <p>            2010 - 2016 Wrocław, Poland          </p>          <ul>            <li>              Database management            </li>            <li>              Maps and other graphics            </li>            <li>              Writing documentation            </li>            <li>              Resource estimation:copper, silver, nickel, coal            </li>            <li>              Investor representation, drill site supervising            </li>            <li>              Quality assurance, data logging, core sampling, logistics            </li>          </ul>        </div>      </mat-tab>      <mat-tab label="Personal">        <div class="mat-tab">          <h2>            Fast learner          </h2>          <p>            I\'m curious of the world, new material naturally connects with my            knowledge and is remembered through repetition.          </p>          <h2>            Team player          </h2>          <p>            When you aim to be a great team player, others will follow.          </p>          <h2>            Adaptive          </h2>          <p>            Adjust, change is permanent.          </p>          <h2>            Communicative          </h2>          <p>            Listen, listen, listen.          </p>          <h2>            Problem Solver          </h2>          <p>            There are no such things as problems, Mr. Green. Only people and            situations - Revolver movie          </p>          <h2>            Good Cook          </h2>          <p>            It comes naturally.          </p>          <h2>            Dog Whisperer          </h2>          <p>            We just connect.          </p>        </div>      </mat-tab>    </mat-tab-group>    <ng-template #polish>      <mat-tab-group>        <mat-tab class="mat-tab" label="W skrócie">          <h1>            Krótkie info o mnie          </h1>          <h2>            Cześć, jestem Jan Warzecha z Wrocławia          </h2>          <ul>            <li>              Jestem programistą samoukiem, koduję od lipca 2020            </li>            <li>              HTML, CSS, JavaScript, TypeScript, Angular 13, Material            </li>            <li>              angielski B2/C1            </li>            <li>              Magister geologii            </li>            <li>              8 lat doświadczenia zawodowego w sektorach poszukiwania zasobów /              górnictwa / wiertnictwa / ochrony środowiska / energetyki            </li>            <li>              Obecnie chcę dołączyć do zespołu Developerów            </li>          </ul>        </mat-tab>        <mat-tab label="Zawodowo">          <div class="mat-tab">            <h1>              Transport            </h1>            <h2>              Kierowca            </h2>            <p>2017 - 2021, Wrocław</p>            <ul>              <li>                transport VIP              </li>            </ul>            <h1>              PGE EJ 1 - Pierwsza Elektrownia Jądrowa            </h1>            <h2>              Specjalista ds. Inżynierii            </h2>            <p>2016 - 2018 Pomorze, Polska</p>            <ul>              <li>                Monitoring hydrogeologiczny              </li>              <li>                Nadzór nad miejscem wiercenia              </li>              <li>                Zapewnienie jakości w pobieraniu próbek i logistyce              </li>              <li>                Raportowanie              </li>            </ul>            <h1>              Centrum Badawczo-Rozwojowe Wrocław            </h1>            <h2>              Specjalista ds. Inżynierii - Geolog Poszukiwawczy</h2>            <p>              2010 - 2016 Wrocław, Polska            </p>            <ul>              <li>                Zarządzania bazami danych              </li>              <li>                Mapy i inne grafiki              </li>              <li>                Pisanie dokumentacji              </li>              <li>                Szacowanie zasobów: miedź, srebro, nikiel, węgiel              </li>              <li>                Reprezentacja inwestora, nadzór nad robotami wiertniczymi              </li>              <li>                Koordynacja pracy urządzeń wiertniczych, zapewnienie jakości, cyrkulacja danych i dokumentów, pobieranie                próbek podstawowych, logistyka                </li>                </ul>          </div>        </mat-tab>        <mat-tab label="Prywatnie">          <div class="mat-tab">            <h2>              Szybko się uczę            </h2>            <p>              Jestem ciekawy świata, nowy materiał w naturalny sposób łączy się z moją              wiedzą. Dobrze zapamiętuję poprzez powtarzanie.            </p>            <h2>              Gracz zespołowy            </h2>            <p>              Kiedy jesteś świetnym graczem zespołowym, inni idą za tobą.            </p>            <h2>              Adaptacyjny            </h2>            <p>              Dostosuj się, zmiana jest jedyną stałą.            </p>            <h2>              Komunikacywny            </h2>            <p>              Słuchaj, słuchaj, słuchaj.            </p>            <h2>              Rozwiązuje problemów            </h2>            <p>              Nie ma takich rzeczy jak problemy, panie Green. Tylko ludzie i              sytuacje - film Revolver            </p>            <h2>              Dobry kucharz            </h2>            <p>              To przychodzi naturalnie.            </p>            <h2>              Zaklinacz psów            </h2>            <p>              Po prostu się łączymy.            </p>          </div>        </mat-tab>      </mat-tab-group>    </ng-template>    <hr mat-divider>  </div>  <div id="projects" class="homepage-tile">    <h1>Projects</h1>    <app-projects-grid></app-projects-grid>  </div>  <hr mat-divider>  <div id="about" class="homepage-tile">    <h1>About me</h1>    <app-ngb-carusel></app-ngb-carusel>  </div>  <hr mat-divider>  <div id="contact" class="homepage-tile contact">    <h1>Contact me</h1>    <app-contact-page></app-contact-page>    </div>    <hr mat-divider>  <div id="footer" class="homepage-tile">    <h2>Explore more</h2>    <app-file-tree></app-file-tree>  </div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'FutureGreenTechComponent', 'selector': 'app-future-green-tech'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'NordschleifeComponent', 'selector': 'app-nordschleife'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'QuoPicComponent', 'selector': 'app-quo-pic'},{'name': 'RespGalleryComponent', 'selector': 'app-resp-gallery'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomepageComponent'};
 </script>

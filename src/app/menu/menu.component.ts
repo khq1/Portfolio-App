@@ -70,7 +70,7 @@ export class MenuComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.messageService.add('Hi, take a look around');
+    this.messageService.add('Hi, take a look around..');
     this.themeService.setTheme('light');
     this.messageService.add('Try theme switch');
   }
@@ -87,7 +87,7 @@ toogleUserLogin() {
   public buttonClick(fragment: string): void {
     this.router.navigate(['/Homepage']).then(() => {
       window.location.hash = fragment;
-      this.messageService.add('Navigating to ' + fragment);
+      this.messageService.add(`Navigating to ${fragment}`);
     });
   }
 }

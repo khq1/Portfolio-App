@@ -440,13 +440,13 @@ export class DynamicFlatNode {
 @Injectable({ providedIn: &#x27;root&#x27; })
 export class DynamicDatabase {
   dataMap &#x3D; new Map&lt;string, string[]&gt;([
-    [&#x27;src&#x27;, [&#x27;app&#x27;, &#x27;assets&#x27;, &#x27;environments&#x27;]],
-    [&#x27;app&#x27;, [&#x27;Tomato&#x27;, &#x27;Potato&#x27;, &#x27;Onion&#x27;]],
-    [&#x27;Apple&#x27;, [&#x27;Fuji&#x27;, &#x27;Macintosh&#x27;]],
-    [&#x27;Onion&#x27;, [&#x27;Yellow&#x27;, &#x27;White&#x27;, &#x27;Purple&#x27;]],
+    [&#x27;Portfolio-App&#x27;, [&#x27;Home&#x27;, &#x27;Documentations&#x27;, &#x27;Menu&#x27;]],
+    [&#x27;Home&#x27;, [&#x27;User Login&#x27;,&#x27;Tooltips&#x27;, &#x27;Theme Switch&#x27;, &#x27;Custom Data Pipe&#x27;, &#x27;Messages&#x27;]],
+    [&#x27;Documentations&#x27;, [&#x27;Compodoc&#x27;, &#x27;Typedoc&#x27;]],
+    [&#x27;Menu&#x27;, [&#x27;Welcome&#x27;, &#x27;Bio&#x27;, &#x27;Projects&#x27;, &#x27;About me&#x27;, &#x27;Contact&#x27;]],
   ]);
 
-  rootLevelNodes: string[] &#x3D; [&#x27;src&#x27;];
+  rootLevelNodes: string[] &#x3D; [&#x27;Portfolio-App&#x27;];
 
   /** Initial data from database */
   initialData(): DynamicFlatNode[] {
@@ -608,7 +608,8 @@ export class FileTreeComponent implements OnInit {
     {{node.item}}
     &lt;mat-progress-bar *ngIf&#x3D;&quot;node.isLoading&quot; mode&#x3D;&quot;indeterminate&quot; class&#x3D;&quot;example-tree-progress-bar&quot;&gt;&lt;/mat-progress-bar&gt;
   &lt;/mat-tree-node&gt;
-&lt;/mat-tree&gt;</code></pre>
+&lt;/mat-tree&gt;
+&lt;p class&#x3D;&quot;center&quot;&gt;Portfolio-App Copyright Jan Warzecha&lt;/p&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -616,7 +617,12 @@ export class FileTreeComponent implements OnInit {
                     <code>./file-tree.component.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">.example-tree-progress-bar {
-  margin-left: 3px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.center{
+  text-align: center;
+margin:25px auto;
 }</code></pre>
     </div>
 
@@ -645,8 +651,8 @@ export class FileTreeComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-tree [dataSource]="dataSource" [treeControl]="treeControl">  <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>    <button mat-icon-button disabled></button>    {{node.item}}  </mat-tree-node>  <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>    <button mat-icon-button [attr.aria-label]="\'Toggle \' + node.item" matTreeNodeToggle>      <mat-icon class="mat-icon-rtl-mirror">        {{treeControl.isExpanded(node) ? \'expand_more\' : \'chevron_right\'}}      </mat-icon>    </button>    {{node.item}}    <mat-progress-bar *ngIf="node.isLoading" mode="indeterminate" class="example-tree-progress-bar"></mat-progress-bar>  </mat-tree-node></mat-tree></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
+        var COMPONENT_TEMPLATE = '<div><mat-tree [dataSource]="dataSource" [treeControl]="treeControl">  <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>    <button mat-icon-button disabled></button>    {{node.item}}  </mat-tree-node>  <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>    <button mat-icon-button [attr.aria-label]="\'Toggle \' + node.item" matTreeNodeToggle>      <mat-icon class="mat-icon-rtl-mirror">        {{treeControl.isExpanded(node) ? \'expand_more\' : \'chevron_right\'}}      </mat-icon>    </button>    {{node.item}}    <mat-progress-bar *ngIf="node.isLoading" mode="indeterminate" class="example-tree-progress-bar"></mat-progress-bar>  </mat-tree-node></mat-tree><p class="center">Portfolio-App Copyright Jan Warzecha</p></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'FutureGreenTechComponent', 'selector': 'app-future-green-tech'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'NordschleifeComponent', 'selector': 'app-nordschleife'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'QuoPicComponent', 'selector': 'app-quo-pic'},{'name': 'RespGalleryComponent', 'selector': 'app-resp-gallery'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FileTreeComponent'};
 </script>
