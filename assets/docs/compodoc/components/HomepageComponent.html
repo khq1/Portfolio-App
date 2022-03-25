@@ -1,0 +1,1109 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>portfolio-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">portfolio-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HomepageComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/homepage/homepage.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+            <tr>
+                <td class="col-md-3">encapsulation</td>
+                <td class="col-md-9"><code>ViewEncapsulation.Emulated</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-homepage</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./homepage.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./homepage.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#english" >english</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#buttonClick" >buttonClick</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, messageService: <a href="../injectables/MessageService.html" target="_self">MessageService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/homepage/homepage.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>messageService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MessageService.html" target="_self" >MessageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buttonClick"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>buttonClick</b></span>
+                        <a href="#buttonClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buttonClick(fragment: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/components/homepage/homepage.component.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Navigate Router to Homepage with fragment ID <a href="https://marked.js.org/">Markdown</a></p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fragment</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/components/homepage/homepage.component.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="english"></a>
+                    <span class="name">
+                        <span ><b>english</b></span>
+                        <a href="#english"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/homepage/homepage.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Language toogle boolean - BIO section <a href="https://marked.js.org/">Markdown</a></p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewEncapsulation } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { MessageService } from &#x27;src/app/message.service&#x27;;
+
+
+@Component({
+  selector: &#x27;app-homepage&#x27;,
+  templateUrl: &#x27;./homepage.component.html&#x27;,
+  styleUrls: [&#x27;./homepage.component.scss&#x27;],
+  encapsulation: ViewEncapsulation.Emulated,
+})
+export class HomepageComponent implements OnInit {
+  /**
+   * Language toogle boolean - BIO section [Markdown](https://marked.js.org/)
+   */
+  english &#x3D; true;
+  constructor(private router: Router, private messageService: MessageService) {}
+
+  ngOnInit() {}
+  /**
+   * Navigate Router to Homepage with fragment ID [Markdown](https://marked.js.org/)
+   */
+  public buttonClick(fragment: string): void {
+    this.router.navigate([&#x27;/Homepage&#x27;]).then(() &#x3D;&gt; {
+      window.location.hash &#x3D; fragment;
+
+      this.messageService.add(&#x27;Navigating to &#x27; + fragment);
+    });
+  }
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;welcome-page&quot; class&#x3D;&quot;container-fluid&quot;&gt;
+  &lt;header class&#x3D;&quot;docs-header-background&quot; aria-label&#x3D;&quot;Welcome&quot; id&#x3D;&quot;homepage-header&quot;&gt;
+    &lt;div class&#x3D;&quot;docs-header-section&quot;&gt;
+      &lt;div class&#x3D;&quot;docs-header-headline&quot;&gt;
+        &lt;h1 class&#x3D;&quot;mat-h1&quot;&gt;Jan Warzecha&lt;/h1&gt;
+        &lt;h2 class&#x3D;&quot;mat-h2&quot;&gt;Full Stack Developer&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;docs-header-start&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;section&gt;
+      &lt;div class&#x3D;&quot;docs-header-button-group&quot;&gt;
+
+        &lt;button mat-raised-button #tooltip&#x3D;&quot;matTooltip&quot; matTooltip&#x3D;&quot;Read my bio&quot; routerLinkActive&#x3D;&quot;active&quot;
+          (click)&#x3D;&quot;buttonClick(&#x27;bio&#x27;)&quot;&gt;Bio&lt;/button&gt;
+        &lt;button mat-raised-button color&#x3D;&quot;primary&quot; #tooltip&#x3D;&quot;matTooltip&quot; matTooltip&#x3D;&quot;Explore my projects&quot;
+          routerLinkActive&#x3D;&quot;active&quot; (click)&#x3D;&quot;buttonClick(&#x27;projects&#x27;)&quot;&gt;Projects&lt;/button&gt;
+        &lt;button mat-raised-button color&#x3D;&quot;warn&quot; matTooltip&#x3D;&quot;Info about me&quot; routerLinkActive&#x3D;&quot;active&quot;
+          (click)&#x3D;&quot;buttonClick(&#x27;about&#x27;)&quot;&gt;About
+          me&lt;/button&gt;
+        &lt;button mat-raised-button color&#x3D;&quot;accent&quot; routerLinkActive&#x3D;&quot;active&quot; (click)&#x3D;&quot;buttonClick(&#x27;contact&#x27;)&quot;
+          #tooltip&#x3D;&quot;matTooltip&quot; matTooltip&#x3D;&quot;Contact me&quot;&gt;Contact&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+  &lt;/header&gt;
+  &lt;hr mat-divider&gt;
+  &lt;div id&#x3D;&quot;bio&quot; class&#x3D;&quot;homepage-tile&quot;&gt;
+    &lt;h1&gt;Bio&lt;/h1&gt;
+    &lt;button mat-button (click)&#x3D;&quot;english &#x3D; !english&quot; matTooltip&#x3D;&quot;Toggle language ( EN | PL )&quot; #tooltip&#x3D;&quot;matTooltip&quot;
+      type&#x3D;&quot;button&quot; aria-label&#x3D;&quot;Toggle language ( EN | PL )&quot;&gt;
+      &lt;mat-icon&gt;{{english ? &#x27;language&#x27; : &#x27;language&#x27;}}&lt;/mat-icon&gt;
+
+      {{english ? &#x27;PL&#x27; : &#x27;EN&#x27;}}
+    &lt;/button&gt;
+    &lt;mat-tab-group *ngIf&#x3D;&quot;english; else polish&quot;&gt;
+
+      &lt;mat-tab label&#x3D;&quot;Short&quot;&gt;
+        &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
+          &lt;h1&gt;
+            Brief info
+            &lt;/h1&gt;
+          &lt;h2&gt;
+            I&#x27;m Jan Warzecha from Wrocław, Poland
+          &lt;/h2&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              Self-thought programmer, coding since July 2020
+            &lt;/li&gt;
+            &lt;li&gt;
+              HTML, CSS, JavaScript, TypeScript, Angular 13, Angular Material,
+            &lt;/li&gt;
+            &lt;li&gt;
+              English B2/C1
+            &lt;/li&gt;
+            &lt;li&gt;
+              MSc in Geology
+            &lt;/li&gt;
+            &lt;li&gt;
+              8 years of professional experience in resource prospecting and exploration projects / mining / drilling /
+              environment / energy / documentation / mapping / moddeling
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;b&gt;I&#x27;m currently looking to remotely join frontend / full-stack team&lt;/b&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/mat-tab&gt;
+
+      &lt;mat-tab label&#x3D;&quot;Professional&quot;&gt;
+        &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
+          &lt;h1&gt;
+            Transport
+          &lt;/h1&gt;
+          &lt;h2&gt;
+            Driver
+          &lt;/h2&gt;
+          &lt;p&gt;2017 - 2021, Wrocław&lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              VIP transport
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;h1&gt;
+            PGE EJ 1 - First Nuclear Power Plant
+          &lt;/h1&gt;
+          &lt;h2&gt;
+            Engineering Specialist
+          &lt;/h2&gt;
+          &lt;p&gt;2016 - 2018 Pomerania, Poland&lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              Hydro-geological monitoring
+            &lt;/li&gt;
+            &lt;li&gt;
+              Drill site supervising
+            &lt;/li&gt;
+            &lt;li&gt;
+              Quality assurance in sampling and logistics
+            &lt;/li&gt;
+            &lt;li&gt;
+              Reporting
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;h1&gt;
+            Research and Development Center Wrocław
+          &lt;/h1&gt;
+          &lt;h2&gt;
+            Engineering Specialist - Exploration Geologist&lt;/h2&gt;
+          &lt;p&gt;
+            2010 - 2016 Wrocław, Poland
+          &lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              Database management
+            &lt;/li&gt;
+            &lt;li&gt;
+              Maps and other graphics
+            &lt;/li&gt;
+            &lt;li&gt;
+              Writing documentation
+            &lt;/li&gt;
+            &lt;li&gt;
+              Resource estimation:copper, silver, nickel, coal
+            &lt;/li&gt;
+            &lt;li&gt;
+              Investor representation, drill site supervising
+            &lt;/li&gt;
+            &lt;li&gt;
+              Quality assurance, data logging, core sampling, logistics
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/mat-tab&gt;
+
+      &lt;mat-tab label&#x3D;&quot;Personal&quot;&gt;
+        &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
+          &lt;h2&gt;
+            Fast learner
+          &lt;/h2&gt;
+          &lt;p&gt;
+            I&#x27;m curious of the world, new material naturally connects with my
+            knowledge and is remembered through repetition.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Team player
+          &lt;/h2&gt;
+          &lt;p&gt;
+            When you aim to be a great team player, others will follow.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Adaptive
+          &lt;/h2&gt;
+          &lt;p&gt;
+            Adjust, change is permanent.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Communicative
+          &lt;/h2&gt;
+          &lt;p&gt;
+            Listen, listen, listen.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Problem Solver
+          &lt;/h2&gt;
+          &lt;p&gt;
+            There are no such things as problems, Mr. Green. Only people and
+            situations - Revolver movie
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Good Cook
+          &lt;/h2&gt;
+          &lt;p&gt;
+            It comes naturally.
+          &lt;/p&gt;
+          &lt;h2&gt;
+            Dog Whisperer
+          &lt;/h2&gt;
+          &lt;p&gt;
+            We just connect.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/mat-tab&gt;
+    &lt;/mat-tab-group&gt;
+
+
+    &lt;ng-template #polish&gt;
+      &lt;mat-tab-group&gt;
+        &lt;mat-tab class&#x3D;&quot;mat-tab&quot; label&#x3D;&quot;W skrócie&quot;&gt;
+          &lt;h1&gt;
+            Krótkie info o mnie
+          &lt;/h1&gt;
+          &lt;h2&gt;
+            Cześć, jestem Jan Warzecha z Wrocławia
+          &lt;/h2&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              Jestem programistą samoukiem, koduję od lipca 2020
+            &lt;/li&gt;
+            &lt;li&gt;
+              HTML, CSS, JavaScript, TypeScript, Angular 13, Material
+            &lt;/li&gt;
+            &lt;li&gt;
+              angielski B2/C1
+            &lt;/li&gt;
+            &lt;li&gt;
+              Magister geologii
+            &lt;/li&gt;
+            &lt;li&gt;
+              8 lat doświadczenia zawodowego w sektorach poszukiwania zasobów /
+              górnictwa / wiertnictwa / ochrony środowiska / energetyki
+            &lt;/li&gt;
+            &lt;li&gt;
+              Obecnie chcę dołączyć do zespołu Developerów
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/mat-tab&gt;
+
+        &lt;mat-tab label&#x3D;&quot;Zawodowo&quot;&gt;
+          &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
+            &lt;h1&gt;
+              Transport
+            &lt;/h1&gt;
+            &lt;h2&gt;
+              Kierowca
+            &lt;/h2&gt;
+            &lt;p&gt;2017 - 2021, Wrocław&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                transport VIP
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;h1&gt;
+              PGE EJ 1 - Pierwsza Elektrownia Jądrowa
+            &lt;/h1&gt;
+            &lt;h2&gt;
+              Specjalista ds. Inżynierii
+            &lt;/h2&gt;
+            &lt;p&gt;2016 - 2018 Pomorze, Polska&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                Monitoring hydrogeologiczny
+              &lt;/li&gt;
+              &lt;li&gt;
+                Nadzór nad miejscem wiercenia
+              &lt;/li&gt;
+              &lt;li&gt;
+                Zapewnienie jakości w pobieraniu próbek i logistyce
+              &lt;/li&gt;
+              &lt;li&gt;
+                Raportowanie
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;h1&gt;
+              Centrum Badawczo-Rozwojowe Wrocław
+            &lt;/h1&gt;
+            &lt;h2&gt;
+              Specjalista ds. Inżynierii - Geolog Poszukiwawczy&lt;/h2&gt;
+            &lt;p&gt;
+              2010 - 2016 Wrocław, Polska
+            &lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                Zarządzania bazami danych
+              &lt;/li&gt;
+              &lt;li&gt;
+                Mapy i inne grafiki
+              &lt;/li&gt;
+              &lt;li&gt;
+                Pisanie dokumentacji
+              &lt;/li&gt;
+              &lt;li&gt;
+                Szacowanie zasobów: miedź, srebro, nikiel, węgiel
+              &lt;/li&gt;
+              &lt;li&gt;
+                Reprezentacja inwestora, nadzór nad robotami wiertniczymi
+              &lt;/li&gt;
+              &lt;li&gt;
+                Koordynacja pracy urządzeń wiertniczych, zapewnienie jakości, cyrkulacja danych i dokumentów, pobieranie
+                próbek podstawowych, logistyka
+                &lt;/li&gt;
+                &lt;/ul&gt;
+
+          &lt;/div&gt;
+        &lt;/mat-tab&gt;
+
+        &lt;mat-tab label&#x3D;&quot;Prywatnie&quot;&gt;
+          &lt;div class&#x3D;&quot;mat-tab&quot;&gt;
+            &lt;h2&gt;
+              Szybko się uczę
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Jestem ciekawy świata, nowy materiał w naturalny sposób łączy się z moją
+              wiedzą. Dobrze zapamiętuję poprzez powtarzanie.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Gracz zespołowy
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Kiedy jesteś świetnym graczem zespołowym, inni idą za tobą.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Adaptacyjny
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Dostosuj się, zmiana jest jedyną stałą.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Komunikacywny
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Słuchaj, słuchaj, słuchaj.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Rozwiązuje problemów
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Nie ma takich rzeczy jak problemy, panie Green. Tylko ludzie i
+              sytuacje - film Revolver
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Dobry kucharz
+            &lt;/h2&gt;
+            &lt;p&gt;
+              To przychodzi naturalnie.
+            &lt;/p&gt;
+            &lt;h2&gt;
+              Zaklinacz psów
+            &lt;/h2&gt;
+            &lt;p&gt;
+              Po prostu się łączymy.
+            &lt;/p&gt;
+
+          &lt;/div&gt;
+        &lt;/mat-tab&gt;
+      &lt;/mat-tab-group&gt;
+    &lt;/ng-template&gt;
+    &lt;hr mat-divider&gt;
+  &lt;/div&gt;
+
+  &lt;div id&#x3D;&quot;projects&quot; class&#x3D;&quot;homepage-tile&quot;&gt;
+    &lt;h1&gt;Projects&lt;/h1&gt;
+    &lt;app-projects-grid&gt;&lt;/app-projects-grid&gt;
+  &lt;/div&gt;
+  &lt;hr mat-divider&gt;
+  &lt;div id&#x3D;&quot;about&quot; class&#x3D;&quot;homepage-tile&quot;&gt;
+    &lt;h1&gt;About me&lt;/h1&gt;
+    &lt;app-ngb-carusel&gt;&lt;/app-ngb-carusel&gt;
+  &lt;/div&gt;
+  &lt;hr mat-divider&gt;
+  &lt;div id&#x3D;&quot;contact&quot; class&#x3D;&quot;homepage-tile contact&quot;&gt;
+    &lt;h1&gt;Contact me&lt;/h1&gt;
+    &lt;app-contact-page&gt;&lt;/app-contact-page&gt;
+    &lt;/div&gt;
+    &lt;hr mat-divider&gt;
+
+  &lt;div id&#x3D;&quot;footer&quot; class&#x3D;&quot;homepage-tile&quot;&gt;
+    &lt;h2&gt;Explore more&lt;/h2&gt;
+    &lt;app-file-tree&gt;&lt;/app-file-tree&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./homepage.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">// The margin between two sections
+$margin-promotion-sections: 50px;
+$margin-promotion-sections-small: 152px;
+
+.docs-header-background {
+  overflow: hidden;
+  position: relative;
+  height: 600px;
+}
+
+.docs-header-background::before {
+  content: &quot;&quot;;
+  position: absolute;
+  background-image: url(&quot;../../../assets/img/homepage/portfolio-header-custom-logo.png&quot;);
+  background-size: 500px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 80% 30px;
+  opacity: 0.2;
+}
+.docs-header-background::after {
+  content: &quot;&quot;;
+  top: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+
+  animation: slide 1s  1 3s;
+	
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(50%, rgba(255, 255, 255, 0.8)),
+    color-stop(99%, rgba(128, 186, 232, 0)),
+    color-stop(100%, rgba(125, 185, 232, 0))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr&#x3D;&#x27;#00ffffff&#x27;, endColorstr&#x3D;&#x27;#007db9e8&#x27;,GradientType&#x3D;1 ); /* IE6-9 */
+}
+
+
+
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
+}
+
+.docs-header-section {
+  width: 90vh;
+  position: absolute;
+  z-index: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .docs-header-headline {
+    height: 100%;
+
+    .mat-h1 {
+      font-size: 66px;
+      font-weight: bold;
+      line-height: 56px;
+      margin: 15px 5px;
+    }
+    .mat-h2 {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      margin: 15px 0 25px 0;
+    }
+  }
+   @media only screen and (max-width: 600px) {
+.docs-header-background {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  
+}
+
+
+
+   .docs-header-headline
+  .mat-h1 {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 36px;
+      margin: 15px 5px;
+    }
+     .docs-header-headline
+    .mat-h2 {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 20px;
+      margin: 15px 0 25px 0;
+    }  
+   }
+}
+
+mat-divider {
+  width: 100%;
+  
+}
+
+mat-icon {
+  vertical-align: middle;
+}
+
+.docs-header-button-group {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 1em;
+  column-gap: 1em;
+  align-items: center;
+  justify-content: space-evenly;
+  right:5px;
+
+  bottom: 15%;
+  margin: 0 auto;
+}
+.container-fluid {
+  padding: 0px;
+ 
+  .homepage-tile {
+    height: auto;
+    
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 36px;
+      margin: 15px 5px;
+    }
+  }
+}
+#bio {
+  
+  mat-tab-group {
+
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 22px;
+      margin: 15px 10px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 18px;
+      margin: 15px 10px;
+    }
+    p{
+       font-size: 12px;
+      font-weight: 300;
+      line-height: 12px;
+     margin: 15px 10px;
+    }
+    ul li {
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 12px;
+      margin: 15px 10px;
+      padding: 0;
+      
+    }
+  }
+}
+
+.contact-clipboard {
+  width: auto;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div id="welcome-page" class="container-fluid">  <header class="docs-header-background" aria-label="Welcome" id="homepage-header">    <div class="docs-header-section">      <div class="docs-header-headline">        <h1 class="mat-h1">Jan Warzecha</h1>        <h2 class="mat-h2">Full Stack Developer</h2>      </div>      <div class="docs-header-start"></div>    </div>    <section>      <div class="docs-header-button-group">        <button mat-raised-button #tooltip="matTooltip" matTooltip="Read my bio" routerLinkActive="active"          (click)="buttonClick(\'bio\')">Bio</button>        <button mat-raised-button color="primary" #tooltip="matTooltip" matTooltip="Explore my projects"          routerLinkActive="active" (click)="buttonClick(\'projects\')">Projects</button>        <button mat-raised-button color="warn" matTooltip="Info about me" routerLinkActive="active"          (click)="buttonClick(\'about\')">About          me</button>        <button mat-raised-button color="accent" routerLinkActive="active" (click)="buttonClick(\'contact\')"          #tooltip="matTooltip" matTooltip="Contact me">Contact</button>      </div>    </section>  </header>  <hr mat-divider>  <div id="bio" class="homepage-tile">    <h1>Bio</h1>    <button mat-button (click)="english = !english" matTooltip="Toggle language ( EN | PL )" #tooltip="matTooltip"      type="button" aria-label="Toggle language ( EN | PL )">      <mat-icon>{{english ? \'language\' : \'language\'}}</mat-icon>      {{english ? \'PL\' : \'EN\'}}    </button>    <mat-tab-group *ngIf="english; else polish">      <mat-tab label="Short">        <div class="mat-tab">          <h1>            Brief info            </h1>          <h2>            I\'m Jan Warzecha from Wrocław, Poland          </h2>          <ul>            <li>              Self-thought programmer, coding since July 2020            </li>            <li>              HTML, CSS, JavaScript, TypeScript, Angular 13, Angular Material,            </li>            <li>              English B2/C1            </li>            <li>              MSc in Geology            </li>            <li>              8 years of professional experience in resource prospecting and exploration projects / mining / drilling /              environment / energy / documentation / mapping / moddeling            </li>            <li>              <b>I\'m currently looking to remotely join frontend / full-stack team</b>            </li>          </ul>        </div>      </mat-tab>      <mat-tab label="Professional">        <div class="mat-tab">          <h1>            Transport          </h1>          <h2>            Driver          </h2>          <p>2017 - 2021, Wrocław</p>          <ul>            <li>              VIP transport            </li>          </ul>          <h1>            PGE EJ 1 - First Nuclear Power Plant          </h1>          <h2>            Engineering Specialist          </h2>          <p>2016 - 2018 Pomerania, Poland</p>          <ul>            <li>              Hydro-geological monitoring            </li>            <li>              Drill site supervising            </li>            <li>              Quality assurance in sampling and logistics            </li>            <li>              Reporting            </li>          </ul>          <h1>            Research and Development Center Wrocław          </h1>          <h2>            Engineering Specialist - Exploration Geologist</h2>          <p>            2010 - 2016 Wrocław, Poland          </p>          <ul>            <li>              Database management            </li>            <li>              Maps and other graphics            </li>            <li>              Writing documentation            </li>            <li>              Resource estimation:copper, silver, nickel, coal            </li>            <li>              Investor representation, drill site supervising            </li>            <li>              Quality assurance, data logging, core sampling, logistics            </li>          </ul>        </div>      </mat-tab>      <mat-tab label="Personal">        <div class="mat-tab">          <h2>            Fast learner          </h2>          <p>            I\'m curious of the world, new material naturally connects with my            knowledge and is remembered through repetition.          </p>          <h2>            Team player          </h2>          <p>            When you aim to be a great team player, others will follow.          </p>          <h2>            Adaptive          </h2>          <p>            Adjust, change is permanent.          </p>          <h2>            Communicative          </h2>          <p>            Listen, listen, listen.          </p>          <h2>            Problem Solver          </h2>          <p>            There are no such things as problems, Mr. Green. Only people and            situations - Revolver movie          </p>          <h2>            Good Cook          </h2>          <p>            It comes naturally.          </p>          <h2>            Dog Whisperer          </h2>          <p>            We just connect.          </p>        </div>      </mat-tab>    </mat-tab-group>    <ng-template #polish>      <mat-tab-group>        <mat-tab class="mat-tab" label="W skrócie">          <h1>            Krótkie info o mnie          </h1>          <h2>            Cześć, jestem Jan Warzecha z Wrocławia          </h2>          <ul>            <li>              Jestem programistą samoukiem, koduję od lipca 2020            </li>            <li>              HTML, CSS, JavaScript, TypeScript, Angular 13, Material            </li>            <li>              angielski B2/C1            </li>            <li>              Magister geologii            </li>            <li>              8 lat doświadczenia zawodowego w sektorach poszukiwania zasobów /              górnictwa / wiertnictwa / ochrony środowiska / energetyki            </li>            <li>              Obecnie chcę dołączyć do zespołu Developerów            </li>          </ul>        </mat-tab>        <mat-tab label="Zawodowo">          <div class="mat-tab">            <h1>              Transport            </h1>            <h2>              Kierowca            </h2>            <p>2017 - 2021, Wrocław</p>            <ul>              <li>                transport VIP              </li>            </ul>            <h1>              PGE EJ 1 - Pierwsza Elektrownia Jądrowa            </h1>            <h2>              Specjalista ds. Inżynierii            </h2>            <p>2016 - 2018 Pomorze, Polska</p>            <ul>              <li>                Monitoring hydrogeologiczny              </li>              <li>                Nadzór nad miejscem wiercenia              </li>              <li>                Zapewnienie jakości w pobieraniu próbek i logistyce              </li>              <li>                Raportowanie              </li>            </ul>            <h1>              Centrum Badawczo-Rozwojowe Wrocław            </h1>            <h2>              Specjalista ds. Inżynierii - Geolog Poszukiwawczy</h2>            <p>              2010 - 2016 Wrocław, Polska            </p>            <ul>              <li>                Zarządzania bazami danych              </li>              <li>                Mapy i inne grafiki              </li>              <li>                Pisanie dokumentacji              </li>              <li>                Szacowanie zasobów: miedź, srebro, nikiel, węgiel              </li>              <li>                Reprezentacja inwestora, nadzór nad robotami wiertniczymi              </li>              <li>                Koordynacja pracy urządzeń wiertniczych, zapewnienie jakości, cyrkulacja danych i dokumentów, pobieranie                próbek podstawowych, logistyka                </li>                </ul>          </div>        </mat-tab>        <mat-tab label="Prywatnie">          <div class="mat-tab">            <h2>              Szybko się uczę            </h2>            <p>              Jestem ciekawy świata, nowy materiał w naturalny sposób łączy się z moją              wiedzą. Dobrze zapamiętuję poprzez powtarzanie.            </p>            <h2>              Gracz zespołowy            </h2>            <p>              Kiedy jesteś świetnym graczem zespołowym, inni idą za tobą.            </p>            <h2>              Adaptacyjny            </h2>            <p>              Dostosuj się, zmiana jest jedyną stałą.            </p>            <h2>              Komunikacywny            </h2>            <p>              Słuchaj, słuchaj, słuchaj.            </p>            <h2>              Rozwiązuje problemów            </h2>            <p>              Nie ma takich rzeczy jak problemy, panie Green. Tylko ludzie i              sytuacje - film Revolver            </p>            <h2>              Dobry kucharz            </h2>            <p>              To przychodzi naturalnie.            </p>            <h2>              Zaklinacz psów            </h2>            <p>              Po prostu się łączymy.            </p>          </div>        </mat-tab>      </mat-tab-group>    </ng-template>    <hr mat-divider>  </div>  <div id="projects" class="homepage-tile">    <h1>Projects</h1>    <app-projects-grid></app-projects-grid>  </div>  <hr mat-divider>  <div id="about" class="homepage-tile">    <h1>About me</h1>    <app-ngb-carusel></app-ngb-carusel>  </div>  <hr mat-divider>  <div id="contact" class="homepage-tile contact">    <h1>Contact me</h1>    <app-contact-page></app-contact-page>    </div>    <hr mat-divider>  <div id="footer" class="homepage-tile">    <h2>Explore more</h2>    <app-file-tree></app-file-tree>  </div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactPageComponent', 'selector': 'app-contact-page'},{'name': 'CounterDataComponent', 'selector': 'app-counter-data'},{'name': 'FileTreeComponent', 'selector': 'app-file-tree'},{'name': 'FutureGreenTechComponent', 'selector': 'app-future-green-tech'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MessagesComponent', 'selector': 'app-messages'},{'name': 'NgbCaruselComponent', 'selector': 'app-ngb-carusel'},{'name': 'NordschleifeComponent', 'selector': 'app-nordschleife'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsGridComponent', 'selector': 'app-projects-grid'},{'name': 'QuoPicComponent', 'selector': 'app-quo-pic'},{'name': 'RespGalleryComponent', 'selector': 'app-resp-gallery'},{'name': 'ThemeSwitchComponent', 'selector': 'app-theme-switch'},{'name': 'UserLoginComponent', 'selector': 'app-user-login'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomepageComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomepageComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
