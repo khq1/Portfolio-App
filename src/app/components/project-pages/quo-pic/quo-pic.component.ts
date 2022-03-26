@@ -14,36 +14,32 @@ export class QuoPicComponent implements OnInit {
       if (matches) {
       
         return [
-          
-
           {
-            title: 'QuoPic',
+            title: 'Cafe and Clouds',
             colspan: 2,
             rowspan: 2,
-            subtitle: 'Cafe and Clouds',
+            subtitle: 'Sit back and enjoy random quotes and images',
             img_url: 'assets/img/projects-images/QuoPic.jpg',
             gh_url: 'https://github.com/khq1/QuoPic',
             gh_pages_url: 'https://khq1.github.io/QuoPic/',
             description:
-              'Sit back and enjoy random quotes combined with a random image, read by text to speech, build in browspaner synthesis module',
+              'This my first project combining HTML, CSS and JavaScript. \n\n Site utilizes 3 APIs:\n https://quotable.io - get radom quotes \n https://picsum.photos get random image with a window size resolution \n https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis - Web Speech API \n',
             routerLink: 'QuoPic',
           },
-         
         ];
       }
     
       return [
-        
         {
-          title: 'QuoPic',
+          title: 'Cafe and Clouds',
           colspan: 2,
           rowspan: 2,
-          subtitle: 'Cafe and Clouds',
+          subtitle: 'Sit back and enjoy random quotes and images',
           img_url: 'assets/img/projects-images/QuoPic.jpg',
           gh_url: 'https://github.com/khq1/QuoPic',
           gh_pages_url: 'https://khq1.github.io/QuoPic/',
           description:
-            'Sit back and enjoy random quotes combined with a random image, read by text to speech, build in browspaner synthesis module',
+            'This my first project combining HTML, CSS and JavaScript. \n\n Site utilizes 3 APIs:\n https://quotable.io - get radom quotes \n https://picsum.photos get random image with a window size resolution \n https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis - Web Speech API \n',
           routerLink: 'QuoPic',
         },
       ];

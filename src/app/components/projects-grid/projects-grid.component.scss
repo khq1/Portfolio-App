@@ -2,6 +2,7 @@
 
 .grid-container {
   width: 100%;
+  margin:0;
   }
   .grid-tile{
 width: 100%;
@@ -9,14 +10,20 @@ height: 100%;
 
 }
 .dashboard-card { 
-  top: 15px;
-  bottom: 15px;
+  
   padding: 0;
   width: 90%;
   height: 90%;
-   margin-left:auto;
-   margin-right:auto;
+  margin-left:auto;
+  margin-right:auto;
+    position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+
   
+  margin: 0 auto;
 }
 
 mat-card:hover {

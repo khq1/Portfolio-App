@@ -28,7 +28,7 @@ export class PortfolioComponent implements OnInit {
           },
         ];
       }
-      this.messageService.add(`NoHandset Device`);
+      
       return [
         {
           title: 'Portfolio-App',
