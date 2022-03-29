@@ -38,12 +38,17 @@ mat-card:hover {
   margin-left: 15px;
 }
 .card-description {
+  .card-description {
   margin-top: 5px;
-  margin-left: 35px;
+  
   font-size: 12px;
   font-weight: 300;
-  line-height: 14px;
+
   margin-left: 15px;
+
+  padding: 10px;
+   white-space: pre-line;
+}
 }
 .more-button {
   position: absolute;

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
-
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -21,7 +20,6 @@ import { NgbCaruselComponent } from './components/ngb-carusel/ngb-carusel/ngb-ca
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
-
 import {MatDialogModule} from '@angular/material/dialog';
 import { MessagesComponent } from './components/messages/messages.component';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -41,7 +39,6 @@ import { ThemeService } from './theme.service';
 import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.component';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
@@ -105,7 +102,6 @@ import { RespGalleryComponent } from './components/project-pages/resp-gallery/re
 
   ],
   providers: [
-    
     NgbCarouselConfig,
     StyleManagerService,
     ThemeService,

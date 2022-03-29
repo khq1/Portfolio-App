@@ -2,7 +2,6 @@
 
 This project is my personal software developer portfolio, solo project to master Angular, Git, IDEs and build stacks.
 
-
 ## Preview
 Check it live on Github Pages: 
 

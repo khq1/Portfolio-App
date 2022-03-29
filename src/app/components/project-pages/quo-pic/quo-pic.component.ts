@@ -23,7 +23,7 @@ export class QuoPicComponent implements OnInit {
             gh_url: 'https://github.com/khq1/QuoPic',
             gh_pages_url: 'https://khq1.github.io/QuoPic/',
             description:
-              'This my first project combining HTML, CSS and JavaScript. \n\n Site utilizes 3 APIs:\n https://quotable.io - get radom quotes \n https://picsum.photos get random image with a window size resolution \n https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis - Web Speech API \n',
+              'This my first project combining HTML, CSS and JavaScript. \n\n Site utilizes 3 APIs:\n https://quotable.io - get radom quotes \n https://picsum.photos get random image with a user window size resolution \n https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis - Web Speech API \n',
             routerLink: 'QuoPic',
           },
         ];
@@ -39,7 +39,7 @@ export class QuoPicComponent implements OnInit {
           gh_url: 'https://github.com/khq1/QuoPic',
           gh_pages_url: 'https://khq1.github.io/QuoPic/',
           description:
-            'This my first project combining HTML, CSS and JavaScript. \n\n Site utilizes 3 APIs:\n https://quotable.io - get radom quotes \n https://picsum.photos get random image with a window size resolution \n https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis - Web Speech API \n',
+            'This my first project combining HTML, CSS and JavaScript. \n\n Site utilizes 3 APIs:\n https://quotable.io - get radom quotes \n https://picsum.photos get random image with a user window size resolution \n https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis - Web Speech API \n',
           routerLink: 'QuoPic',
         },
       ];
