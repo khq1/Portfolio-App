@@ -16,8 +16,7 @@ export class PortfolioComponent implements OnInit {
         return [
           {
             title: 'Portfolio-App',
-            colspan: 2,
-            rowspan: 2,
+          
             subtitle: "My way to learn Angular - google's frontend framework",
             img_url: 'assets/img/projects-images/Portfolio-App.jpg ',
             gh_url: 'https://github.com/khq1/Portfolio-App',
@@ -33,8 +32,7 @@ export class PortfolioComponent implements OnInit {
       return [
         {
           title: 'Portfolio-App',
-          colspan: 2,
-          rowspan: 2,
+      
           subtitle: "My way to learn Angular - google's frontend framework",
           img_url: 'assets/img/projects-images/Portfolio-App.jpg ',
           gh_url: 'https://github.com/khq1/Portfolio-App',

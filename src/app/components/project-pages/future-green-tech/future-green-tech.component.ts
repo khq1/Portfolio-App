@@ -17,9 +17,7 @@ export class FutureGreenTechComponent implements OnInit {
           
           {
             title: 'FutureGreenTech',
-            colspan: 2,
-            rowspan: 2,
-            subtitle: 'Visions For A Sustainable Future.',
+                     subtitle: 'Vision For A Sustainable Future.',
             img_url: 'assets/img/projects-images/FutureGreenTech.jpg',
             gh_url: 'https://github.com/khq1/FutureGreenTech',
             gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',
@@ -34,9 +32,7 @@ export class FutureGreenTechComponent implements OnInit {
        
         {
           title: 'FutureGreenTech',
-          colspan: 2,
-          rowspan: 2,
-          subtitle: 'WebSite project.',
+              subtitle: 'WebSite project.',
           img_url: 'assets/img/projects-images/FutureGreenTech.jpg',
           gh_url: 'https://github.com/khq1/FutureGreenTech',
           gh_pages_url: 'https://khq1.github.io/FutureGreenTech/',

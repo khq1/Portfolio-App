@@ -1,91 +1,65 @@
-@use "@angular/material"as mat;
-
-.grid-container {
-  width: 100%;
+.img-wrapper {
+  width: 84vw;
+  height: 74vh;
+  margin: auto auto;
 }
 
-
-
-.dashboard-card {
-  padding: 0;
-  width: 90%;
-  height: auto;
-  max-width: 100%;
-  margin: 15px auto;
+.img_slide {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center center;
 }
 
-mat-raised-button:hover {
-  @include mat.elevation(8);
-}
-
-.card-title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 18px;
-  margin: 15px;
-}
-
-.card-subtitle {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 14px;
-  margin-left: 15px;
-
-}
-
-.card-description {
-  margin-top: 5px;
+.carousel-caption {
   white-space: pre-line;
-  font-size: 12px;
-  font-weight: 300;
-  margin: 30px auto;
-  padding: 10px;
+  color: white;
+  position: absolute;
+  transform: translateY(0%);
+  height: auto;
+  text-align: left;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
-.card-description::first-letter {
-  font-size: xx-large;
+.carousel-caption .carousel-title {
   font-weight: bold;
-
 }
 
-
-.dashboard-card-content {
-  width: 100%;
-  height: 100%;
-
+.carousel-caption .carousel-description {
+  font-weight: 200;
 }
 
 .button-group {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1em;
+  row-gap: 1em;
+  align-content: center;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.cycle_pause_button {
+  width: auto;
+  min-width: max-content;
+}
+
+.slide-controls-panel {
+  width: inherit;
+}
+
+.button-group-panel {
   min-height: 10%;
   display: flex;
   flex-flow: row wrap;
-  row-gap: 2%;
-  column-gap: 2%;
-  justify-content: center;
-  align-items: center;
-  margin: 30px auto;
-}
+  row-gap: 1em;
+  column-gap: 1em;
+  align-content: center;
+  justify-content: space-around;
 
-.img_project {
-  width: 75%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-
-}
-
-.menu-item {
-  margin: 15px 0;
-  @include mat.elevation(2);
-
-  :hover {
-    @include mat.elevation(4);
+  @media (min-width: 800px) {
+    max-width: 50vw;
   }
-}
-
-.menu-docs-logo {
-  width: 24px;
-  height: 24px;
 }

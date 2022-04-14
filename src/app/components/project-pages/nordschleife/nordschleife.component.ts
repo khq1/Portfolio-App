@@ -14,44 +14,36 @@ export class NordschleifeComponent implements OnInit {
       if (matches) {
         
         return [
-                    {
-            title: 'Nürburgring Nordschleife',
-            colspan: 2,
-            rowspan: 2,
+          {
+            title: 'Nordschleife Record Laps',
             subtitle: 'Record Lap Times',
             img_url: 'assets/img/projects-images/My-First-App.jpg',
             gh_url: 'https://github.com/khq1/My-First-App',
             gh_pages_url: 'https://khq1.github.io/My-First-App/',
             description:
-              'Angular Material App that utilizes mat-autocomplete, sort and filter results with HttpService and Angular Router. Which of these cars would you pick for a late night cruise?',
+              'Angular Material \n\n MatAutocompleteModule \n MatCardModule \n MatGridListModule\nHttpClientModule\nAppRoutingModule\n and many more.\n\n Which of these cars would you pick for a late night cruise?',
             routerLink: 'Nordschleife',
           },
         ];
       }
       
       return [
-        
-        
         {
-          title: 'Nürburgring Nordschleife',
-          colspan: 2,
-          rowspan: 2,
+          title: 'Nordschleife Record Laps',
           subtitle: 'Record Lap Times',
           img_url: 'assets/img/projects-images/My-First-App.jpg',
           gh_url: 'https://github.com/khq1/My-First-App',
           gh_pages_url: 'https://khq1.github.io/My-First-App/',
           description:
-            'Angular Material App, that utilizes mat-autocomplete, sort and filter results with Http service and Angular Router. Which of these  cuties you pick for a late night cruise?',
+            'Angular Material \n\n MatAutocompleteModule \n MatCardModule \n MatGridListModule\nHttpClientModule\nAppRoutingModule\n and many more.\n\n Which of these cars would you pick for a late night cruise?',
           routerLink: 'Nordschleife',
         },
       ];
     })
   );
-  /** Based on the screen size, switch from standard to one column per row */
+ 
   panelOpenState = false;
-  colspan: number = 1;
-  rowspan: number = 1;
-  /** Based on the screen size, switch from standard to one column per row */
+
 
   constructor(
     private breakpointObserver: BreakpointObserver,

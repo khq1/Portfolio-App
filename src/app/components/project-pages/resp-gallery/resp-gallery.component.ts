@@ -15,14 +15,13 @@ export class RespGalleryComponent implements OnInit {
         return [
           {
             title: 'Responsive Gallery ',
-            colspan: 2,
-            rowspan: 2,
-            subtitle: 'Balanced App',
+
+            subtitle: 'Sandbox project, that ',
             img_url: 'assets/img/projects-images/Gallery.jpg',
             gh_url: 'https://khq1.github.io/Gallery/',
             gh_pages_url: 'https://khq1.github.io/Gallery/',
             description:
-              'Sit back and enjoy random quotes combined with a random image read aloud using the speech synthesis module',
+              "My first steps in html,css and js to create flex gallery, project is unfinished and glitchy, it's just a placeholder to populate projects section",
             routerLink: 'RespGallery',
           },
         ];
@@ -30,8 +29,7 @@ export class RespGalleryComponent implements OnInit {
         return [        
         {
           title: 'Responsive Gallery ',
-          colspan: 2,
-          rowspan: 2,
+         
           subtitle: 'Sandbox project, that ',
           img_url: 'assets/img/projects-images/Gallery.jpg',
           gh_url: 'https://khq1.github.io/Gallery/',

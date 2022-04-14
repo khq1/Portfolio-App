@@ -16,8 +16,7 @@ export class QuoPicComponent implements OnInit {
         return [
           {
             title: 'Cafe and Clouds',
-            colspan: 2,
-            rowspan: 2,
+            
             subtitle: 'Sit back and enjoy random quotes and images',
             img_url: 'assets/img/projects-images/QuoPic.jpg',
             gh_url: 'https://github.com/khq1/QuoPic',
@@ -32,8 +31,7 @@ export class QuoPicComponent implements OnInit {
       return [
         {
           title: 'Cafe and Clouds',
-          colspan: 2,
-          rowspan: 2,
+     
           subtitle: 'Sit back and enjoy random quotes and images',
           img_url: 'assets/img/projects-images/QuoPic.jpg',
           gh_url: 'https://github.com/khq1/QuoPic',
