@@ -1,58 +1,59 @@
 [
-    {
-        "id": "1",
-        "title": "My Coding Experience:",
-        "image_url": "assets/img/carusel-images/i1.jpg",
-        "description": "Coding since June 2020 Front-end route:  HTML, CSS, JavaScript, TypeScript, Angular  Self-taught  Enthusiastic learner, aspiring for Fullstack developer position",
-        "img_alt": "Image by birgl from Pixabay"
-    },
-    {
-        "id": "2",
-        "title": "Graduation",
-        "image_url": "assets/img/carusel-images/i2.jpg",
-        "description": "Geology - master's degree at the University Specialization: Geochemistry",
-        "img_alt": "Image by McElspeth from Pixabay"
-    },
-    {
-        "id": "3",
-        "title": "Profesional Carrier: R&D Centre",
-        "image_url": "assets/img/carusel-images/i3.jpg",
-        "description": "Exploration Geologist Data digitization, database building and management  Custom maps, geological cross sections and profiles from interpolated data Estimation of the mine's industrial resources - ores: copper and polimetals, nickel and brown coal, mineral salt",
-        "img_alt": "Image by Malachi Witt from Pixabay"
-    },
-    {
-        "id": "4",
-        "title": "Projects and documentations",
-        "image_url": "assets/img/carusel-images/i4.jpg",
-        "description": "Exploration projects and resource documentations Creaing documentation chapters, e.g. administration, geology, mineralization characteristics, chronostratigraphy, tectonics. Tasks from investor relations to approval of documentation by the Ministry of the Environment  Cooperation on drilling projects in Poland and Germany",
-        "img_alt": "Image by György Károly Tóth from Pixabay"
-    },
-    {
-        "id": "5",
-        "title": "Drilling:",
-        "image_url": "assets/img/carusel-images/i5.jpg",
-        "description": "Representation of the investor on the premises of the geological and drilling works  Supervision and reporting of drilling works Consulting and expertise in the field of core drilling  Management of data, drill cores, samples of water, ore and gas, documents",
-        "img_alt": "Image by Terry McGraw from Pixabay"
-    },
-    {
-        "id": "6",
-        "title": "First Nuclear Power Plant in Poland Project:",
-        "image_url": "assets/img/carusel-images/i6.jpg",
-        "description": "Supervisor of the hydrological drilling rigs Quality assurance in soil, rock, fluid, cores and logistics Hydrogeological mesurements and monitoring  Periodic, formal raports",
-        "img_alt": "Image by Markus Distelrath from Pixabay"
-    },
-    {
-        "id": "7",
-        "title": "Chauffeuring services:",
-        "image_url": "assets/img/carusel-images/i7.jpg",
-        "description": "VIP transport in cooperation with major companies and hotels located in Wrocław  Ensure promptness, safety and comfort",
-        "img_alt": "Image by Free-Photos from Pixabay"
-    },
-    {
-        "id": "8",
-        "title": "Profesional goals:",
-        "image_url": "assets/img/carusel-images/i8.jpg",
-        "description": "Get a contract of employment as a developer  Join international development team, grow to create value by gaining competence  Become Full Stack Developer",
-        "img_alt": "Image by borozdor from Pixabay"
-    }
+  {
+    "id": "1",
+    "title": "IT",
+    "image_url": "https://cdn.pixabay.com/photo/2018/09/16/11/00/nature-3681148_1280.jpg",
+    "description": "First PC in 1997 - INTEL PENTIUM MMX @ 166MHZ, 32MB RAM, 4.30 GB HARD DRIVE, CD-ROM, 3.5 FLOPPY",
+
+    "img_alt": "Image by darutpl from Pixabay"
+  },
+  {
+    "id": "2",
+    "title": "Geology",
+    "image_url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    "description": "Master's degree",
+    "img_alt": "Image by Bessi from Pixabay"
+  },
+  {
+    "id": "3",
+    "title": "Exploration Geologist",
+    "image_url": "https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435_1280.jpg",
+    "description": "database management, maps, cross sections",
+    "img_alt": "Image by pepperminting from Pixabay"
+  },
+  {
+    "id": "4",
+    "title": "Exploration Projects",
+    "image_url": "https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg",
+    "description": "Estimation of the mine's industrial resources: copper and polimetals, nickel, brown coal, mineral salt",
+    "img_alt": "Image by Cleverpix from Pixabay"
+  },
+  {
+    "id": "5",
+    "title": "Rig Drilling",
+    "image_url": "https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736875_1280.jpg",
+    "description": "Multiple projects coordination",
+    "img_alt": "Image by Bessi from Pixabay"
+  },
+  {
+    "id": "6",
+    "title": "Documentations",
+    "image_url": "https://cdn.pixabay.com/photo/2013/08/20/15/47/poppies-174276_1280.jpg",
+    "description": "Writing documentation administration, geology, mineralization characteristics, chronostratigraphy, tectonics",
+    "img_alt": "Image by danigeza from Pixabay"
+  },
+  {
+    "id": "7",
+    "title": "First Nuclear Power Plant in Poland Project",
+    "image_url": "https://cdn.pixabay.com/photo/2015/07/05/10/18/tree-832079_1280.jpg",
+    "description": "Supervison of drilling project. Periodic raports",
+    "img_alt": "Image Bessi from Pixabay"
+  },
+  {
+    "id": "8",
+    "title": "Profesional goals",
+    "image_url": "https://cdn.pixabay.com/photo/2021/08/10/18/12/tree-6536637_1280.jpg",
+    "description": "Angular Developer",
+    "img_alt": "Image by Larisa-K from Pixabay"
+  }
 ]
