@@ -8,22 +8,22 @@
 
       <span class="side-nav-toolbar-spacer"></span>
 
-      <button class="menu-item2" mat-button class="tooltips-button" matTooltip="Show / hide all tooltip"
-        #tooltip="matTooltip" (mousemove)="show = false" (click)="showAllTooltips()">
-        ?
+      <button mat-icon-button (click)="showAllTooltips()" matTooltip="Show / hide all tooltip"
+        #tooltip="matTooltip" (mousemove)="show = false" >
+      <mat-icon aria-label="Question mark">question_mark</mat-icon>
       </button>
 
       <span class="side-nav-toolbar-spacer"></span>
 
       <button mat-icon-button (click)="toogleUserLogin()" matTooltip="Sign In" #tooltip="matTooltip" type="button"
         aria-label="Sign In" aria-tooltip="Open Login page">
-        <mat-icon aria-label="Home icon">home</mat-icon>
+        <mat-icon aria-label="Account circle">account_circle</mat-icon>
       </button>
 
       <span class="side-nav-toolbar-spacer"></span>
 
       <app-theme-switch [options]="options$ | async" (themeChange)="themeChangeHandler($event)"
-        matTooltip="Change theme" aria-tooltip="Aria description" #tooltip="matTooltip" type="button"
+        matTooltip="Change theme" aria-tooltip="Change color theme" #tooltip="matTooltip" type="button"
         aria-label="Change theme">
       </app-theme-switch>
 
@@ -36,8 +36,8 @@
 
     <mat-nav-list class="menu-list-item">
       <a mat-list-item class="menu-item" #tooltip="matTooltip" matTooltip="Welcome header" routerLinkActive="active"
-        aria-tooltip="Navigatate do Welcome page" (click)="buttonClick('welcome')" aria-tooltip="Welcome header">
-        <mat-icon>feed</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
+        aria-tooltip="Navigatate to welcome page" (click)="buttonClick('welcome')" aria-tooltip="Welcome header">
+        <mat-icon>title</mat-icon><span class="side-nav-toolbar-spacer"></span>Welcome
       </a>
 
       <a mat-list-item class="menu-item" #tooltip="matTooltip" matTooltip="Read short authors biography"
@@ -47,14 +47,14 @@
 
       <a mat-list-item class="menu-item" #tooltip="matTooltip" matTooltip="Explore my projects"
         routerLinkActive="active" (click)="buttonClick('projects')" aria-tooltip="Visit and explore my projects">
-        <mat-icon><span class="material-icons"> dashboard </span></mat-icon><span
+        <mat-icon><span class="material-icons">dashboard </span></mat-icon><span
           class="side-nav-but-spacer"></span>Projects
       </a>
 
       <a mat-list-item class="menu-item"
         matTooltip="Read more in-depth information about the author of this code portfolio" routerLinkActive="active"
         (click)="buttonClick('about')" #tooltip="matTooltip" aria-tooltip="About me slideshow">
-        <mat-icon>subject</mat-icon><span class="side-nav-but-spacer"></span>About me
+        <mat-icon>image</mat-icon><span class="side-nav-but-spacer"></span>About me
       </a>
 
       <a mat-list-item class="menu-item" matTooltip="Send me an e-mail" routerLinkActive="active"

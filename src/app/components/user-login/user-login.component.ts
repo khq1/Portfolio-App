@@ -1,5 +1,4 @@
 import { Component,Output, EventEmitter, OnInit } from '@angular/core';
-import { CountriesService } from 'src/app/countries.service';
 import { MessageService } from 'src/app/message.service';
 import { MatDialog } from '@angular/material/dialog';
 import { FormBuilder } from '@angular/forms';
@@ -24,7 +23,7 @@ export class UserLoginComponent {
     aliases: this.fb.array([this.fb.control('')]),
   });
   dialogRef: any;
-
+  ToggleMessages = true;
   get aliases() {
     return this.profileForm.get('aliases') as FormArray;
   }
@@ -35,16 +34,12 @@ export class UserLoginComponent {
     this.dialogRef.close();
   }
 
-
   constructor(
     private fb: FormBuilder,
     public dialog: MatDialog,
     private messageService: MessageService
   ) {}
 
-  ToggleMessages = true;
-
- 
   updateProfile() {
     this.profileForm.patchValue({
       firstName: 'Name',
@@ -58,11 +53,10 @@ export class UserLoginComponent {
     });
   }
 
-  /*
-      addAlias() {
-        this.aliases.push(this.fb.control(''));
-      }
-    */
+  addAlias() {
+    this.aliases.push(this.fb.control(''));
+  }
+
   onSubmit() {
     // TODO: Use EventEmitter with form value
 

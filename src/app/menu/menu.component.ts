@@ -71,8 +71,8 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.messageService.add('Hi, take a look around..');
-    this.themeService.setTheme('light');
-    this.messageService.add('Try theme switch');
+    this.themeService.setTheme('dark');
+    
   }
 toogleUserLogin() {
   this.dialog.open(UserLoginComponent);

@@ -1,7 +1,6 @@
-import { Component,ViewChild, OnInit, Injectable, Input } from '@angular/core';
+import { Component,ViewChild, OnInit, Injectable} from '@angular/core';
 import { Slide } from '../../../slide';
 import { SlideService } from '../../../slide.service';
-import { FormControl } from '@angular/forms';
 import { MessageService } from '../../../message.service';
 import {
   NgbCarouselConfig,
@@ -27,11 +26,9 @@ export class NgbCaruselComponent {
   pauseOnIndicator = false;
   pauseOnHover = false;
   pauseOnFocus = false;
-  paused = false;
+  paused = true;
   icon = '';
-  @Input()
-  interval: FormControl = new FormControl(5000);
-
+ 
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
 

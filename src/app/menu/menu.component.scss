@@ -18,7 +18,6 @@ overflow-y: hidden;
     font-weight: bold;
     line-height: 28px;    
   background: inherit;
-  
 }
 
 .mat-toolbar.mat-primary {
@@ -31,28 +30,13 @@ overflow-y: hidden;
     }
 
 .menu-list-item{
-
   font-size: 26px;
     font-weight: 300;
     line-height: 26px;
     margin: 4px;
     
 }
-.menu-item{
-margin: 15px 0;
-@include mat.elevation(2);
-    :hover {
-    @include mat.elevation(4);
-  }
-}
-.menu-item2{
 
-
-@include mat.elevation(2);
-    :hover {
-    @include mat.elevation(4);
-  }
-}
 
 
 .side-nav-toolbar-spacer {
@@ -76,12 +60,6 @@ margin: 15px 0;
   
 }
 
-.tooltips-button{
-  @include mat.elevation(2);
-    :hover {
-    @include mat.elevation(4);
-  }
-}
 
 .menu-docs-logo{
   width:24px;

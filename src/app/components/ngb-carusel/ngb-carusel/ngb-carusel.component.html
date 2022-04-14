@@ -1,79 +1,63 @@
 <div class="container">
-    <ngb-carousel #carousel  [showNavigationArrows]="showNavigationArrows"
-        [showNavigationIndicators]="showNavigationIndicators" [pauseOnHover]="pauseOnHover"[interval]="interval.value" (slide)="onSlide($event)">
-        
-         
-        <ng-template ngbSlide *ngFor="let slide of slides"
-        (ngModelChange)="(onSelect)" 
-        
-        >
+    <ngb-carousel #carousel [showNavigationArrows]="showNavigationArrows"
+        [showNavigationIndicators]="showNavigationIndicators" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+        <ng-template ngbSlide *ngFor="let slide of slides" (ngModelChange)="(onSelect)">
             <div class="img-wrapper">
                 <img [src]="slide.image_url" class="img_slide" alt={{slide.img_alt}}>
             </div>
             <div class="carousel-caption">
                 <h3 class="carousel-title">{{slide.title}}</h3>
-                <p class="carousel-description">{{slide.description}}.</p>
-                </div>
-                </ng-template>
-                </ngb-carousel>
+                <p class="carousel-description">{{slide.description}}</p>
+            </div>
+            </ng-template>
+            </ngb-carousel>
 
-<hr>
+    <hr>
 
     <div class="button-group" aria-label="Carousel toggle controls">
         <button mat-raised-button isIconButton:true (click)="togglePaused()" class="cycle_pause_button">
             {{paused ? 'Cycle' : 'Pause'}}
             <mat-icon>{{paused ? 'play_circle_outline' : 'pause_circle_outline'}}</mat-icon>
         </button>
-    <mat-accordion class="slide-controls-panel">
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                Controls:
-            </mat-panel-title>
-            <mat-panel-description>
-                 {{panelOpenState ? 'Open' : 'Closed'}}
-            </mat-panel-description>
-        </mat-expansion-panel-header>
+        <mat-accordion class="slide-controls-panel">
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Controls:
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        {{panelOpenState ? 'Open' : 'Closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+        
+                <div class="button-group-panel" aria-label="Carousel toggle controls">
 
-    <div class="button-group-panel" aria-label="Carousel toggle controls">
+                        <button mat-raised-button aria-label="Toggle navigation arrows" (click)="showNavigationArrows = !showNavigationArrows">
+                            <mat-icon>keyboard_arrow_left</mat-icon>
+                            <mat-icon>keyboard_arrow_right</mat-icon>
+                            Toggle navigation arrows
+                        </button>
 
-            <mat-form-field class="mat-elevation-z2 form-center" floatLabel="always">
-                <mat-label>1 second = 1000 ms</mat-label>
-                <input matInput type="number"  [formControl]="interval" class="interval-right-align"
-                    placeholder={{interval.value}}>
-                
-            </mat-form-field>
-
-                    <button mat-raised-button aria-label="Toggle navigation arrows" (click)="showNavigationArrows = !showNavigationArrows">
-                        <mat-icon>keyboard_arrow_left</mat-icon>
-                        Toggle navigation arrows
-                        <mat-icon>keyboard_arrow_right</mat-icon>
-                    </button>
-
-                    <button mat-raised-button aria-label="Toggle navigation
+                        <button mat-raised-button aria-label="Toggle navigation
                                     indicators" (click)="showNavigationIndicators = !showNavigationIndicators">
-                        <mat-icon>minimize</mat-icon>
-                        <mat-icon>minimize</mat-icon>
-                        <mat-icon>minimize</mat-icon>
-                        Toggle indicators
-                    </button>
-                    <button mat-raised-button (click)="pauseOnHover = !pauseOnHover">Pause on hover
-                    </button>
+                            Toggle indicators
+                            </button>
+                            <button mat-raised-button (click)="pauseOnHover = !pauseOnHover">Pause on hover
+                            </button>
 
-                    <button mat-raised-button [(ngModel)]="pauseOnFocus">
-                        Pause on focus
-                    </button>
+                        <button mat-raised-button [(ngModel)]="pauseOnFocus">
+                            Pause on focus
+                        </button>
 
-                    <button mat-raised-button [(ngModel)]="unpauseOnArrow">
-                        Unpause when arrow click
-                    </button>
+                        <button mat-raised-button [(ngModel)]="unpauseOnArrow">
+                            Unpause when arrow click
+                        </button>
 
-                    <button mat-raised-button [(ngModel)]="pauseOnIndicator">
-                        Pause when click indicator
-                    </button>
-                </div>
+                        <button mat-raised-button [(ngModel)]="pauseOnIndicator">
+                            Pause when click indicator
+                        </button>
+                        </div>
+                
             </mat-expansion-panel>
-            
-            </mat-accordion>
+        </mat-accordion>
     </div>
-   
