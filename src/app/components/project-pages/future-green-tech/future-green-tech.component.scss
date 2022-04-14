@@ -1,88 +1,91 @@
-@use '@angular/material' as mat;
+@use "@angular/material"as mat;
 
 .grid-container {
   width: 100%;
-  }
-  .grid-tile{
-width: 100%;
-height: 100%;
-
 }
-.dashboard-card { 
-  top: 10px;
-  bottom: 10px;
+
+
+
+.dashboard-card {
   padding: 0;
   width: 90%;
-  height: 90%;
+  height: auto;
   max-width: 100%;
-max-height: 100%;
- margin-left:auto;
-    margin-right:auto;
-  
+  margin: 15px auto;
 }
 
-mat-card:hover {
-    @include mat.elevation(8);
-  }
+mat-raised-button:hover {
+  @include mat.elevation(8);
+}
 
-.card-title{
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 18px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 10px;
-   
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 15px;
 }
-.card-subtitle{
-font-size: 14px;
-    font-weight: 300;
-    line-height: 14px;
-    margin-left: 15px;
-}
-.card-description{
-margin-top: 15px;
-margin-left: 35px;
-font-size: 12px;
-    font-weight: 300;
-    line-height: 14px;
-    margin-left: 15px;
-}
-.card-description::first-letter{
 
-font-size:xx-large ;
-font-weight:bold;
+.card-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  margin-left: 15px;
+
 }
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
+
+.card-description {
+  margin-top: 5px;
+  white-space: pre-line;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 30px auto;
+  padding: 10px;
 }
+
+.card-description::first-letter {
+  font-size: xx-large;
+  font-weight: bold;
+
+}
+
 
 .dashboard-card-content {
-width: 100%;
-height: 100%;
-  }
+  width: 100%;
+  height: 100%;
 
+}
 
 .button-group {
-    
-    min-height: 10%;
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 2%;
-    column-gap: 2%;
-    justify-content:center;
-    align-items: center;
-    }
-    
+  min-height: 10%;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 2%;
+  column-gap: 2%;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
 
-mat-card img{
-        width: 100%;
-        height: auto;       
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+.img_project {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 3%;
-  max-width: 500px;
+
+}
+
+.menu-item {
+  margin: 15px 0;
+  @include mat.elevation(2);
+
+  :hover {
+    @include mat.elevation(4);
   }
+}
+
+.menu-docs-logo {
+  width: 24px;
+  height: 24px;
+}

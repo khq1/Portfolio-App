@@ -1,48 +1,43 @@
 <div class="grid-container">
-    <mat-grid-list cols="2" rowHeight="350px">
-        <mat-grid-tile class="grid-tile" *ngFor="let card of cards | async" [colspan]="card.colspan"
-            [rowspan]="card.rowspan" [title]="card.title" subtitle="card.subtitle" img_url="card.img_url"
-            gh_url="card.gh_url" gh_pages_url="card.gh_pages_url" description="card.description">
-            <mat-card tabindex="0" class="dashboard-card">
-                <mat-card-header>
-                    <mat-card-title class="card-title">
-                        {{card.title}}
-                        <button mat-icon-button class="more-button" #tooltip="matTooltip" matTooltip="more"
-                            [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                            <mat-icon>more_vert</mat-icon>
-                        </button>
-                        <mat-menu #menu="matMenu" xPosition="before">
+    <div class="grid-tile" *ngFor="let card of cards | async" [title]="card.title" subtitle="card.subtitle"
+        img_url="card.img_url" gh_url="card.gh_url" gh_pages_url="card.gh_pages_url" description="card.description">
+        <div tabindex="0" class="dashboard-card">
+
+            <div class="dashboard-card-content">
+                <button mat-icon-button class="more-button" #tooltip="matTooltip" matTooltip="more"
+                    [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu class="menu" #menu="matMenu" xPosition="before">
+                    <button mat-menu-item #tooltip="matTooltip" routerLink="/Homepage" routerLinkActive="active"
+                        matTooltip="Homepage">Back</button>
+                    <a mat-menu-item href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
+                        matTooltip="Github page">Github</a>
+                    <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
+                        matTooltip="Visit project website">Visit</a>
+                </mat-menu>
+
+
+
+                <div class="card-title">
+                    {{card.title}}
+                </div>
 
 
 
 
-                            <button mat-menu-item #tooltip="matTooltip" routerLink="/Homepage"
-                                routerLinkActive="active"
-                                matTooltip="Homepage">Back</button>
+                <div class="card-subtitle">{{card.subtitle}}</div>
+                <img mat-card-s-image [src]="card.img_url" class="img_project">
+                <p class="card-description">{{card.description}}</p>
+                <div class="button-group">
 
-                            <a mat-menu-item href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
-                                matTooltip="Github page">Github</a>
-                            <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
-                                matTooltip="Visit project website">Visit</a>
-                        </mat-menu>
-                    </mat-card-title>
-                </mat-card-header>
-                <mat-card-content class="dashboard-card-content">
-                    <div class="card-subtitle">{{card.subtitle}}</div>
-                    <img mat-card-s-image [src]="card.img_url" class="img_project">
-                    <div  class="card-description">{{card.description}}</div>
-                    <mat-card-actions class="button-group">
+                    <a mat-raised-button href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
+                        matTooltip="Github page">Github</a>
+                    <a mat-raised-button href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
+                        matTooltip="Visit project website">Visit</a>
 
-                        <a mat-raised-button href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
-                            matTooltip="Github page">Github</a>
-                        <a mat-raised-button href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
-                            matTooltip="Visit project website">Visit</a>
-
-
-                    </mat-card-actions>
-
-                </mat-card-content>
-            </mat-card>
-        </mat-grid-tile>
-    </mat-grid-list>
+                    </div>
+            </div>
+        </div>
+    </div>
 </div>
