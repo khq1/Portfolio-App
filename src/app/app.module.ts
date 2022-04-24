@@ -47,6 +47,7 @@ import { NordschleifeComponent } from './components/project-pages/nordschleife/n
 import { FutureGreenTechComponent } from './components/project-pages/future-green-tech/future-green-tech.component';
 import { QuoPicComponent } from './components/project-pages/quo-pic/quo-pic.component';
 import { RespGalleryComponent } from './components/project-pages/resp-gallery/resp-gallery.component';
+import { VideoBackgroundComponent } from './components/video-background/video-background.component';
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import { RespGalleryComponent } from './components/project-pages/resp-gallery/re
     FutureGreenTechComponent,
     QuoPicComponent,
     RespGalleryComponent,
+    VideoBackgroundComponent,
   ],
   imports: [
     BrowserModule,
