@@ -70,8 +70,8 @@ export class MenuComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.messageService.add('Hi, take a look around..');
-    this.themeService.setTheme('dark');
+    this.messageService.add('Hi, take a look around...');
+    this.themeService.setTheme('light');
     
   }
 toogleUserLogin() {

@@ -22,12 +22,7 @@
 
       <span class="side-nav-toolbar-spacer"></span>
 
-      <app-theme-switch [options]="options$ | async" (themeChange)="themeChangeHandler($event)"
-        matTooltip="Change theme" aria-tooltip="Change color theme" #tooltip="matTooltip" type="button"
-        aria-label="Change theme">
-      </app-theme-switch>
-
-    <span class="side-nav-toolbar-spacer"></span>
+      
 
 
     </mat-toolbar>
@@ -86,10 +81,16 @@
         mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Jan's Code:</span>
+      <span class="title-link"routerLink="/" routerLinkActive="active">Jan's Code:</span>
       <span class="side-nav-toolbar-spacer"></span>
-      <app-counter-data matTooltip="Date" #tooltip="matTooltip" class="toolbar-date">
+      <app-counter-data matTooltip= "Current date" #tooltip="matTooltip" class="toolbar-date">
       </app-counter-data>
+
+      <app-theme-switch [options]="options$ | async" (themeChange)="themeChangeHandler($event)" matTooltip="Change theme"
+        aria-tooltip="Change color theme" #tooltip="matTooltip" type="button" aria-label="Change theme">
+      </app-theme-switch>
+      
+     
       <app-messages></app-messages>
     </mat-toolbar>
 

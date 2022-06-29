@@ -30,13 +30,22 @@ export class DynamicFlatNode {
 @Injectable({ providedIn: 'root' })
 export class DynamicDatabase {
   dataMap = new Map<string, string[]>([
-    ['Portfolio-App', ['Home', 'Documentations', 'Menu']],
-    ['Home', ['User Login','Tooltips', 'Theme Switch', 'Custom Data Pipe', 'Messages']],
+    ['Portfolio', ['Home', 'Documentations', 'Menu']],
+    [
+      'Home',
+      [
+        'User Login',
+        'Tooltips',
+        'Theme Switch',
+        'Custom Data Pipe',
+        'Messages',
+      ],
+    ],
     ['Documentations', ['Compodoc', 'Typedoc']],
     ['Menu', ['Welcome', 'Bio', 'Projects', 'About me', 'Contact']],
   ]);
 
-  rootLevelNodes: string[] = ['Portfolio-App'];
+  rootLevelNodes: string[] = ['Portfolio'];
 
   /** Initial data from database */
   initialData(): DynamicFlatNode[] {

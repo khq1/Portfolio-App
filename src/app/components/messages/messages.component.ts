@@ -15,7 +15,7 @@ export class MessagesComponent implements OnInit {
   constructor(public messageService: MessageService) {}
 
   ngOnInit() {
-    this.messageService.add('Messages');
+    this.messageService.add('Pick a theme');
   }
 
   ToggleMessageComponent() {

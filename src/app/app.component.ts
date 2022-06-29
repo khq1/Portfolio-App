@@ -10,7 +10,7 @@ declare const gtag: Function;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'PortfolioApp';
+  title = 'Jan Warzecha Angular Developer Portfolio';
 
   constructor(public router: Router) {
     this.router.events.subscribe((event) => {

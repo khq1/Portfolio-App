@@ -1,5 +1,12 @@
 <div id="welcome-page" class="container-fluid">
   <header class="docs-header-background" aria-label="Welcome" id="homepage-header">
+    <div class="overlay"></div>
+    
+ 
+    <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+      <source src="../../../assets/img/homepage/video_background.mp4" type="video/mp4">
+    </video>
+        
     <div class="docs-header-section">
       <div class="docs-header-headline">
         <h1 class="mat-h1">Jan Warzecha</h1>
@@ -7,6 +14,10 @@
       </div>
       <div class="docs-header-start"></div>
     </div>
+
+
+
+
     <section>
       <div class="docs-header-button-group">
 
@@ -354,10 +365,9 @@
     <hr mat-divider>
 <div id="video-background">
 
-  <app-video-background></app-video-background>
 
 </div>
-  <hr mat-divider>
+  
   <div id="footer" class="homepage-tile">
     <h2>Explore more</h2>
     <app-file-tree></app-file-tree>

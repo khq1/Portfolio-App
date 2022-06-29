@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
-import { CommonModule } from "@angular/common";
 import { Option } from "../../option.model";
 import { ThemeService } from "../.././theme.service";
 import { MessageService } from "src/app/message.service";
@@ -22,7 +21,7 @@ export class ThemeSwitchComponent {
 
   changeTheme(themeToSet: string) {
     this.themeChange.emit(themeToSet);
-    this.messageService.add(themeToSet)
+    this.messageService.add('Selected ' + themeToSet + ' theme');
 
   };
 }

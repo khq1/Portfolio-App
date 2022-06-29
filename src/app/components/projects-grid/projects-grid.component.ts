@@ -12,7 +12,7 @@ export class ProjectsGridComponent {
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
-        this.messageService.add(`Handset Detected`);
+        
         return [
           {
             title: "Jan's Code",
@@ -77,7 +77,7 @@ export class ProjectsGridComponent {
           },
         ];
       }
-      this.messageService.add(`NoHandset Detected`);
+     
       return [
         {
           title: 'Portfolio-App',
