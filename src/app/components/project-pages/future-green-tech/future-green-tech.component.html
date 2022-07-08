@@ -2,7 +2,6 @@
     <div class="grid-tile" *ngFor="let card of cards | async" [title]="card.title" subtitle="card.subtitle"
         img_url="card.img_url" gh_url="card.gh_url" gh_pages_url="card.gh_pages_url" description="card.description">
         <div tabindex="0" class="dashboard-card">
-
             <div class="dashboard-card-content">
                 <button mat-icon-button class="more-button" #tooltip="matTooltip" matTooltip="more"
                     [matMenuTriggerFor]="menu" aria-label="Toggle menu">
@@ -16,27 +15,18 @@
                     <a mat-menu-item href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
                         matTooltip="Visit project website">Visit</a>
                 </mat-menu>
-
-
-
                 <div class="card-title">
                     {{card.title}}
                 </div>
-
-
-
-
                 <div class="card-subtitle">{{card.subtitle}}</div>
                 <img mat-card-s-image [src]="card.img_url" class="img_project">
-                <p class="card-description">{{card.description}}</p>
                 <div class="button-group">
-
                     <a mat-raised-button href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
                         matTooltip="Github page">Github</a>
                     <a mat-raised-button href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
                         matTooltip="Visit project website">Visit</a>
-
-                    </div>
+                </div>
+                <p class="card-description">{{card.description}}</p>
             </div>
         </div>
     </div>

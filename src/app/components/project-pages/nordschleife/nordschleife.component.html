@@ -28,15 +28,16 @@
 
                 <div class="card-subtitle">{{card.subtitle}}</div>
                 <img mat-card-s-image [src]="card.img_url" class="img_project">
-                <p class="card-description">{{card.description}}</p>
                 <div class="button-group">
-
+                
                     <a mat-raised-button href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
                         matTooltip="Github page">Github</a>
                     <a mat-raised-button href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
                         matTooltip="Visit project website">Visit</a>
-
+                
                 </div>
+                <p class="card-description">{{card.description}}</p>
+               
             </div>
         </div>
     </div>

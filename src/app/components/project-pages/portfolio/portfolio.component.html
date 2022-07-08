@@ -28,27 +28,28 @@
 
                 <div class="card-subtitle">{{card.subtitle}}</div>
                 <img mat-card-s-image [src]="card.img_url" class="img_project">
-                <p class="card-description">{{card.description}}</p>
                 <div class="button-group">
-
+                
                     <a mat-raised-button href="{{card.gh_url}}" target="_blank" #tooltip="matTooltip"
                         matTooltip="Github page">Github</a>
                     <a mat-raised-button href="{{card.gh_pages_url}}" target="_blank" #tooltip="matTooltip"
                         matTooltip="Visit project website">Visit</a>
-
+                
                     <a mat-raised-button matTooltip="Compodoc documentation for Portfolio-App" #tooltip="matTooltip"
                         aria-tooltip="Documentation by Compodoc" href="assets/docs/compodoc/index.html" target="_blank">
-
-                        <img src="assets/docs/compodoc/compodoc-vectorise-inverted.png" alt="Compodoc"
-                            class="menu-docs-logo" /><span class="side-nav-but-spacer"></span>Compodoc Docs
+                
+                        <img src="assets/docs/compodoc/compodoc-vectorise-inverted.png" alt="Compodoc" class="menu-docs-logo" /><span
+                            class="side-nav-but-spacer"></span>Compodoc Docs
                     </a>
-
+                
                     <a mat-raised-button matTooltip="Typedoc documentation for Portfolio-App" #tooltip="matTooltip"
                         aria-tooltip="Documentation by Typedoc" href="assets/docs/typedoc/index.html" target="_blank">
                         <img src="assets/docs/typedoc/typedoc.png" alt="Typdedoc" class="menu-docs-logo" /><span
                             class="side-nav-but-spacer"></span>Typedoc Docs</a>
-
+                
                 </div>
+                <p class="card-description">{{card.description}}</p>
+                
             </div>
         </div>
     </div>
