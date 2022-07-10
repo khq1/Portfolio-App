@@ -26,7 +26,7 @@ export class NgbCaruselComponent {
   pauseOnIndicator = false;
   pauseOnHover = false;
   pauseOnFocus = false;
-  paused = true;
+  paused = false;
   icon = '';
  
   @ViewChild('carousel', { static: true })

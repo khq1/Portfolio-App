@@ -72,7 +72,7 @@ header .overlay {
   right: 0;
   background-repeat: no-repeat;
   background-position: 80% 30px;
-  opacity: 0.2;
+  opacity: 0.18;
   z-index: 2;
 }
 .docs-header-background::after {
@@ -141,9 +141,10 @@ header .overlay {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  z-index: 3;
   .docs-header-headline {
     height: 100%;
+    
 
     .mat-h1 {
       font-size: 66px;
@@ -169,11 +170,13 @@ header .overlay {
 
 
    .docs-header-headline
+   
   .mat-h1 {
       font-size: 36px;
       font-weight: bold;
       line-height: 36px;
       margin: 15px 5px;
+      z-index: 3;
     }
      .docs-header-headline
     .mat-h2 {
@@ -181,6 +184,7 @@ header .overlay {
       font-weight: 300;
       line-height: 20px;
       margin: 15px 0 25px 0;
+      
     }  
    }
 }
